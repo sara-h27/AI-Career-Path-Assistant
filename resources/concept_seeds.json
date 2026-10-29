@@ -1,0 +1,2620 @@
+{
+ "note": "DRAFT concept list used only to search for learning resources. Track 2 owns the real taxonomy: adopt these concept_ids or provide a mapping. 'match' = title must contain any entry; '+' inside an entry means all parts required. 'iran_specific' concepts skip English sources. 'exclude' = drop titles containing any entry.",
+ "concepts": [
+  {
+   "concept_id": "git",
+   "title_fa": "گیت و کنترل نسخه",
+   "title_en": "Git & version control",
+   "level": "junior",
+   "roles": [
+    "backend_developer",
+    "frontend_developer",
+    "mobile_developer",
+    "devops_engineer",
+    "qa_engineer",
+    "data_engineer",
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش گیت",
+   "q_en": "git tutorial for beginners",
+   "match": [
+    "git",
+    "گیت"
+   ]
+  },
+  {
+   "concept_id": "linux_basics",
+   "title_fa": "مبانی لینوکس",
+   "title_en": "Linux basics",
+   "level": "junior",
+   "roles": [
+    "devops_engineer",
+    "backend_developer",
+    "data_engineer",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش لینوکس مقدماتی",
+   "q_en": "linux command line basics",
+   "match": [
+    "linux",
+    "لینوکس"
+   ]
+  },
+  {
+   "concept_id": "bash_scripting",
+   "title_fa": "اسکریپت‌نویسی Bash",
+   "title_en": "Bash scripting",
+   "level": "mid",
+   "roles": [
+    "devops_engineer",
+    "data_engineer"
+   ],
+   "q_fa": "آموزش bash scripting",
+   "q_en": "bash scripting tutorial",
+   "match": [
+    "bash",
+    "shell",
+    "اسکریپت"
+   ]
+  },
+  {
+   "concept_id": "networking_basics",
+   "title_fa": "مبانی شبکه",
+   "title_en": "Computer networking basics",
+   "level": "junior",
+   "roles": [
+    "devops_engineer",
+    "backend_developer"
+   ],
+   "q_fa": "آموزش شبکه مقدماتی",
+   "q_en": "computer networking basics",
+   "match": [
+    "شبکه",
+    "network",
+    "ccna"
+   ]
+  },
+  {
+   "concept_id": "python_basics",
+   "title_fa": "مبانی پایتون",
+   "title_en": "Python basics",
+   "level": "junior",
+   "roles": [
+    "backend_developer",
+    "qa_engineer",
+    "data_analyst",
+    "data_engineer",
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش پایتون مقدماتی",
+   "q_en": "python for beginners",
+   "match": [
+    "python",
+    "پایتون"
+   ]
+  },
+  {
+   "concept_id": "oop",
+   "title_fa": "برنامه‌نویسی شیءگرا",
+   "title_en": "Object-oriented programming",
+   "level": "junior",
+   "roles": [
+    "backend_developer",
+    "mobile_developer",
+    "qa_engineer",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش برنامه نویسی شی گرا",
+   "q_en": "object oriented programming tutorial",
+   "match": [
+    "شی گرا",
+    "شیءگرا",
+    "شی‌گرا",
+    "oop",
+    "object oriented",
+    "object-oriented"
+   ]
+  },
+  {
+   "concept_id": "data_structures_algorithms",
+   "title_fa": "ساختمان داده و الگوریتم",
+   "title_en": "Data structures & algorithms",
+   "level": "mid",
+   "roles": [
+    "backend_developer",
+    "frontend_developer",
+    "mobile_developer",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش ساختمان داده و الگوریتم",
+   "q_en": "data structures and algorithms course",
+   "match": [
+    "ساختمان داده",
+    "ساختمان‌داده",
+    "الگوریتم",
+    "data structure",
+    "algorithm"
+   ]
+  },
+  {
+   "concept_id": "design_patterns",
+   "title_fa": "الگوهای طراحی",
+   "title_en": "Design patterns",
+   "level": "mid",
+   "roles": [
+    "backend_developer",
+    "frontend_developer",
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش دیزاین پترن",
+   "q_en": "design patterns tutorial",
+   "match": [
+    "design pattern",
+    "دیزاین پترن",
+    "الگوهای طراحی",
+    "الگوی طراحی"
+   ]
+  },
+  {
+   "concept_id": "http_rest_api",
+   "title_fa": "HTTP و REST API",
+   "title_en": "HTTP & REST APIs",
+   "level": "junior",
+   "roles": [
+    "backend_developer",
+    "frontend_developer",
+    "mobile_developer",
+    "qa_engineer"
+   ],
+   "q_fa": "آموزش REST API",
+   "q_en": "REST API tutorial",
+   "match": [
+    "rest",
+    "api",
+    "http"
+   ]
+  },
+  {
+   "concept_id": "sql_basics",
+   "title_fa": "مبانی SQL",
+   "title_en": "SQL basics",
+   "level": "junior",
+   "roles": [
+    "backend_developer",
+    "data_analyst",
+    "bi_developer",
+    "data_engineer",
+    "data_scientist",
+    "financial_analyst",
+    "business_analyst"
+   ],
+   "q_fa": "آموزش SQL مقدماتی",
+   "q_en": "SQL tutorial for beginners",
+   "match": [
+    "sql"
+   ]
+  },
+  {
+   "concept_id": "sql_advanced",
+   "title_fa": "SQL پیشرفته",
+   "title_en": "Advanced SQL",
+   "level": "mid",
+   "roles": [
+    "data_analyst",
+    "bi_developer",
+    "data_engineer"
+   ],
+   "q_fa": "آموزش SQL پیشرفته",
+   "q_en": "advanced SQL window functions",
+   "match": [
+    "sql+پیشرفته",
+    "advanced+sql",
+    "window function"
+   ]
+  },
+  {
+   "concept_id": "database_design",
+   "title_fa": "طراحی پایگاه داده",
+   "title_en": "Database design",
+   "level": "mid",
+   "roles": [
+    "backend_developer",
+    "data_engineer",
+    "bi_developer"
+   ],
+   "q_fa": "آموزش طراحی پایگاه داده",
+   "q_en": "database design tutorial",
+   "match": [
+    "پایگاه داده",
+    "پایگاه‌داده",
+    "database",
+    "دیتابیس"
+   ]
+  },
+  {
+   "concept_id": "nosql_mongodb",
+   "title_fa": "پایگاه داده NoSQL و MongoDB",
+   "title_en": "NoSQL & MongoDB",
+   "level": "mid",
+   "roles": [
+    "backend_developer",
+    "data_engineer"
+   ],
+   "q_fa": "آموزش MongoDB",
+   "q_en": "MongoDB tutorial",
+   "match": [
+    "mongo",
+    "nosql",
+    "مونگو"
+   ]
+  },
+  {
+   "concept_id": "django",
+   "title_fa": "جنگو",
+   "title_en": "Django",
+   "level": "junior",
+   "roles": [
+    "backend_developer"
+   ],
+   "q_fa": "آموزش جنگو",
+   "q_en": "Django tutorial",
+   "match": [
+    "django",
+    "جنگو"
+   ]
+  },
+  {
+   "concept_id": "nodejs",
+   "title_fa": "Node.js",
+   "title_en": "Node.js",
+   "level": "junior",
+   "roles": [
+    "backend_developer"
+   ],
+   "q_fa": "آموزش Node.js",
+   "q_en": "Node.js tutorial",
+   "match": [
+    "node",
+    "نود"
+   ]
+  },
+  {
+   "concept_id": "unit_testing",
+   "title_fa": "تست‌نویسی و تست واحد",
+   "title_en": "Unit testing",
+   "level": "mid",
+   "roles": [
+    "backend_developer",
+    "frontend_developer",
+    "mobile_developer",
+    "qa_engineer"
+   ],
+   "q_fa": "آموزش تست نویسی",
+   "q_en": "unit testing tutorial",
+   "match": [
+    "تست",
+    "test"
+   ]
+  },
+  {
+   "concept_id": "web_security",
+   "title_fa": "امنیت وب",
+   "title_en": "Web security (OWASP)",
+   "level": "mid",
+   "roles": [
+    "backend_developer",
+    "frontend_developer",
+    "devops_engineer"
+   ],
+   "q_fa": "آموزش امنیت وب",
+   "q_en": "web security OWASP top 10",
+   "match": [
+    "امنیت",
+    "security",
+    "owasp"
+   ]
+  },
+  {
+   "concept_id": "caching_redis",
+   "title_fa": "کش و Redis",
+   "title_en": "Caching & Redis",
+   "level": "mid",
+   "roles": [
+    "backend_developer"
+   ],
+   "q_fa": "آموزش Redis",
+   "q_en": "Redis caching tutorial",
+   "match": [
+    "redis",
+    "ردیس",
+    "cache",
+    "کش"
+   ]
+  },
+  {
+   "concept_id": "message_queues",
+   "title_fa": "صف پیام (RabbitMQ/Kafka)",
+   "title_en": "Message queues",
+   "level": "senior",
+   "roles": [
+    "backend_developer",
+    "data_engineer"
+   ],
+   "q_fa": "آموزش RabbitMQ",
+   "q_en": "RabbitMQ message queue tutorial",
+   "match": [
+    "rabbitmq",
+    "kafka",
+    "کافکا",
+    "message queue",
+    "صف"
+   ]
+  },
+  {
+   "concept_id": "docker",
+   "title_fa": "داکر",
+   "title_en": "Docker",
+   "level": "mid",
+   "roles": [
+    "backend_developer",
+    "devops_engineer",
+    "data_engineer",
+    "ml_engineer",
+    "qa_engineer"
+   ],
+   "q_fa": "آموزش داکر",
+   "q_en": "Docker tutorial for beginners",
+   "match": [
+    "docker",
+    "داکر"
+   ]
+  },
+  {
+   "concept_id": "kubernetes",
+   "title_fa": "کوبرنتیز",
+   "title_en": "Kubernetes",
+   "level": "senior",
+   "roles": [
+    "devops_engineer",
+    "backend_developer"
+   ],
+   "q_fa": "آموزش کوبرنتیز",
+   "q_en": "Kubernetes tutorial",
+   "match": [
+    "kubernetes",
+    "کوبرنتیز",
+    "k8s"
+   ]
+  },
+  {
+   "concept_id": "ci_cd",
+   "title_fa": "CI/CD",
+   "title_en": "CI/CD pipelines",
+   "level": "mid",
+   "roles": [
+    "devops_engineer",
+    "backend_developer",
+    "qa_engineer",
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش CI/CD",
+   "q_en": "CI/CD pipeline tutorial",
+   "match": [
+    "ci/cd",
+    "ci cd",
+    "cicd",
+    "jenkins",
+    "gitlab ci",
+    "github actions"
+   ]
+  },
+  {
+   "concept_id": "system_design",
+   "title_fa": "طراحی سیستم",
+   "title_en": "System design",
+   "level": "senior",
+   "roles": [
+    "backend_developer",
+    "devops_engineer"
+   ],
+   "q_fa": "آموزش طراحی سیستم",
+   "q_en": "system design course",
+   "match": [
+    "system design",
+    "طراحی سیستم",
+    "سیستم دیزاین"
+   ]
+  },
+  {
+   "concept_id": "microservices",
+   "title_fa": "معماری میکروسرویس",
+   "title_en": "Microservices architecture",
+   "level": "senior",
+   "roles": [
+    "backend_developer"
+   ],
+   "q_fa": "آموزش میکروسرویس",
+   "q_en": "microservices architecture tutorial",
+   "match": [
+    "microservice",
+    "میکروسرویس"
+   ]
+  },
+  {
+   "concept_id": "distributed_systems",
+   "title_fa": "سیستم‌های توزیع‌شده",
+   "title_en": "Distributed systems",
+   "level": "senior",
+   "roles": [
+    "backend_developer",
+    "data_engineer"
+   ],
+   "q_fa": "سیستم های توزیع شده",
+   "q_en": "distributed systems course",
+   "match": [
+    "distributed",
+    "توزیع شده",
+    "توزیع‌شده"
+   ]
+  },
+  {
+   "concept_id": "nginx",
+   "title_fa": "وب‌سرور Nginx",
+   "title_en": "Nginx web server",
+   "level": "mid",
+   "roles": [
+    "devops_engineer",
+    "backend_developer"
+   ],
+   "q_fa": "آموزش nginx",
+   "q_en": "nginx tutorial",
+   "match": [
+    "nginx",
+    "انجین"
+   ]
+  },
+  {
+   "concept_id": "cloud_basics",
+   "title_fa": "رایانش ابری",
+   "title_en": "Cloud computing (AWS)",
+   "level": "mid",
+   "roles": [
+    "devops_engineer",
+    "data_engineer",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش رایانش ابری",
+   "q_en": "AWS cloud practitioner",
+   "match": [
+    "cloud",
+    "ابری",
+    "aws"
+   ]
+  },
+  {
+   "concept_id": "infrastructure_as_code",
+   "title_fa": "زیرساخت به‌عنوان کد (Terraform/Ansible)",
+   "title_en": "Infrastructure as code",
+   "level": "senior",
+   "roles": [
+    "devops_engineer"
+   ],
+   "q_fa": "آموزش انسیبل",
+   "q_en": "Terraform tutorial",
+   "match": [
+    "terraform",
+    "ansible",
+    "انسیبل",
+    "ترافرم",
+    "infrastructure as code"
+   ]
+  },
+  {
+   "concept_id": "monitoring_observability",
+   "title_fa": "مانیتورینگ (Prometheus/Grafana)",
+   "title_en": "Monitoring & observability",
+   "level": "senior",
+   "roles": [
+    "devops_engineer"
+   ],
+   "q_fa": "آموزش Prometheus Grafana",
+   "q_en": "Prometheus Grafana monitoring tutorial",
+   "match": [
+    "prometheus",
+    "grafana",
+    "مانیتورینگ",
+    "monitoring",
+    "پرومتئوس"
+   ]
+  },
+  {
+   "concept_id": "html_css",
+   "title_fa": "HTML و CSS",
+   "title_en": "HTML & CSS",
+   "level": "junior",
+   "roles": [
+    "frontend_developer"
+   ],
+   "q_fa": "آموزش HTML و CSS",
+   "q_en": "HTML CSS tutorial for beginners",
+   "match": [
+    "html",
+    "css"
+   ]
+  },
+  {
+   "concept_id": "javascript",
+   "title_fa": "جاوااسکریپت",
+   "title_en": "JavaScript",
+   "level": "junior",
+   "roles": [
+    "frontend_developer",
+    "backend_developer"
+   ],
+   "q_fa": "آموزش جاوا اسکریپت",
+   "q_en": "JavaScript tutorial for beginners",
+   "match": [
+    "javascript",
+    "جاوا اسکریپت",
+    "جاوااسکریپت",
+    "js"
+   ]
+  },
+  {
+   "concept_id": "typescript",
+   "title_fa": "تایپ‌اسکریپت",
+   "title_en": "TypeScript",
+   "level": "mid",
+   "roles": [
+    "frontend_developer",
+    "backend_developer"
+   ],
+   "q_fa": "آموزش تایپ اسکریپت",
+   "q_en": "TypeScript tutorial",
+   "match": [
+    "typescript",
+    "تایپ اسکریپت",
+    "تایپ‌اسکریپت"
+   ]
+  },
+  {
+   "concept_id": "responsive_design",
+   "title_fa": "طراحی واکنش‌گرا",
+   "title_en": "Responsive web design",
+   "level": "junior",
+   "roles": [
+    "frontend_developer"
+   ],
+   "q_fa": "آموزش طراحی ریسپانسیو",
+   "q_en": "responsive web design tutorial",
+   "match": [
+    "responsive",
+    "ریسپانسیو",
+    "واکنش گرا",
+    "واکنش‌گرا",
+    "flexbox",
+    "bootstrap",
+    "tailwind"
+   ]
+  },
+  {
+   "concept_id": "react",
+   "title_fa": "ری‌اکت",
+   "title_en": "React",
+   "level": "junior",
+   "roles": [
+    "frontend_developer"
+   ],
+   "q_fa": "آموزش ری اکت",
+   "q_en": "React tutorial for beginners",
+   "match": [
+    "react",
+    "ری اکت",
+    "ری‌اکت",
+    "ریکت"
+   ]
+  },
+  {
+   "concept_id": "state_management",
+   "title_fa": "مدیریت State (Redux)",
+   "title_en": "State management (Redux)",
+   "level": "mid",
+   "roles": [
+    "frontend_developer"
+   ],
+   "q_fa": "آموزش ریداکس",
+   "q_en": "Redux toolkit tutorial",
+   "match": [
+    "redux",
+    "ریداکس",
+    "state management",
+    "zustand"
+   ]
+  },
+  {
+   "concept_id": "nextjs",
+   "title_fa": "Next.js",
+   "title_en": "Next.js",
+   "level": "mid",
+   "roles": [
+    "frontend_developer"
+   ],
+   "q_fa": "آموزش Next.js",
+   "q_en": "Next.js tutorial",
+   "match": [
+    "next.js",
+    "nextjs",
+    "next js",
+    "نکست"
+   ]
+  },
+  {
+   "concept_id": "web_performance",
+   "title_fa": "بهینه‌سازی عملکرد وب",
+   "title_en": "Web performance optimization",
+   "level": "senior",
+   "roles": [
+    "frontend_developer"
+   ],
+   "q_fa": "بهینه سازی سرعت سایت",
+   "q_en": "web performance optimization",
+   "match": [
+    "سرعت",
+    "performance",
+    "بهینه"
+   ]
+  },
+  {
+   "concept_id": "kotlin",
+   "title_fa": "کاتلین",
+   "title_en": "Kotlin",
+   "level": "junior",
+   "roles": [
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش کاتلین",
+   "q_en": "Kotlin tutorial for beginners",
+   "match": [
+    "kotlin",
+    "کاتلین"
+   ]
+  },
+  {
+   "concept_id": "android_development",
+   "title_fa": "برنامه‌نویسی اندروید",
+   "title_en": "Android development",
+   "level": "junior",
+   "roles": [
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش برنامه نویسی اندروید",
+   "q_en": "Android development tutorial",
+   "match": [
+    "android",
+    "اندروید"
+   ]
+  },
+  {
+   "concept_id": "jetpack_compose",
+   "title_fa": "Jetpack Compose",
+   "title_en": "Jetpack Compose",
+   "level": "mid",
+   "roles": [
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش جت پک کامپوز",
+   "q_en": "Jetpack Compose tutorial",
+   "match": [
+    "compose",
+    "کامپوز"
+   ]
+  },
+  {
+   "concept_id": "flutter_dart",
+   "title_fa": "فلاتر و دارت",
+   "title_en": "Flutter & Dart",
+   "level": "junior",
+   "roles": [
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش فلاتر",
+   "q_en": "Flutter tutorial for beginners",
+   "match": [
+    "flutter",
+    "فلاتر",
+    "dart",
+    "دارت"
+   ]
+  },
+  {
+   "concept_id": "swift_ios",
+   "title_fa": "Swift و iOS",
+   "title_en": "Swift & iOS",
+   "level": "junior",
+   "roles": [
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش برنامه نویسی iOS سوئیفت",
+   "q_en": "Swift iOS development tutorial",
+   "match": [
+    "swift",
+    "سوئیفت",
+    "ios"
+   ]
+  },
+  {
+   "concept_id": "mobile_architecture",
+   "title_fa": "معماری اپلیکیشن موبایل (MVVM)",
+   "title_en": "Mobile app architecture",
+   "level": "senior",
+   "roles": [
+    "mobile_developer"
+   ],
+   "q_fa": "آموزش معماری MVVM اندروید",
+   "q_en": "Android MVVM clean architecture",
+   "match": [
+    "mvvm",
+    "clean architecture",
+    "معماری"
+   ]
+  },
+  {
+   "concept_id": "software_testing_fundamentals",
+   "title_fa": "مبانی تست نرم‌افزار",
+   "title_en": "Software testing fundamentals",
+   "level": "junior",
+   "roles": [
+    "qa_engineer"
+   ],
+   "q_fa": "آموزش تست نرم افزار",
+   "q_en": "software testing fundamentals ISTQB",
+   "match": [
+    "تست نرم",
+    "software testing",
+    "istqb",
+    "qa"
+   ]
+  },
+  {
+   "concept_id": "test_automation",
+   "title_fa": "اتوماسیون تست (Selenium)",
+   "title_en": "Test automation (Selenium)",
+   "level": "mid",
+   "roles": [
+    "qa_engineer"
+   ],
+   "q_fa": "آموزش سلنیوم",
+   "q_en": "Selenium test automation tutorial",
+   "match": [
+    "selenium",
+    "سلنیوم",
+    "cypress",
+    "playwright",
+    "automation",
+    "اتوماسیون"
+   ]
+  },
+  {
+   "concept_id": "api_testing",
+   "title_fa": "تست API با Postman",
+   "title_en": "API testing (Postman)",
+   "level": "junior",
+   "roles": [
+    "qa_engineer",
+    "backend_developer"
+   ],
+   "q_fa": "آموزش پستمن",
+   "q_en": "Postman API testing tutorial",
+   "match": [
+    "postman",
+    "پستمن",
+    "api test",
+    "تست api"
+   ]
+  },
+  {
+   "concept_id": "performance_testing",
+   "title_fa": "تست عملکرد (JMeter)",
+   "title_en": "Performance testing (JMeter)",
+   "level": "senior",
+   "roles": [
+    "qa_engineer"
+   ],
+   "q_fa": "آموزش JMeter",
+   "q_en": "JMeter performance testing tutorial",
+   "match": [
+    "jmeter",
+    "جی متر",
+    "performance test",
+    "load test",
+    "تست بار",
+    "تست عملکرد"
+   ]
+  },
+  {
+   "concept_id": "agile_scrum",
+   "title_fa": "چابک و اسکرام",
+   "title_en": "Agile & Scrum",
+   "level": "junior",
+   "roles": [
+    "qa_engineer",
+    "project_manager",
+    "product_manager",
+    "backend_developer",
+    "frontend_developer",
+    "business_analyst"
+   ],
+   "q_fa": "آموزش اسکرام",
+   "q_en": "Agile Scrum tutorial",
+   "match": [
+    "scrum",
+    "اسکرام",
+    "agile",
+    "چابک",
+    "اجایل"
+   ]
+  },
+  {
+   "concept_id": "excel_basics",
+   "title_fa": "اکسل مقدماتی",
+   "title_en": "Excel basics",
+   "level": "junior",
+   "roles": [
+    "data_analyst",
+    "bi_developer",
+    "accountant",
+    "financial_analyst",
+    "auditor",
+    "tax_specialist",
+    "investment_analyst",
+    "hr_specialist",
+    "recruiter",
+    "business_analyst",
+    "sales_specialist",
+    "digital_marketer",
+    "project_manager"
+   ],
+   "q_fa": "آموزش اکسل مقدماتی",
+   "q_en": "Excel tutorial for beginners",
+   "match": [
+    "excel",
+    "اکسل"
+   ]
+  },
+  {
+   "concept_id": "excel_advanced",
+   "title_fa": "اکسل پیشرفته (Pivot و توابع)",
+   "title_en": "Advanced Excel",
+   "level": "mid",
+   "roles": [
+    "data_analyst",
+    "bi_developer",
+    "accountant",
+    "financial_analyst",
+    "auditor",
+    "investment_analyst",
+    "business_analyst"
+   ],
+   "q_fa": "آموزش اکسل پیشرفته",
+   "q_en": "advanced Excel pivot tables formulas",
+   "match": [
+    "اکسل+پیشرفته",
+    "advanced+excel",
+    "pivot",
+    "پیوت"
+   ]
+  },
+  {
+   "concept_id": "statistics_basics",
+   "title_fa": "آمار مقدماتی",
+   "title_en": "Statistics basics",
+   "level": "junior",
+   "roles": [
+    "data_analyst",
+    "data_scientist",
+    "ml_engineer",
+    "financial_analyst",
+    "investment_analyst",
+    "business_analyst",
+    "digital_marketer"
+   ],
+   "q_fa": "آموزش آمار مقدماتی",
+   "q_en": "statistics for data science beginners",
+   "match": [
+    "آمار",
+    "statistic"
+   ]
+  },
+  {
+   "concept_id": "probability",
+   "title_fa": "احتمال",
+   "title_en": "Probability",
+   "level": "junior",
+   "roles": [
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش آمار و احتمال",
+   "q_en": "probability for machine learning",
+   "match": [
+    "احتمال",
+    "probability"
+   ]
+  },
+  {
+   "concept_id": "linear_algebra",
+   "title_fa": "جبر خطی",
+   "title_en": "Linear algebra",
+   "level": "junior",
+   "roles": [
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش جبر خطی",
+   "q_en": "linear algebra for machine learning",
+   "match": [
+    "جبر خطی",
+    "linear algebra"
+   ]
+  },
+  {
+   "concept_id": "pandas_numpy",
+   "title_fa": "Pandas و NumPy",
+   "title_en": "Pandas & NumPy",
+   "level": "junior",
+   "roles": [
+    "data_analyst",
+    "data_scientist",
+    "ml_engineer",
+    "data_engineer"
+   ],
+   "q_fa": "آموزش پانداس",
+   "q_en": "pandas numpy tutorial",
+   "match": [
+    "pandas",
+    "پانداس",
+    "numpy",
+    "نامپای"
+   ]
+  },
+  {
+   "concept_id": "data_cleaning",
+   "title_fa": "پاکسازی و آماده‌سازی داده",
+   "title_en": "Data cleaning",
+   "level": "junior",
+   "roles": [
+    "data_analyst",
+    "data_scientist"
+   ],
+   "q_fa": "آموزش پاکسازی داده",
+   "q_en": "data cleaning tutorial",
+   "match": [
+    "پاکسازی",
+    "data cleaning",
+    "پیش پردازش",
+    "پیش‌پردازش",
+    "preprocessing",
+    "data wrangling"
+   ]
+  },
+  {
+   "concept_id": "data_visualization",
+   "title_fa": "مصورسازی داده",
+   "title_en": "Data visualization",
+   "level": "junior",
+   "roles": [
+    "data_analyst",
+    "bi_developer",
+    "data_scientist",
+    "business_analyst"
+   ],
+   "q_fa": "آموزش مصورسازی داده",
+   "q_en": "data visualization tutorial",
+   "match": [
+    "مصورسازی",
+    "مصور سازی",
+    "visualization",
+    "visualisation",
+    "matplotlib",
+    "seaborn"
+   ]
+  },
+  {
+   "concept_id": "power_bi",
+   "title_fa": "Power BI",
+   "title_en": "Power BI",
+   "level": "junior",
+   "roles": [
+    "bi_developer",
+    "data_analyst",
+    "financial_analyst"
+   ],
+   "q_fa": "آموزش Power BI",
+   "q_en": "Power BI tutorial for beginners",
+   "match": [
+    "power bi",
+    "powerbi",
+    "پاور بی"
+   ]
+  },
+  {
+   "concept_id": "tableau",
+   "title_fa": "Tableau",
+   "title_en": "Tableau",
+   "level": "mid",
+   "roles": [
+    "bi_developer",
+    "data_analyst"
+   ],
+   "q_fa": "آموزش تبلو",
+   "q_en": "Tableau tutorial",
+   "match": [
+    "tableau",
+    "تبلو"
+   ]
+  },
+  {
+   "concept_id": "dax",
+   "title_fa": "زبان DAX",
+   "title_en": "DAX",
+   "level": "mid",
+   "roles": [
+    "bi_developer"
+   ],
+   "q_fa": "آموزش DAX",
+   "q_en": "DAX Power BI tutorial",
+   "match": [
+    "dax"
+   ]
+  },
+  {
+   "concept_id": "data_modeling",
+   "title_fa": "مدل‌سازی داده (Star Schema)",
+   "title_en": "Dimensional data modeling",
+   "level": "mid",
+   "roles": [
+    "bi_developer",
+    "data_engineer"
+   ],
+   "q_fa": "آموزش مدل سازی داده",
+   "q_en": "dimensional modeling star schema",
+   "match": [
+    "مدل سازی داده",
+    "مدل‌سازی داده",
+    "data model",
+    "star schema",
+    "dimensional"
+   ]
+  },
+  {
+   "concept_id": "data_warehousing",
+   "title_fa": "انبار داده",
+   "title_en": "Data warehousing",
+   "level": "mid",
+   "roles": [
+    "bi_developer",
+    "data_engineer"
+   ],
+   "q_fa": "آموزش انبار داده",
+   "q_en": "data warehouse tutorial",
+   "match": [
+    "انبار داده",
+    "data warehouse",
+    "warehousing",
+    "dwh"
+   ]
+  },
+  {
+   "concept_id": "etl_pipelines",
+   "title_fa": "ETL و خطوط داده",
+   "title_en": "ETL pipelines",
+   "level": "mid",
+   "roles": [
+    "data_engineer",
+    "bi_developer"
+   ],
+   "q_fa": "آموزش ETL",
+   "q_en": "ETL pipeline tutorial",
+   "match": [
+    "etl",
+    "ssis",
+    "pipeline"
+   ]
+  },
+  {
+   "concept_id": "airflow",
+   "title_fa": "Apache Airflow",
+   "title_en": "Apache Airflow",
+   "level": "mid",
+   "roles": [
+    "data_engineer"
+   ],
+   "q_fa": "آموزش Apache Airflow",
+   "q_en": "Apache Airflow tutorial",
+   "match": [
+    "airflow",
+    "ایرفلو"
+   ]
+  },
+  {
+   "concept_id": "spark",
+   "title_fa": "Apache Spark",
+   "title_en": "Apache Spark",
+   "level": "mid",
+   "roles": [
+    "data_engineer",
+    "data_scientist"
+   ],
+   "q_fa": "آموزش اسپارک",
+   "q_en": "Apache Spark PySpark tutorial",
+   "match": [
+    "spark",
+    "اسپارک",
+    "hadoop",
+    "هدوپ",
+    "big data",
+    "کلان داده"
+   ]
+  },
+  {
+   "concept_id": "kafka_streaming",
+   "title_fa": "پردازش جریان داده (Kafka)",
+   "title_en": "Stream processing (Kafka)",
+   "level": "senior",
+   "roles": [
+    "data_engineer"
+   ],
+   "q_fa": "آموزش کافکا",
+   "q_en": "Apache Kafka tutorial",
+   "match": [
+    "kafka",
+    "کافکا",
+    "stream"
+   ]
+  },
+  {
+   "concept_id": "hypothesis_testing",
+   "title_fa": "آزمون فرض",
+   "title_en": "Hypothesis testing",
+   "level": "mid",
+   "roles": [
+    "data_analyst",
+    "data_scientist"
+   ],
+   "q_fa": "آموزش آزمون فرض آماری",
+   "q_en": "hypothesis testing statistics",
+   "match": [
+    "آزمون فرض",
+    "hypothesis"
+   ]
+  },
+  {
+   "concept_id": "ab_testing",
+   "title_fa": "آزمون A/B",
+   "title_en": "A/B testing",
+   "level": "mid",
+   "roles": [
+    "data_analyst",
+    "data_scientist",
+    "product_manager",
+    "digital_marketer"
+   ],
+   "q_fa": "آموزش A/B تست",
+   "q_en": "A/B testing tutorial",
+   "match": [
+    "a/b",
+    "ab test",
+    "a b test"
+   ]
+  },
+  {
+   "concept_id": "machine_learning_basics",
+   "title_fa": "مبانی یادگیری ماشین",
+   "title_en": "Machine learning basics",
+   "level": "junior",
+   "roles": [
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش یادگیری ماشین",
+   "q_en": "machine learning course for beginners",
+   "match": [
+    "یادگیری ماشین",
+    "machine learning",
+    "ماشین لرنینگ"
+   ]
+  },
+  {
+   "concept_id": "scikit_learn",
+   "title_fa": "Scikit-learn",
+   "title_en": "Scikit-learn",
+   "level": "junior",
+   "roles": [
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش سایکیت لرن",
+   "q_en": "scikit-learn tutorial",
+   "match": [
+    "scikit",
+    "sklearn",
+    "سایکیت"
+   ]
+  },
+  {
+   "concept_id": "feature_engineering",
+   "title_fa": "مهندسی ویژگی",
+   "title_en": "Feature engineering",
+   "level": "mid",
+   "roles": [
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "مهندسی ویژگی یادگیری ماشین",
+   "q_en": "feature engineering machine learning",
+   "match": [
+    "مهندسی ویژگی",
+    "feature engineering",
+    "feature selection",
+    "انتخاب ویژگی"
+   ]
+  },
+  {
+   "concept_id": "deep_learning",
+   "title_fa": "یادگیری عمیق",
+   "title_en": "Deep learning",
+   "level": "mid",
+   "roles": [
+    "data_scientist",
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش یادگیری عمیق",
+   "q_en": "deep learning course",
+   "match": [
+    "یادگیری عمیق",
+    "deep learning",
+    "شبکه عصبی",
+    "neural network"
+   ]
+  },
+  {
+   "concept_id": "pytorch",
+   "title_fa": "PyTorch",
+   "title_en": "PyTorch",
+   "level": "mid",
+   "roles": [
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش پایتورچ",
+   "q_en": "PyTorch tutorial",
+   "match": [
+    "pytorch",
+    "پایتورچ",
+    "tensorflow",
+    "تنسورفلو",
+    "keras",
+    "کراس"
+   ]
+  },
+  {
+   "concept_id": "nlp",
+   "title_fa": "پردازش زبان طبیعی",
+   "title_en": "Natural language processing",
+   "level": "senior",
+   "roles": [
+    "ml_engineer",
+    "data_scientist"
+   ],
+   "q_fa": "آموزش پردازش زبان طبیعی",
+   "q_en": "NLP course",
+   "match": [
+    "پردازش زبان",
+    "nlp",
+    "natural language"
+   ]
+  },
+  {
+   "concept_id": "computer_vision",
+   "title_fa": "بینایی ماشین",
+   "title_en": "Computer vision",
+   "level": "senior",
+   "roles": [
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش بینایی ماشین",
+   "q_en": "computer vision course",
+   "match": [
+    "بینایی ماشین",
+    "بینایی کامپیوتر",
+    "computer vision",
+    "opencv",
+    "پردازش تصویر"
+   ]
+  },
+  {
+   "concept_id": "time_series",
+   "title_fa": "تحلیل سری زمانی",
+   "title_en": "Time series analysis",
+   "level": "mid",
+   "roles": [
+    "data_scientist",
+    "investment_analyst",
+    "financial_analyst"
+   ],
+   "q_fa": "آموزش سری زمانی",
+   "q_en": "time series forecasting tutorial",
+   "match": [
+    "سری زمانی",
+    "سری‌های زمانی",
+    "time series",
+    "forecast"
+   ]
+  },
+  {
+   "concept_id": "mlops",
+   "title_fa": "MLOps و استقرار مدل",
+   "title_en": "MLOps & model deployment",
+   "level": "senior",
+   "roles": [
+    "ml_engineer"
+   ],
+   "q_fa": "آموزش MLOps",
+   "q_en": "MLOps model deployment tutorial",
+   "match": [
+    "mlops",
+    "deploy",
+    "استقرار",
+    "دیپلوی"
+   ]
+  },
+  {
+   "concept_id": "llm_applications",
+   "title_fa": "مدل‌های زبانی بزرگ و هوش مصنوعی مولد",
+   "title_en": "LLMs & generative AI",
+   "level": "senior",
+   "roles": [
+    "ml_engineer",
+    "data_scientist"
+   ],
+   "q_fa": "آموزش LLM",
+   "q_en": "LLM applications RAG tutorial",
+   "match": [
+    "llm",
+    "rag",
+    "generative",
+    "مولد",
+    "langchain",
+    "لنگچین",
+    "مدل زبانی",
+    "مدل‌های زبانی"
+   ]
+  },
+  {
+   "concept_id": "accounting_principles",
+   "title_fa": "اصول حسابداری",
+   "title_en": "Accounting principles",
+   "level": "junior",
+   "roles": [
+    "accountant",
+    "auditor",
+    "tax_specialist",
+    "financial_analyst"
+   ],
+   "q_fa": "آموزش اصول حسابداری",
+   "q_en": "accounting basics",
+   "match": [
+    "حسابداری",
+    "accounting"
+   ]
+  },
+  {
+   "concept_id": "financial_accounting",
+   "title_fa": "حسابداری مالی و صورت‌های مالی",
+   "title_en": "Financial accounting & statements",
+   "level": "junior",
+   "roles": [
+    "accountant",
+    "auditor",
+    "financial_analyst",
+    "investment_analyst"
+   ],
+   "q_fa": "آموزش حسابداری مالی",
+   "q_en": "financial accounting financial statements",
+   "match": [
+    "حسابداری مالی",
+    "صورت مالی",
+    "صورت‌های مالی",
+    "صورتهای مالی",
+    "صورت های مالی",
+    "financial accounting",
+    "financial statement"
+   ]
+  },
+  {
+   "concept_id": "cost_accounting",
+   "title_fa": "حسابداری صنعتی (بهای تمام‌شده)",
+   "title_en": "Cost accounting",
+   "level": "mid",
+   "roles": [
+    "accountant",
+    "financial_analyst"
+   ],
+   "q_fa": "آموزش حسابداری صنعتی",
+   "q_en": "cost accounting",
+   "match": [
+    "حسابداری صنعتی",
+    "بهای تمام",
+    "cost accounting"
+   ]
+  },
+  {
+   "concept_id": "accounting_software",
+   "title_fa": "نرم‌افزارهای حسابداری (سپیدار، همکاران سیستم)",
+   "title_en": "Accounting software",
+   "level": "junior",
+   "roles": [
+    "accountant"
+   ],
+   "q_fa": "آموزش نرم افزار حسابداری سپیدار",
+   "q_en": "",
+   "iran_specific": true,
+   "match": [
+    "سپیدار",
+    "همکاران سیستم",
+    "محک",
+    "هلو",
+    "نرم افزار حسابداری",
+    "نرم‌افزار حسابداری"
+   ]
+  },
+  {
+   "concept_id": "payroll_insurance",
+   "title_fa": "حقوق و دستمزد و بیمه",
+   "title_en": "Payroll & social insurance",
+   "level": "junior",
+   "roles": [
+    "accountant",
+    "hr_specialist"
+   ],
+   "q_fa": "آموزش حقوق و دستمزد و بیمه",
+   "q_en": "",
+   "iran_specific": true,
+   "match": [
+    "حقوق و دستمزد",
+    "بیمه"
+   ]
+  },
+  {
+   "concept_id": "direct_tax_law",
+   "title_fa": "قانون مالیات‌های مستقیم",
+   "title_en": "Direct taxation law (Iran)",
+   "level": "mid",
+   "roles": [
+    "tax_specialist",
+    "accountant",
+    "auditor"
+   ],
+   "q_fa": "آموزش قانون مالیات های مستقیم",
+   "q_en": "",
+   "iran_specific": true,
+   "match": [
+    "مالیات",
+    "مالیاتی"
+   ]
+  },
+  {
+   "concept_id": "vat",
+   "title_fa": "مالیات بر ارزش افزوده",
+   "title_en": "Value added tax (Iran)",
+   "level": "mid",
+   "roles": [
+    "tax_specialist",
+    "accountant"
+   ],
+   "q_fa": "آموزش مالیات بر ارزش افزوده",
+   "q_en": "",
+   "iran_specific": true,
+   "match": [
+    "ارزش افزوده"
+   ]
+  },
+  {
+   "concept_id": "tax_returns",
+   "title_fa": "تنظیم اظهارنامه مالیاتی",
+   "title_en": "Tax returns (Iran)",
+   "level": "mid",
+   "roles": [
+    "tax_specialist",
+    "accountant"
+   ],
+   "q_fa": "آموزش اظهارنامه مالیاتی",
+   "q_en": "",
+   "iran_specific": true,
+   "match": [
+    "اظهارنامه",
+    "مالیات"
+   ]
+  },
+  {
+   "concept_id": "accounting_standards",
+   "title_fa": "استانداردهای حسابداری (ایران و IFRS)",
+   "title_en": "Accounting standards (IFRS)",
+   "level": "mid",
+   "roles": [
+    "accountant",
+    "auditor",
+    "financial_analyst"
+   ],
+   "q_fa": "آموزش استانداردهای حسابداری",
+   "q_en": "IFRS course",
+   "match": [
+    "استاندارد",
+    "ifrs"
+   ]
+  },
+  {
+   "concept_id": "auditing_fundamentals",
+   "title_fa": "اصول حسابرسی",
+   "title_en": "Auditing fundamentals",
+   "level": "junior",
+   "roles": [
+    "auditor"
+   ],
+   "q_fa": "آموزش حسابرسی",
+   "q_en": "auditing fundamentals",
+   "match": [
+    "حسابرسی",
+    "audit"
+   ]
+  },
+  {
+   "concept_id": "internal_control",
+   "title_fa": "کنترل‌های داخلی",
+   "title_en": "Internal control (COSO)",
+   "level": "mid",
+   "roles": [
+    "auditor",
+    "accountant"
+   ],
+   "q_fa": "آموزش کنترل های داخلی",
+   "q_en": "internal controls COSO",
+   "match": [
+    "کنترل داخلی",
+    "کنترل‌های داخلی",
+    "کنترل های داخلی",
+    "internal control",
+    "coso",
+    "حسابرسی داخلی",
+    "internal audit"
+   ]
+  },
+  {
+   "concept_id": "risk_management",
+   "title_fa": "مدیریت ریسک",
+   "title_en": "Risk management",
+   "level": "senior",
+   "roles": [
+    "auditor",
+    "financial_analyst",
+    "investment_analyst",
+    "project_manager"
+   ],
+   "q_fa": "آموزش مدیریت ریسک سازمانی",
+   "q_en": "risk management course",
+   "match": [
+    "ریسک",
+    "risk"
+   ],
+   "exclude": [
+    "فارکس",
+    "forex",
+    "trading",
+    "trader",
+    "معامله",
+    "کریپتو",
+    "crypto",
+    "ارز دیجیتال"
+   ]
+  },
+  {
+   "concept_id": "financial_statement_analysis",
+   "title_fa": "تجزیه و تحلیل صورت‌های مالی",
+   "title_en": "Financial statement analysis",
+   "level": "mid",
+   "roles": [
+    "financial_analyst",
+    "investment_analyst",
+    "auditor"
+   ],
+   "q_fa": "آموزش تجزیه و تحلیل صورت های مالی",
+   "q_en": "financial statement analysis",
+   "match": [
+    "تحلیل صورت",
+    "تجزیه و تحلیل",
+    "financial statement analysis",
+    "financial analysis",
+    "نسبت های مالی",
+    "نسبت‌های مالی"
+   ]
+  },
+  {
+   "concept_id": "financial_modeling",
+   "title_fa": "مدل‌سازی مالی",
+   "title_en": "Financial modeling",
+   "level": "mid",
+   "roles": [
+    "financial_analyst",
+    "investment_analyst"
+   ],
+   "q_fa": "آموزش مدل سازی مالی در اکسل",
+   "q_en": "financial modeling in Excel",
+   "match": [
+    "مدل سازی مالی",
+    "مدل‌سازی مالی",
+    "financial model"
+   ]
+  },
+  {
+   "concept_id": "budgeting_forecasting",
+   "title_fa": "بودجه‌بندی و پیش‌بینی مالی",
+   "title_en": "Budgeting & forecasting",
+   "level": "mid",
+   "roles": [
+    "financial_analyst",
+    "accountant"
+   ],
+   "q_fa": "آموزش بودجه ریزی",
+   "q_en": "budgeting and forecasting",
+   "match": [
+    "بودجه",
+    "budget"
+   ]
+  },
+  {
+   "concept_id": "corporate_valuation",
+   "title_fa": "ارزش‌گذاری شرکت و مدیریت مالی",
+   "title_en": "Corporate finance & valuation",
+   "level": "senior",
+   "roles": [
+    "financial_analyst",
+    "investment_analyst"
+   ],
+   "q_fa": "آموزش ارزشگذاری سهام",
+   "q_en": "company valuation DCF",
+   "match": [
+    "ارزشگذاری",
+    "ارزش گذاری",
+    "ارزش‌گذاری",
+    "valuation",
+    "dcf",
+    "مدیریت مالی",
+    "corporate finance"
+   ]
+  },
+  {
+   "concept_id": "financial_math",
+   "title_fa": "ریاضیات مالی و ارزش زمانی پول",
+   "title_en": "Financial math (time value of money)",
+   "level": "junior",
+   "roles": [
+    "financial_analyst",
+    "investment_analyst"
+   ],
+   "q_fa": "آموزش ریاضیات مالی",
+   "q_en": "time value of money finance",
+   "match": [
+    "ریاضیات مالی",
+    "ارزش زمانی",
+    "time value",
+    "financial math"
+   ]
+  },
+  {
+   "concept_id": "capital_markets_basics",
+   "title_fa": "مبانی بازار سرمایه",
+   "title_en": "Capital markets basics",
+   "level": "junior",
+   "roles": [
+    "investment_analyst",
+    "financial_analyst"
+   ],
+   "q_fa": "آموزش بورس مقدماتی",
+   "q_en": "stock market basics",
+   "match": [
+    "بورس",
+    "بازار سرمایه",
+    "stock market",
+    "سهام",
+    "capital market"
+   ]
+  },
+  {
+   "concept_id": "fundamental_analysis",
+   "title_fa": "تحلیل بنیادی",
+   "title_en": "Fundamental analysis",
+   "level": "mid",
+   "roles": [
+    "investment_analyst"
+   ],
+   "q_fa": "آموزش تحلیل بنیادی",
+   "q_en": "fundamental analysis stocks",
+   "match": [
+    "بنیادی",
+    "فاندامنتال",
+    "fundamental"
+   ]
+  },
+  {
+   "concept_id": "technical_analysis",
+   "title_fa": "تحلیل تکنیکال",
+   "title_en": "Technical analysis",
+   "level": "mid",
+   "roles": [
+    "investment_analyst"
+   ],
+   "q_fa": "آموزش تحلیل تکنیکال",
+   "q_en": "technical analysis trading course",
+   "match": [
+    "تکنیکال",
+    "technical analysis"
+   ]
+  },
+  {
+   "concept_id": "portfolio_management",
+   "title_fa": "مدیریت پرتفوی",
+   "title_en": "Portfolio management",
+   "level": "senior",
+   "roles": [
+    "investment_analyst"
+   ],
+   "q_fa": "آموزش مدیریت پرتفوی",
+   "q_en": "portfolio management course",
+   "match": [
+    "پرتفوی",
+    "پورتفولیو",
+    "سبد",
+    "portfolio"
+   ]
+  },
+  {
+   "concept_id": "marketing_fundamentals",
+   "title_fa": "مبانی بازاریابی",
+   "title_en": "Marketing fundamentals",
+   "level": "junior",
+   "roles": [
+    "digital_marketer",
+    "content_marketer",
+    "social_media_specialist",
+    "sales_specialist",
+    "product_manager"
+   ],
+   "q_fa": "آموزش اصول بازاریابی",
+   "q_en": "marketing fundamentals",
+   "match": [
+    "بازاریابی",
+    "مارکتینگ",
+    "marketing"
+   ]
+  },
+  {
+   "concept_id": "digital_marketing_fundamentals",
+   "title_fa": "مبانی دیجیتال مارکتینگ",
+   "title_en": "Digital marketing fundamentals",
+   "level": "junior",
+   "roles": [
+    "digital_marketer",
+    "seo_specialist",
+    "content_marketer",
+    "social_media_specialist"
+   ],
+   "q_fa": "آموزش دیجیتال مارکتینگ",
+   "q_en": "digital marketing course",
+   "match": [
+    "دیجیتال مارکتینگ",
+    "بازاریابی دیجیتال",
+    "digital marketing"
+   ]
+  },
+  {
+   "concept_id": "seo_basics",
+   "title_fa": "مبانی سئو",
+   "title_en": "SEO basics",
+   "level": "junior",
+   "roles": [
+    "seo_specialist",
+    "content_marketer",
+    "digital_marketer"
+   ],
+   "q_fa": "آموزش سئو",
+   "q_en": "SEO tutorial for beginners",
+   "match": [
+    "سئو",
+    "seo"
+   ]
+  },
+  {
+   "concept_id": "technical_seo",
+   "title_fa": "سئو تکنیکال",
+   "title_en": "Technical SEO",
+   "level": "mid",
+   "roles": [
+    "seo_specialist"
+   ],
+   "q_fa": "آموزش سئو تکنیکال",
+   "q_en": "technical SEO course",
+   "match": [
+    "سئو+تکنیکال",
+    "سئو+فنی",
+    "technical+seo"
+   ]
+  },
+  {
+   "concept_id": "keyword_research",
+   "title_fa": "تحقیق کلمات کلیدی",
+   "title_en": "Keyword research",
+   "level": "junior",
+   "roles": [
+    "seo_specialist",
+    "content_marketer"
+   ],
+   "q_fa": "آموزش تحقیق کلمات کلیدی",
+   "q_en": "keyword research SEO",
+   "match": [
+    "کلمات کلیدی",
+    "کلمه کلیدی",
+    "keyword"
+   ]
+  },
+  {
+   "concept_id": "link_building",
+   "title_fa": "لینک‌سازی (سئو خارجی)",
+   "title_en": "Link building (off-page SEO)",
+   "level": "mid",
+   "roles": [
+    "seo_specialist"
+   ],
+   "q_fa": "آموزش لینک سازی سئو خارجی",
+   "q_en": "link building off-page SEO",
+   "match": [
+    "لینک سازی",
+    "لینک‌سازی",
+    "بک لینک",
+    "سئو خارجی",
+    "link building",
+    "backlink",
+    "off-page",
+    "off page"
+   ]
+  },
+  {
+   "concept_id": "wordpress",
+   "title_fa": "وردپرس",
+   "title_en": "WordPress",
+   "level": "junior",
+   "roles": [
+    "seo_specialist",
+    "content_marketer"
+   ],
+   "q_fa": "آموزش وردپرس",
+   "q_en": "WordPress tutorial for beginners",
+   "match": [
+    "wordpress",
+    "وردپرس"
+   ]
+  },
+  {
+   "concept_id": "copywriting",
+   "title_fa": "کپی‌رایتینگ",
+   "title_en": "Copywriting",
+   "level": "junior",
+   "roles": [
+    "content_marketer",
+    "social_media_specialist",
+    "digital_marketer"
+   ],
+   "q_fa": "آموزش کپی رایتینگ",
+   "q_en": "copywriting course",
+   "match": [
+    "کپی رایتینگ",
+    "کپی‌رایتینگ",
+    "copywriting",
+    "نویسندگی",
+    "محتوانویسی",
+    "محتوا نویسی"
+   ]
+  },
+  {
+   "concept_id": "content_strategy",
+   "title_fa": "استراتژی محتوا",
+   "title_en": "Content strategy",
+   "level": "mid",
+   "roles": [
+    "content_marketer",
+    "social_media_specialist"
+   ],
+   "q_fa": "آموزش استراتژی محتوا",
+   "q_en": "content marketing strategy",
+   "match": [
+    "محتوا",
+    "content"
+   ]
+  },
+  {
+   "concept_id": "social_media_marketing",
+   "title_fa": "بازاریابی در شبکه‌های اجتماعی",
+   "title_en": "Social media marketing",
+   "level": "junior",
+   "roles": [
+    "social_media_specialist",
+    "digital_marketer",
+    "content_marketer"
+   ],
+   "q_fa": "آموزش سوشال مدیا مارکتینگ",
+   "q_en": "social media marketing course",
+   "match": [
+    "شبکه های اجتماعی",
+    "شبکه‌های اجتماعی",
+    "سوشال",
+    "social media"
+   ]
+  },
+  {
+   "concept_id": "instagram_marketing",
+   "title_fa": "بازاریابی اینستاگرام",
+   "title_en": "Instagram marketing",
+   "level": "junior",
+   "roles": [
+    "social_media_specialist"
+   ],
+   "q_fa": "آموزش اینستاگرام مارکتینگ",
+   "q_en": "Instagram marketing",
+   "match": [
+    "اینستاگرام",
+    "instagram"
+   ]
+  },
+  {
+   "concept_id": "graphic_design_basics",
+   "title_fa": "مبانی طراحی گرافیک (فتوشاپ)",
+   "title_en": "Graphic design basics",
+   "level": "junior",
+   "roles": [
+    "social_media_specialist",
+    "content_marketer"
+   ],
+   "q_fa": "آموزش فتوشاپ مقدماتی",
+   "q_en": "graphic design basics Photoshop Canva",
+   "match": [
+    "فتوشاپ",
+    "photoshop",
+    "canva",
+    "کانوا",
+    "گرافیک",
+    "graphic"
+   ]
+  },
+  {
+   "concept_id": "video_editing",
+   "title_fa": "تدوین ویدیو",
+   "title_en": "Video editing",
+   "level": "mid",
+   "roles": [
+    "social_media_specialist",
+    "content_marketer"
+   ],
+   "q_fa": "آموزش تدوین ویدیو",
+   "q_en": "video editing for beginners Premiere",
+   "match": [
+    "تدوین",
+    "premiere",
+    "پریمیر",
+    "video editing",
+    "capcut"
+   ]
+  },
+  {
+   "concept_id": "google_ads",
+   "title_fa": "تبلیغات گوگل",
+   "title_en": "Google Ads",
+   "level": "mid",
+   "roles": [
+    "digital_marketer"
+   ],
+   "q_fa": "آموزش گوگل ادز",
+   "q_en": "Google Ads tutorial",
+   "match": [
+    "google ads",
+    "گوگل ادز",
+    "adwords",
+    "ادوردز",
+    "تبلیغات"
+   ]
+  },
+  {
+   "concept_id": "google_analytics",
+   "title_fa": "گوگل آنالیتیکس",
+   "title_en": "Google Analytics",
+   "level": "mid",
+   "roles": [
+    "digital_marketer",
+    "seo_specialist",
+    "content_marketer",
+    "product_manager"
+   ],
+   "q_fa": "آموزش گوگل آنالیتیکس",
+   "q_en": "Google Analytics 4 tutorial",
+   "match": [
+    "analytics",
+    "آنالیتیکس",
+    "ga4"
+   ]
+  },
+  {
+   "concept_id": "email_marketing",
+   "title_fa": "ایمیل مارکتینگ",
+   "title_en": "Email marketing",
+   "level": "mid",
+   "roles": [
+    "digital_marketer",
+    "content_marketer"
+   ],
+   "q_fa": "آموزش ایمیل مارکتینگ",
+   "q_en": "email marketing course",
+   "match": [
+    "ایمیل",
+    "email"
+   ]
+  },
+  {
+   "concept_id": "branding",
+   "title_fa": "برندینگ",
+   "title_en": "Branding",
+   "level": "senior",
+   "roles": [
+    "digital_marketer",
+    "content_marketer",
+    "social_media_specialist"
+   ],
+   "q_fa": "آموزش برندینگ",
+   "q_en": "branding course",
+   "match": [
+    "برند",
+    "brand"
+   ]
+  },
+  {
+   "concept_id": "growth_marketing",
+   "title_fa": "بازاریابی رشد (Growth)",
+   "title_en": "Growth marketing",
+   "level": "senior",
+   "roles": [
+    "digital_marketer",
+    "product_manager"
+   ],
+   "q_fa": "آموزش گروث مارکتینگ",
+   "q_en": "growth marketing course",
+   "match": [
+    "گروث",
+    "growth",
+    "رشد"
+   ]
+  },
+  {
+   "concept_id": "sales_techniques",
+   "title_fa": "فنون فروش",
+   "title_en": "Sales techniques",
+   "level": "junior",
+   "roles": [
+    "sales_specialist"
+   ],
+   "q_fa": "آموزش فنون فروش",
+   "q_en": "sales techniques training",
+   "match": [
+    "فروش",
+    "sales",
+    "selling"
+   ]
+  },
+  {
+   "concept_id": "b2b_sales",
+   "title_fa": "فروش سازمانی (B2B)",
+   "title_en": "B2B sales",
+   "level": "mid",
+   "roles": [
+    "sales_specialist"
+   ],
+   "q_fa": "آموزش فروش b2b",
+   "q_en": "B2B sales course",
+   "match": [
+    "b2b",
+    "فروش سازمانی",
+    "فروش صنعتی"
+   ]
+  },
+  {
+   "concept_id": "crm",
+   "title_fa": "مدیریت ارتباط با مشتری (CRM)",
+   "title_en": "CRM",
+   "level": "junior",
+   "roles": [
+    "sales_specialist",
+    "digital_marketer"
+   ],
+   "q_fa": "آموزش CRM",
+   "q_en": "CRM tutorial",
+   "match": [
+    "crm",
+    "ارتباط با مشتری",
+    "customer relationship"
+   ]
+  },
+  {
+   "concept_id": "negotiation",
+   "title_fa": "مذاکره",
+   "title_en": "Negotiation",
+   "level": "mid",
+   "roles": [
+    "sales_specialist",
+    "recruiter",
+    "project_manager",
+    "product_manager"
+   ],
+   "q_fa": "آموزش فن مذاکره",
+   "q_en": "negotiation skills course",
+   "match": [
+    "مذاکره",
+    "negotiation"
+   ]
+  },
+  {
+   "concept_id": "market_research",
+   "title_fa": "تحقیقات بازار",
+   "title_en": "Market research",
+   "level": "mid",
+   "roles": [
+    "product_manager",
+    "digital_marketer",
+    "business_analyst",
+    "sales_specialist"
+   ],
+   "q_fa": "آموزش تحقیقات بازار",
+   "q_en": "market research course",
+   "match": [
+    "تحقیقات بازار",
+    "تحقیق بازار",
+    "market research"
+   ]
+  },
+  {
+   "concept_id": "communication_skills",
+   "title_fa": "مهارت‌های ارتباطی",
+   "title_en": "Communication skills",
+   "level": "junior",
+   "roles": [
+    "sales_specialist",
+    "recruiter",
+    "hr_specialist",
+    "project_manager",
+    "product_manager",
+    "business_analyst"
+   ],
+   "q_fa": "آموزش مهارت های ارتباطی",
+   "q_en": "communication skills course",
+   "match": [
+    "ارتباطی",
+    "ارتباط موثر",
+    "communication"
+   ]
+  },
+  {
+   "concept_id": "presentation_skills",
+   "title_fa": "فن بیان و ارائه",
+   "title_en": "Presentation skills",
+   "level": "junior",
+   "roles": [
+    "sales_specialist",
+    "project_manager",
+    "product_manager",
+    "business_analyst",
+    "financial_analyst"
+   ],
+   "q_fa": "آموزش فن بیان و ارائه",
+   "q_en": "presentation skills course",
+   "match": [
+    "فن بیان",
+    "ارائه",
+    "presentation",
+    "public speaking",
+    "سخنرانی"
+   ]
+  },
+  {
+   "concept_id": "hrm_fundamentals",
+   "title_fa": "مبانی مدیریت منابع انسانی",
+   "title_en": "HRM fundamentals",
+   "level": "junior",
+   "roles": [
+    "hr_specialist",
+    "recruiter"
+   ],
+   "q_fa": "آموزش مدیریت منابع انسانی",
+   "q_en": "human resource management course",
+   "match": [
+    "منابع انسانی",
+    "human resource",
+    "hr"
+   ]
+  },
+  {
+   "concept_id": "recruitment_selection",
+   "title_fa": "فرایند جذب و استخدام",
+   "title_en": "Recruitment & selection",
+   "level": "junior",
+   "roles": [
+    "recruiter",
+    "hr_specialist"
+   ],
+   "q_fa": "آموزش جذب و استخدام",
+   "q_en": "recruitment and selection course",
+   "match": [
+    "جذب",
+    "استخدام",
+    "recruit",
+    "hiring"
+   ]
+  },
+  {
+   "concept_id": "interviewing_techniques",
+   "title_fa": "مصاحبه استخدامی",
+   "title_en": "Interviewing techniques",
+   "level": "junior",
+   "roles": [
+    "recruiter",
+    "hr_specialist"
+   ],
+   "q_fa": "آموزش مصاحبه استخدامی",
+   "q_en": "structured interview techniques for recruiters",
+   "match": [
+    "مصاحبه",
+    "interview"
+   ]
+  },
+  {
+   "concept_id": "talent_sourcing",
+   "title_fa": "سورسینگ و جذب استعداد",
+   "title_en": "Talent sourcing (LinkedIn)",
+   "level": "mid",
+   "roles": [
+    "recruiter"
+   ],
+   "q_fa": "آموزش لینکدین",
+   "q_en": "talent sourcing LinkedIn recruiter",
+   "match": [
+    "لینکدین",
+    "linkedin",
+    "sourcing",
+    "سورسینگ",
+    "talent"
+   ]
+  },
+  {
+   "concept_id": "employer_branding",
+   "title_fa": "برند کارفرمایی",
+   "title_en": "Employer branding",
+   "level": "senior",
+   "roles": [
+    "recruiter",
+    "hr_specialist"
+   ],
+   "q_fa": "برند کارفرمایی",
+   "q_en": "employer branding",
+   "match": [
+    "برند کارفرمایی",
+    "employer brand"
+   ]
+  },
+  {
+   "concept_id": "labor_law",
+   "title_fa": "قانون کار",
+   "title_en": "Labor law (Iran)",
+   "level": "junior",
+   "roles": [
+    "hr_specialist",
+    "recruiter",
+    "accountant"
+   ],
+   "q_fa": "آموزش قانون کار",
+   "q_en": "",
+   "iran_specific": true,
+   "match": [
+    "قانون کار"
+   ]
+  },
+  {
+   "concept_id": "performance_management",
+   "title_fa": "مدیریت و ارزیابی عملکرد",
+   "title_en": "Performance management",
+   "level": "mid",
+   "roles": [
+    "hr_specialist"
+   ],
+   "q_fa": "آموزش ارزیابی عملکرد کارکنان",
+   "q_en": "performance management HR",
+   "match": [
+    "عملکرد",
+    "kpi",
+    "performance"
+   ]
+  },
+  {
+   "concept_id": "compensation_benefits",
+   "title_fa": "نظام جبران خدمات",
+   "title_en": "Compensation & benefits",
+   "level": "mid",
+   "roles": [
+    "hr_specialist"
+   ],
+   "q_fa": "آموزش نظام جبران خدمات",
+   "q_en": "compensation and benefits course",
+   "match": [
+    "جبران خدمات",
+    "حقوق و مزایا",
+    "compensation"
+   ]
+  },
+  {
+   "concept_id": "hr_analytics",
+   "title_fa": "تحلیل داده منابع انسانی",
+   "title_en": "HR analytics",
+   "level": "senior",
+   "roles": [
+    "hr_specialist",
+    "recruiter"
+   ],
+   "q_fa": "تحلیل داده منابع انسانی",
+   "q_en": "HR analytics course",
+   "match": [
+    "hr analytics",
+    "people analytics",
+    "منابع انسانی+تحلیل",
+    "منابع انسانی+داده"
+   ]
+  },
+  {
+   "concept_id": "project_management_fundamentals",
+   "title_fa": "مبانی مدیریت پروژه (PMBOK)",
+   "title_en": "Project management fundamentals",
+   "level": "junior",
+   "roles": [
+    "project_manager",
+    "product_manager",
+    "business_analyst"
+   ],
+   "q_fa": "آموزش مدیریت پروژه",
+   "q_en": "project management fundamentals PMP",
+   "match": [
+    "مدیریت پروژه",
+    "project management",
+    "pmbok",
+    "pmp"
+   ]
+  },
+  {
+   "concept_id": "project_tools",
+   "title_fa": "ابزارهای مدیریت پروژه (MSP/Jira)",
+   "title_en": "Project tools (MS Project/Jira)",
+   "level": "junior",
+   "roles": [
+    "project_manager"
+   ],
+   "q_fa": "آموزش MSP",
+   "q_en": "Jira tutorial for project managers",
+   "match": [
+    "msp",
+    "ms project",
+    "jira",
+    "جیرا",
+    "project"
+   ]
+  },
+  {
+   "concept_id": "project_control",
+   "title_fa": "کنترل پروژه",
+   "title_en": "Project control (earned value)",
+   "level": "mid",
+   "roles": [
+    "project_manager"
+   ],
+   "q_fa": "آموزش کنترل پروژه",
+   "q_en": "project cost control earned value",
+   "match": [
+    "کنترل پروژه",
+    "earned value",
+    "ارزش کسب شده",
+    "project control"
+   ]
+  },
+  {
+   "concept_id": "stakeholder_management",
+   "title_fa": "مدیریت ذی‌نفعان",
+   "title_en": "Stakeholder management",
+   "level": "mid",
+   "roles": [
+    "project_manager",
+    "product_manager",
+    "business_analyst"
+   ],
+   "q_fa": "مدیریت ذینفعان پروژه",
+   "q_en": "stakeholder management",
+   "match": [
+    "ذینفع",
+    "ذی‌نفع",
+    "ذی نفع",
+    "stakeholder"
+   ]
+  },
+  {
+   "concept_id": "leadership",
+   "title_fa": "رهبری و مدیریت تیم",
+   "title_en": "Leadership & team management",
+   "level": "senior",
+   "roles": [
+    "project_manager",
+    "product_manager",
+    "hr_specialist"
+   ],
+   "q_fa": "آموزش رهبری و مدیریت تیم",
+   "q_en": "leadership team management course",
+   "match": [
+    "رهبری",
+    "مدیریت تیم",
+    "leadership",
+    "team management"
+   ]
+  },
+  {
+   "concept_id": "product_management_fundamentals",
+   "title_fa": "مبانی مدیریت محصول",
+   "title_en": "Product management fundamentals",
+   "level": "junior",
+   "roles": [
+    "product_manager"
+   ],
+   "q_fa": "آموزش مدیریت محصول",
+   "q_en": "product management course",
+   "match": [
+    "مدیریت محصول",
+    "product management",
+    "product manager",
+    "مدیر محصول"
+   ]
+  },
+  {
+   "concept_id": "ux_user_research",
+   "title_fa": "تجربه کاربری و تحقیقات کاربر",
+   "title_en": "UX & user research",
+   "level": "mid",
+   "roles": [
+    "product_manager",
+    "business_analyst"
+   ],
+   "q_fa": "آموزش تجربه کاربری UX",
+   "q_en": "UX user research course",
+   "match": [
+    "ux",
+    "تجربه کاربری",
+    "user research",
+    "تحقیقات کاربر"
+   ]
+  },
+  {
+   "concept_id": "product_analytics",
+   "title_fa": "تحلیل محصول و متریک‌ها",
+   "title_en": "Product analytics & metrics",
+   "level": "mid",
+   "roles": [
+    "product_manager"
+   ],
+   "q_fa": "آموزش تحلیل محصول",
+   "q_en": "product analytics metrics",
+   "match": [
+    "product analytics",
+    "product metric",
+    "تحلیل محصول",
+    "متریک"
+   ]
+  },
+  {
+   "concept_id": "product_strategy",
+   "title_fa": "استراتژی و نقشه راه محصول",
+   "title_en": "Product strategy & roadmap",
+   "level": "senior",
+   "roles": [
+    "product_manager"
+   ],
+   "q_fa": "استراتژی محصول",
+   "q_en": "product strategy roadmap",
+   "match": [
+    "استراتژی محصول",
+    "نقشه راه محصول",
+    "product strategy",
+    "product roadmap"
+   ]
+  },
+  {
+   "concept_id": "requirements_engineering",
+   "title_fa": "تحلیل و مهندسی نیازمندی‌ها",
+   "title_en": "Requirements engineering",
+   "level": "junior",
+   "roles": [
+    "business_analyst",
+    "product_manager",
+    "qa_engineer"
+   ],
+   "q_fa": "آموزش تحلیل نیازمندی",
+   "q_en": "requirements gathering business analysis",
+   "match": [
+    "نیازمندی",
+    "requirement",
+    "business analysis",
+    "تحلیل کسب"
+   ]
+  },
+  {
+   "concept_id": "bpmn_process_modeling",
+   "title_fa": "مدل‌سازی فرایند (BPMN)",
+   "title_en": "Process modeling (BPMN)",
+   "level": "mid",
+   "roles": [
+    "business_analyst"
+   ],
+   "q_fa": "آموزش BPMN",
+   "q_en": "BPMN process modeling tutorial",
+   "match": [
+    "bpmn",
+    "فرایند",
+    "فرآیند",
+    "process model"
+   ]
+  },
+  {
+   "concept_id": "uml",
+   "title_fa": "UML",
+   "title_en": "UML",
+   "level": "mid",
+   "roles": [
+    "business_analyst",
+    "backend_developer"
+   ],
+   "q_fa": "آموزش UML",
+   "q_en": "UML diagrams tutorial",
+   "match": [
+    "uml"
+   ]
+  },
+  {
+   "concept_id": "business_model",
+   "title_fa": "مدل کسب‌وکار و استراتژی",
+   "title_en": "Business models & strategy",
+   "level": "senior",
+   "roles": [
+    "business_analyst",
+    "product_manager"
+   ],
+   "q_fa": "آموزش بوم مدل کسب و کار",
+   "q_en": "business model canvas",
+   "match": [
+    "مدل کسب",
+    "بوم",
+    "business model",
+    "استراتژی",
+    "strategy"
+   ],
+   "exclude": [
+    "erklärt"
+   ]
+  }
+ ]
+}

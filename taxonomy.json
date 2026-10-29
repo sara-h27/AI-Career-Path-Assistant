@@ -1,0 +1,3343 @@
+{
+  "version": "1.0",
+  "description": "Deterministic Skill Taxonomy and Knowledge Graph for AI Career Path Assistant",
+  "domains": [
+    {
+      "domain_id": "software",
+      "title_fa": "نرم‌افزار",
+      "title_en": "Software",
+      "roles": [
+        {
+          "role_id": "backend_developer",
+          "title_fa": "توسعه‌دهنده بک‌اند",
+          "title_en": "Backend Developer",
+          "keywords_fa": [
+            "بک‌اند",
+            "برنامه‌نویس پایتون",
+            "برنامه‌نویس جنگو",
+            "برنامه‌نویس Node.js",
+            "برنامه‌نویس جاوا"
+          ],
+          "keywords_en": [
+            "backend developer",
+            "Django",
+            "Node.js",
+            "Java developer"
+          ]
+        },
+        {
+          "role_id": "frontend_developer",
+          "title_fa": "توسعه‌دهنده فرانت‌اند",
+          "title_en": "Frontend Developer",
+          "keywords_fa": [
+            "فرانت‌اند",
+            "برنامه‌نویس React",
+            "برنامه‌نویس Vue"
+          ],
+          "keywords_en": [
+            "frontend developer",
+            "React",
+            "Vue"
+          ]
+        },
+        {
+          "role_id": "mobile_developer",
+          "title_fa": "توسعه‌دهنده موبایل",
+          "title_en": "Mobile Developer",
+          "keywords_fa": [
+            "برنامه‌نویس اندروید",
+            "برنامه‌نویس Flutter",
+            "برنامه‌نویس iOS"
+          ],
+          "keywords_en": [
+            "mobile developer",
+            "Android",
+            "Flutter",
+            "iOS"
+          ]
+        },
+        {
+          "role_id": "devops_engineer",
+          "title_fa": "مهندس DevOps",
+          "title_en": "DevOps Engineer",
+          "keywords_fa": [
+            "دواپس",
+            "مدیر سیستم لینوکس",
+            "Kubernetes"
+          ],
+          "keywords_en": [
+            "DevOps engineer",
+            "SRE",
+            "Kubernetes",
+            "Linux administrator"
+          ]
+        },
+        {
+          "role_id": "qa_engineer",
+          "title_fa": "مهندس تست نرم‌افزار",
+          "title_en": "QA Engineer",
+          "keywords_fa": [
+            "تست نرم‌افزار",
+            "تستر نرم‌افزار",
+            "کنترل کیفیت نرم‌افزار"
+          ],
+          "keywords_en": [
+            "QA engineer",
+            "software tester",
+            "test automation"
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "data_ai",
+      "title_fa": "داده و هوش مصنوعی",
+      "title_en": "Data & AI",
+      "roles": [
+        {
+          "role_id": "data_analyst",
+          "title_fa": "تحلیلگر داده",
+          "title_en": "Data Analyst",
+          "keywords_fa": [
+            "تحلیلگر داده",
+            "کارشناس تحلیل داده"
+          ],
+          "keywords_en": [
+            "data analyst",
+            "SQL analyst"
+          ]
+        },
+        {
+          "role_id": "bi_developer",
+          "title_fa": "توسعه‌دهنده هوش تجاری",
+          "title_en": "BI Developer",
+          "keywords_fa": [
+            "هوش تجاری",
+            "کارشناس Power BI"
+          ],
+          "keywords_en": [
+            "BI developer",
+            "Power BI",
+            "business intelligence"
+          ]
+        },
+        {
+          "role_id": "data_engineer",
+          "title_fa": "مهندس داده",
+          "title_en": "Data Engineer",
+          "keywords_fa": [
+            "مهندس داده",
+            "ETL"
+          ],
+          "keywords_en": [
+            "data engineer",
+            "ETL",
+            "Spark"
+          ]
+        },
+        {
+          "role_id": "data_scientist",
+          "title_fa": "دانشمند داده",
+          "title_en": "Data Scientist",
+          "keywords_fa": [
+            "دانشمند داده",
+            "علم داده"
+          ],
+          "keywords_en": [
+            "data scientist",
+            "data science"
+          ]
+        },
+        {
+          "role_id": "ml_engineer",
+          "title_fa": "مهندس یادگیری ماشین",
+          "title_en": "Machine Learning Engineer",
+          "keywords_fa": [
+            "یادگیری ماشین",
+            "هوش مصنوعی",
+            "یادگیری عمیق"
+          ],
+          "keywords_en": [
+            "machine learning engineer",
+            "ML engineer",
+            "AI engineer"
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "finance",
+      "title_fa": "مالی و حسابداری",
+      "title_en": "Finance & Accounting",
+      "roles": [
+        {
+          "role_id": "accountant",
+          "title_fa": "حسابدار",
+          "title_en": "Accountant",
+          "keywords_fa": [
+            "حسابدار",
+            "حسابداری",
+            "کارشناس حسابداری"
+          ],
+          "keywords_en": [
+            "accountant"
+          ]
+        },
+        {
+          "role_id": "financial_analyst",
+          "title_fa": "تحلیلگر مالی",
+          "title_en": "Financial Analyst",
+          "keywords_fa": [
+            "تحلیلگر مالی",
+            "کارشناس مالی",
+            "کارشناس بودجه"
+          ],
+          "keywords_en": [
+            "financial analyst",
+            "FP&A"
+          ]
+        },
+        {
+          "role_id": "auditor",
+          "title_fa": "حسابرس",
+          "title_en": "Auditor",
+          "keywords_fa": [
+            "حسابرس",
+            "حسابرسی داخلی"
+          ],
+          "keywords_en": [
+            "auditor",
+            "internal audit"
+          ]
+        },
+        {
+          "role_id": "tax_specialist",
+          "title_fa": "کارشناس مالیاتی",
+          "title_en": "Tax Specialist",
+          "keywords_fa": [
+            "کارشناس مالیاتی",
+            "امور مالیاتی"
+          ],
+          "keywords_en": [
+            "tax specialist",
+            "tax accountant"
+          ]
+        },
+        {
+          "role_id": "investment_analyst",
+          "title_fa": "تحلیلگر بازار سرمایه",
+          "title_en": "Investment Analyst",
+          "keywords_fa": [
+            "تحلیلگر بازار سرمایه",
+            "تحلیلگر بورس",
+            "کارشناس سرمایه‌گذاری"
+          ],
+          "keywords_en": [
+            "investment analyst",
+            "equity analyst"
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "marketing_sales",
+      "title_fa": "بازاریابی و فروش",
+      "title_en": "Marketing & Sales",
+      "roles": [
+        {
+          "role_id": "digital_marketer",
+          "title_fa": "کارشناس دیجیتال مارکتینگ",
+          "title_en": "Digital Marketing Specialist",
+          "keywords_fa": [
+            "دیجیتال مارکتینگ",
+            "کارشناس بازاریابی دیجیتال",
+            "پرفورمنس مارکتینگ"
+          ],
+          "keywords_en": [
+            "digital marketing",
+            "performance marketing"
+          ]
+        },
+        {
+          "role_id": "seo_specialist",
+          "title_fa": "کارشناس سئو",
+          "title_en": "SEO Specialist",
+          "keywords_fa": [
+            "کارشناس سئو",
+            "سئو"
+          ],
+          "keywords_en": [
+            "SEO specialist",
+            "SEO"
+          ]
+        },
+        {
+          "role_id": "content_marketer",
+          "title_fa": "کارشناس تولید محتوا",
+          "title_en": "Content Marketer",
+          "keywords_fa": [
+            "تولید محتوا",
+            "کانتنت مارکتینگ",
+            "تولیدکننده محتوا"
+          ],
+          "keywords_en": [
+            "content marketer",
+            "content writer"
+          ]
+        },
+        {
+          "role_id": "social_media_specialist",
+          "title_fa": "کارشناس شبکه‌های اجتماعی",
+          "title_en": "Social Media Specialist",
+          "keywords_fa": [
+            "کارشناس شبکه‌های اجتماعی",
+            "سوشال مدیا",
+            "ادمین اینستاگرام"
+          ],
+          "keywords_en": [
+            "social media specialist",
+            "social media manager"
+          ]
+        },
+        {
+          "role_id": "sales_specialist",
+          "title_fa": "کارشناس فروش",
+          "title_en": "Sales Specialist",
+          "keywords_fa": [
+            "کارشناس فروش",
+            "کارشناس فروش B2B",
+            "کارشناس توسعه بازار"
+          ],
+          "keywords_en": [
+            "sales specialist",
+            "B2B sales",
+            "business development"
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "management_hr",
+      "title_fa": "مدیریت و منابع انسانی",
+      "title_en": "Management & HR",
+      "roles": [
+        {
+          "role_id": "recruiter",
+          "title_fa": "کارشناس جذب و استخدام",
+          "title_en": "Recruiter",
+          "keywords_fa": [
+            "کارشناس جذب و استخدام",
+            "کارشناس جذب استعداد"
+          ],
+          "keywords_en": [
+            "recruiter",
+            "talent acquisition"
+          ]
+        },
+        {
+          "role_id": "hr_specialist",
+          "title_fa": "کارشناس منابع انسانی",
+          "title_en": "HR Specialist",
+          "keywords_fa": [
+            "کارشناس منابع انسانی",
+            "کارشناس حقوق و دستمزد",
+            "کارشناس اداری"
+          ],
+          "keywords_en": [
+            "HR specialist",
+            "HR generalist",
+            "payroll"
+          ]
+        },
+        {
+          "role_id": "project_manager",
+          "title_fa": "مدیر پروژه",
+          "title_en": "Project Manager",
+          "keywords_fa": [
+            "مدیر پروژه",
+            "کارشناس کنترل پروژه",
+            "اسکرام مستر"
+          ],
+          "keywords_en": [
+            "project manager",
+            "scrum master",
+            "PMP"
+          ]
+        },
+        {
+          "role_id": "product_manager",
+          "title_fa": "مدیر محصول",
+          "title_en": "Product Manager",
+          "keywords_fa": [
+            "مدیر محصول",
+            "مالک محصول"
+          ],
+          "keywords_en": [
+            "product manager",
+            "product owner"
+          ]
+        },
+        {
+          "role_id": "business_analyst",
+          "title_fa": "تحلیلگر کسب‌وکار",
+          "title_en": "Business Analyst",
+          "keywords_fa": [
+            "تحلیلگر کسب‌وکار",
+            "کارشناس تحلیل کسب‌وکار"
+          ],
+          "keywords_en": [
+            "business analyst"
+          ]
+        }
+      ]
+    }
+  ],
+  "roles": {
+    "backend_developer": {
+      "role_id": "backend_developer",
+      "title_fa": "توسعه‌دهنده بک‌اند",
+      "title_en": "Backend Developer",
+      "domain_id": "software",
+      "domain_title_fa": "نرم‌افزار",
+      "domain_title_en": "Software",
+      "keywords_fa": [
+        "بک‌اند",
+        "برنامه‌نویس پایتون",
+        "برنامه‌نویس جنگو",
+        "برنامه‌نویس Node.js",
+        "برنامه‌نویس جاوا"
+      ],
+      "keywords_en": [
+        "backend developer",
+        "Django",
+        "Node.js",
+        "Java developer"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "linux_basics",
+          "networking_basics",
+          "python_basics",
+          "oop",
+          "http_rest_api",
+          "sql_basics",
+          "django",
+          "nodejs",
+          "javascript",
+          "api_testing",
+          "agile_scrum"
+        ],
+        "mid": [
+          "data_structures_algorithms",
+          "design_patterns",
+          "database_design",
+          "nosql_mongodb",
+          "unit_testing",
+          "web_security",
+          "caching_redis",
+          "docker",
+          "ci_cd",
+          "nginx",
+          "typescript",
+          "uml"
+        ],
+        "senior": [
+          "message_queues",
+          "kubernetes",
+          "system_design",
+          "microservices",
+          "distributed_systems"
+        ]
+      }
+    },
+    "frontend_developer": {
+      "role_id": "frontend_developer",
+      "title_fa": "توسعه‌دهنده فرانت‌اند",
+      "title_en": "Frontend Developer",
+      "domain_id": "software",
+      "domain_title_fa": "نرم‌افزار",
+      "domain_title_en": "Software",
+      "keywords_fa": [
+        "فرانت‌اند",
+        "برنامه‌نویس React",
+        "برنامه‌نویس Vue"
+      ],
+      "keywords_en": [
+        "frontend developer",
+        "React",
+        "Vue"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "http_rest_api",
+          "html_css",
+          "javascript",
+          "responsive_design",
+          "react",
+          "agile_scrum"
+        ],
+        "mid": [
+          "data_structures_algorithms",
+          "design_patterns",
+          "unit_testing",
+          "web_security",
+          "typescript",
+          "state_management",
+          "nextjs"
+        ],
+        "senior": [
+          "web_performance"
+        ]
+      }
+    },
+    "mobile_developer": {
+      "role_id": "mobile_developer",
+      "title_fa": "توسعه‌دهنده موبایل",
+      "title_en": "Mobile Developer",
+      "domain_id": "software",
+      "domain_title_fa": "نرم‌افزار",
+      "domain_title_en": "Software",
+      "keywords_fa": [
+        "برنامه‌نویس اندروید",
+        "برنامه‌نویس Flutter",
+        "برنامه‌نویس iOS"
+      ],
+      "keywords_en": [
+        "mobile developer",
+        "Android",
+        "Flutter",
+        "iOS"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "oop",
+          "http_rest_api",
+          "kotlin",
+          "android_development",
+          "flutter_dart",
+          "swift_ios"
+        ],
+        "mid": [
+          "data_structures_algorithms",
+          "design_patterns",
+          "unit_testing",
+          "ci_cd",
+          "jetpack_compose"
+        ],
+        "senior": [
+          "mobile_architecture"
+        ]
+      }
+    },
+    "devops_engineer": {
+      "role_id": "devops_engineer",
+      "title_fa": "مهندس DevOps",
+      "title_en": "DevOps Engineer",
+      "domain_id": "software",
+      "domain_title_fa": "نرم‌افزار",
+      "domain_title_en": "Software",
+      "keywords_fa": [
+        "دواپس",
+        "مدیر سیستم لینوکس",
+        "Kubernetes"
+      ],
+      "keywords_en": [
+        "DevOps engineer",
+        "SRE",
+        "Kubernetes",
+        "Linux administrator"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "linux_basics",
+          "networking_basics"
+        ],
+        "mid": [
+          "bash_scripting",
+          "web_security",
+          "docker",
+          "ci_cd",
+          "nginx",
+          "cloud_basics"
+        ],
+        "senior": [
+          "kubernetes",
+          "system_design",
+          "infrastructure_as_code",
+          "monitoring_observability"
+        ]
+      }
+    },
+    "qa_engineer": {
+      "role_id": "qa_engineer",
+      "title_fa": "مهندس تست نرم‌افزار",
+      "title_en": "QA Engineer",
+      "domain_id": "software",
+      "domain_title_fa": "نرم‌افزار",
+      "domain_title_en": "Software",
+      "keywords_fa": [
+        "تست نرم‌افزار",
+        "تستر نرم‌افزار",
+        "کنترل کیفیت نرم‌افزار"
+      ],
+      "keywords_en": [
+        "QA engineer",
+        "software tester",
+        "test automation"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "python_basics",
+          "oop",
+          "http_rest_api",
+          "software_testing_fundamentals",
+          "api_testing",
+          "agile_scrum",
+          "requirements_engineering"
+        ],
+        "mid": [
+          "unit_testing",
+          "docker",
+          "ci_cd",
+          "test_automation"
+        ],
+        "senior": [
+          "performance_testing"
+        ]
+      }
+    },
+    "data_analyst": {
+      "role_id": "data_analyst",
+      "title_fa": "تحلیلگر داده",
+      "title_en": "Data Analyst",
+      "domain_id": "data_ai",
+      "domain_title_fa": "داده و هوش مصنوعی",
+      "domain_title_en": "Data & AI",
+      "keywords_fa": [
+        "تحلیلگر داده",
+        "کارشناس تحلیل داده"
+      ],
+      "keywords_en": [
+        "data analyst",
+        "SQL analyst"
+      ],
+      "levels": {
+        "junior": [
+          "python_basics",
+          "sql_basics",
+          "excel_basics",
+          "statistics_basics",
+          "pandas_numpy",
+          "data_cleaning",
+          "data_visualization",
+          "power_bi"
+        ],
+        "mid": [
+          "sql_advanced",
+          "excel_advanced",
+          "tableau"
+        ],
+        "senior": [
+          "ab_testing",
+          "hypothesis_testing",
+          "time_series"
+        ]
+      }
+    },
+    "bi_developer": {
+      "role_id": "bi_developer",
+      "title_fa": "توسعه‌دهنده هوش تجاری",
+      "title_en": "BI Developer",
+      "domain_id": "data_ai",
+      "domain_title_fa": "داده و هوش مصنوعی",
+      "domain_title_en": "Data & AI",
+      "keywords_fa": [
+        "هوش تجاری",
+        "کارشناس Power BI"
+      ],
+      "keywords_en": [
+        "BI developer",
+        "Power BI",
+        "business intelligence"
+      ],
+      "levels": {
+        "junior": [
+          "sql_basics",
+          "excel_basics",
+          "data_visualization",
+          "power_bi"
+        ],
+        "mid": [
+          "sql_advanced",
+          "database_design",
+          "excel_advanced",
+          "dax",
+          "data_modeling"
+        ],
+        "senior": [
+          "data_warehousing",
+          "etl_pipelines",
+          "tableau"
+        ]
+      }
+    },
+    "data_engineer": {
+      "role_id": "data_engineer",
+      "title_fa": "مهندس داده",
+      "title_en": "Data Engineer",
+      "domain_id": "data_ai",
+      "domain_title_fa": "داده و هوش مصنوعی",
+      "domain_title_en": "Data & AI",
+      "keywords_fa": [
+        "مهندس داده",
+        "ETL"
+      ],
+      "keywords_en": [
+        "data engineer",
+        "ETL",
+        "Spark"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "linux_basics",
+          "python_basics",
+          "sql_basics",
+          "pandas_numpy"
+        ],
+        "mid": [
+          "bash_scripting",
+          "sql_advanced",
+          "database_design",
+          "nosql_mongodb",
+          "docker",
+          "cloud_basics",
+          "data_modeling",
+          "data_warehousing",
+          "etl_pipelines",
+          "airflow",
+          "spark"
+        ],
+        "senior": [
+          "message_queues",
+          "distributed_systems",
+          "kafka_streaming"
+        ]
+      }
+    },
+    "data_scientist": {
+      "role_id": "data_scientist",
+      "title_fa": "دانشمند داده",
+      "title_en": "Data Scientist",
+      "domain_id": "data_ai",
+      "domain_title_fa": "داده و هوش مصنوعی",
+      "domain_title_en": "Data & AI",
+      "keywords_fa": [
+        "دانشمند داده",
+        "علم داده"
+      ],
+      "keywords_en": [
+        "data scientist",
+        "data science"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "python_basics",
+          "sql_basics",
+          "statistics_basics",
+          "probability",
+          "linear_algebra",
+          "pandas_numpy",
+          "data_cleaning",
+          "data_visualization",
+          "machine_learning_basics",
+          "scikit_learn"
+        ],
+        "mid": [
+          "spark",
+          "hypothesis_testing",
+          "ab_testing",
+          "feature_engineering",
+          "deep_learning",
+          "time_series"
+        ],
+        "senior": [
+          "nlp",
+          "llm_applications"
+        ]
+      }
+    },
+    "ml_engineer": {
+      "role_id": "ml_engineer",
+      "title_fa": "مهندس یادگیری ماشین",
+      "title_en": "Machine Learning Engineer",
+      "domain_id": "data_ai",
+      "domain_title_fa": "داده و هوش مصنوعی",
+      "domain_title_en": "Data & AI",
+      "keywords_fa": [
+        "یادگیری ماشین",
+        "هوش مصنوعی",
+        "یادگیری عمیق"
+      ],
+      "keywords_en": [
+        "machine learning engineer",
+        "ML engineer",
+        "AI engineer"
+      ],
+      "levels": {
+        "junior": [
+          "git",
+          "linux_basics",
+          "python_basics",
+          "oop",
+          "statistics_basics",
+          "probability",
+          "linear_algebra",
+          "pandas_numpy",
+          "machine_learning_basics",
+          "scikit_learn"
+        ],
+        "mid": [
+          "data_structures_algorithms",
+          "docker",
+          "cloud_basics",
+          "feature_engineering",
+          "deep_learning",
+          "pytorch"
+        ],
+        "senior": [
+          "nlp",
+          "computer_vision",
+          "mlops",
+          "llm_applications"
+        ]
+      }
+    },
+    "accountant": {
+      "role_id": "accountant",
+      "title_fa": "حسابدار",
+      "title_en": "Accountant",
+      "domain_id": "finance",
+      "domain_title_fa": "مالی و حسابداری",
+      "domain_title_en": "Finance & Accounting",
+      "keywords_fa": [
+        "حسابدار",
+        "حسابداری",
+        "کارشناس حسابداری"
+      ],
+      "keywords_en": [
+        "accountant"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "accounting_principles",
+          "financial_accounting",
+          "accounting_software",
+          "payroll_insurance",
+          "labor_law"
+        ],
+        "mid": [
+          "excel_advanced",
+          "cost_accounting",
+          "direct_tax_law",
+          "vat",
+          "tax_returns"
+        ],
+        "senior": [
+          "accounting_standards",
+          "internal_control",
+          "budgeting_forecasting",
+          "risk_management"
+        ]
+      }
+    },
+    "financial_analyst": {
+      "role_id": "financial_analyst",
+      "title_fa": "تحلیلگر مالی",
+      "title_en": "Financial Analyst",
+      "domain_id": "finance",
+      "domain_title_fa": "مالی و حسابداری",
+      "domain_title_en": "Finance & Accounting",
+      "keywords_fa": [
+        "تحلیلگر مالی",
+        "کارشناس مالی",
+        "کارشناس بودجه"
+      ],
+      "keywords_en": [
+        "financial analyst",
+        "FP&A"
+      ],
+      "levels": {
+        "junior": [
+          "sql_basics",
+          "excel_basics",
+          "statistics_basics",
+          "power_bi",
+          "accounting_principles",
+          "financial_accounting",
+          "financial_math",
+          "capital_markets_basics",
+          "presentation_skills"
+        ],
+        "mid": [
+          "excel_advanced",
+          "time_series",
+          "cost_accounting",
+          "accounting_standards",
+          "financial_statement_analysis",
+          "financial_modeling",
+          "budgeting_forecasting"
+        ],
+        "senior": [
+          "risk_management",
+          "corporate_valuation"
+        ]
+      }
+    },
+    "auditor": {
+      "role_id": "auditor",
+      "title_fa": "حسابرس",
+      "title_en": "Auditor",
+      "domain_id": "finance",
+      "domain_title_fa": "مالی و حسابداری",
+      "domain_title_en": "Finance & Accounting",
+      "keywords_fa": [
+        "حسابرس",
+        "حسابرسی داخلی"
+      ],
+      "keywords_en": [
+        "auditor",
+        "internal audit"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "accounting_principles",
+          "financial_accounting",
+          "auditing_fundamentals"
+        ],
+        "mid": [
+          "excel_advanced",
+          "direct_tax_law",
+          "accounting_standards",
+          "internal_control",
+          "financial_statement_analysis"
+        ],
+        "senior": [
+          "risk_management"
+        ]
+      }
+    },
+    "tax_specialist": {
+      "role_id": "tax_specialist",
+      "title_fa": "کارشناس مالیاتی",
+      "title_en": "Tax Specialist",
+      "domain_id": "finance",
+      "domain_title_fa": "مالی و حسابداری",
+      "domain_title_en": "Finance & Accounting",
+      "keywords_fa": [
+        "کارشناس مالیاتی",
+        "امور مالیاتی"
+      ],
+      "keywords_en": [
+        "tax specialist",
+        "tax accountant"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "accounting_principles"
+        ],
+        "mid": [
+          "direct_tax_law",
+          "vat"
+        ],
+        "senior": [
+          "tax_returns",
+          "risk_management",
+          "accounting_standards"
+        ]
+      }
+    },
+    "investment_analyst": {
+      "role_id": "investment_analyst",
+      "title_fa": "تحلیلگر بازار سرمایه",
+      "title_en": "Investment Analyst",
+      "domain_id": "finance",
+      "domain_title_fa": "مالی و حسابداری",
+      "domain_title_en": "Finance & Accounting",
+      "keywords_fa": [
+        "تحلیلگر بازار سرمایه",
+        "تحلیلگر بورس",
+        "کارشناس سرمایه‌گذاری"
+      ],
+      "keywords_en": [
+        "investment analyst",
+        "equity analyst"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "statistics_basics",
+          "financial_accounting",
+          "financial_math",
+          "capital_markets_basics"
+        ],
+        "mid": [
+          "excel_advanced",
+          "time_series",
+          "financial_statement_analysis",
+          "financial_modeling",
+          "fundamental_analysis",
+          "technical_analysis"
+        ],
+        "senior": [
+          "risk_management",
+          "corporate_valuation",
+          "portfolio_management"
+        ]
+      }
+    },
+    "digital_marketer": {
+      "role_id": "digital_marketer",
+      "title_fa": "کارشناس دیجیتال مارکتینگ",
+      "title_en": "Digital Marketing Specialist",
+      "domain_id": "marketing_sales",
+      "domain_title_fa": "بازاریابی و فروش",
+      "domain_title_en": "Marketing & Sales",
+      "keywords_fa": [
+        "دیجیتال مارکتینگ",
+        "کارشناس بازاریابی دیجیتال",
+        "پرفورمنس مارکتینگ"
+      ],
+      "keywords_en": [
+        "digital marketing",
+        "performance marketing"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "statistics_basics",
+          "marketing_fundamentals",
+          "digital_marketing_fundamentals",
+          "seo_basics",
+          "copywriting",
+          "social_media_marketing",
+          "crm"
+        ],
+        "mid": [
+          "ab_testing",
+          "google_ads",
+          "google_analytics",
+          "email_marketing",
+          "market_research"
+        ],
+        "senior": [
+          "branding",
+          "growth_marketing"
+        ]
+      }
+    },
+    "seo_specialist": {
+      "role_id": "seo_specialist",
+      "title_fa": "کارشناس سئو",
+      "title_en": "SEO Specialist",
+      "domain_id": "marketing_sales",
+      "domain_title_fa": "بازاریابی و فروش",
+      "domain_title_en": "Marketing & Sales",
+      "keywords_fa": [
+        "کارشناس سئو",
+        "سئو"
+      ],
+      "keywords_en": [
+        "SEO specialist",
+        "SEO"
+      ],
+      "levels": {
+        "junior": [
+          "digital_marketing_fundamentals",
+          "seo_basics",
+          "keyword_research",
+          "wordpress"
+        ],
+        "mid": [
+          "google_analytics"
+        ],
+        "senior": [
+          "technical_seo",
+          "link_building"
+        ]
+      }
+    },
+    "content_marketer": {
+      "role_id": "content_marketer",
+      "title_fa": "کارشناس تولید محتوا",
+      "title_en": "Content Marketer",
+      "domain_id": "marketing_sales",
+      "domain_title_fa": "بازاریابی و فروش",
+      "domain_title_en": "Marketing & Sales",
+      "keywords_fa": [
+        "تولید محتوا",
+        "کانتنت مارکتینگ",
+        "تولیدکننده محتوا"
+      ],
+      "keywords_en": [
+        "content marketer",
+        "content writer"
+      ],
+      "levels": {
+        "junior": [
+          "marketing_fundamentals",
+          "digital_marketing_fundamentals",
+          "seo_basics",
+          "keyword_research",
+          "wordpress",
+          "copywriting",
+          "social_media_marketing",
+          "graphic_design_basics"
+        ],
+        "mid": [
+          "content_strategy",
+          "video_editing",
+          "google_analytics",
+          "email_marketing"
+        ],
+        "senior": [
+          "branding"
+        ]
+      }
+    },
+    "social_media_specialist": {
+      "role_id": "social_media_specialist",
+      "title_fa": "کارشناس شبکه‌های اجتماعی",
+      "title_en": "Social Media Specialist",
+      "domain_id": "marketing_sales",
+      "domain_title_fa": "بازاریابی و فروش",
+      "domain_title_en": "Marketing & Sales",
+      "keywords_fa": [
+        "کارشناس شبکه‌های اجتماعی",
+        "سوشال مدیا",
+        "ادمین اینستاگرام"
+      ],
+      "keywords_en": [
+        "social media specialist",
+        "social media manager"
+      ],
+      "levels": {
+        "junior": [
+          "marketing_fundamentals",
+          "digital_marketing_fundamentals",
+          "copywriting",
+          "social_media_marketing",
+          "instagram_marketing",
+          "graphic_design_basics"
+        ],
+        "mid": [
+          "content_strategy",
+          "video_editing"
+        ],
+        "senior": [
+          "branding"
+        ]
+      }
+    },
+    "sales_specialist": {
+      "role_id": "sales_specialist",
+      "title_fa": "کارشناس فروش",
+      "title_en": "Sales Specialist",
+      "domain_id": "marketing_sales",
+      "domain_title_fa": "بازاریابی و فروش",
+      "domain_title_en": "Marketing & Sales",
+      "keywords_fa": [
+        "کارشناس فروش",
+        "کارشناس فروش B2B",
+        "کارشناس توسعه بازار"
+      ],
+      "keywords_en": [
+        "sales specialist",
+        "B2B sales",
+        "business development"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "marketing_fundamentals",
+          "sales_techniques",
+          "crm",
+          "communication_skills",
+          "presentation_skills"
+        ],
+        "mid": [
+          "market_research"
+        ],
+        "senior": [
+          "b2b_sales",
+          "negotiation"
+        ]
+      }
+    },
+    "recruiter": {
+      "role_id": "recruiter",
+      "title_fa": "کارشناس جذب و استخدام",
+      "title_en": "Recruiter",
+      "domain_id": "management_hr",
+      "domain_title_fa": "مدیریت و منابع انسانی",
+      "domain_title_en": "Management & HR",
+      "keywords_fa": [
+        "کارشناس جذب و استخدام",
+        "کارشناس جذب استعداد"
+      ],
+      "keywords_en": [
+        "recruiter",
+        "talent acquisition"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "communication_skills",
+          "hrm_fundamentals",
+          "recruitment_selection",
+          "interviewing_techniques",
+          "labor_law"
+        ],
+        "mid": [
+          "negotiation",
+          "talent_sourcing"
+        ],
+        "senior": [
+          "employer_branding",
+          "hr_analytics"
+        ]
+      }
+    },
+    "hr_specialist": {
+      "role_id": "hr_specialist",
+      "title_fa": "کارشناس منابع انسانی",
+      "title_en": "HR Specialist",
+      "domain_id": "management_hr",
+      "domain_title_fa": "مدیریت و منابع انسانی",
+      "domain_title_en": "Management & HR",
+      "keywords_fa": [
+        "کارشناس منابع انسانی",
+        "کارشناس حقوق و دستمزد",
+        "کارشناس اداری"
+      ],
+      "keywords_en": [
+        "HR specialist",
+        "HR generalist",
+        "payroll"
+      ],
+      "levels": {
+        "junior": [
+          "excel_basics",
+          "payroll_insurance",
+          "communication_skills",
+          "hrm_fundamentals",
+          "recruitment_selection",
+          "interviewing_techniques",
+          "labor_law"
+        ],
+        "mid": [
+          "performance_management",
+          "compensation_benefits"
+        ],
+        "senior": [
+          "employer_branding",
+          "hr_analytics",
+          "leadership"
+        ]
+      }
+    },
+    "project_manager": {
+      "role_id": "project_manager",
+      "title_fa": "مدیر پروژه",
+      "title_en": "Project Manager",
+      "domain_id": "management_hr",
+      "domain_title_fa": "مدیریت و منابع انسانی",
+      "domain_title_en": "Management & HR",
+      "keywords_fa": [
+        "مدیر پروژه",
+        "کارشناس کنترل پروژه",
+        "اسکرام مستر"
+      ],
+      "keywords_en": [
+        "project manager",
+        "scrum master",
+        "PMP"
+      ],
+      "levels": {
+        "junior": [
+          "agile_scrum",
+          "excel_basics",
+          "communication_skills",
+          "presentation_skills",
+          "project_management_fundamentals",
+          "project_tools"
+        ],
+        "mid": [
+          "negotiation",
+          "project_control",
+          "stakeholder_management"
+        ],
+        "senior": [
+          "risk_management",
+          "leadership"
+        ]
+      }
+    },
+    "product_manager": {
+      "role_id": "product_manager",
+      "title_fa": "مدیر محصول",
+      "title_en": "Product Manager",
+      "domain_id": "management_hr",
+      "domain_title_fa": "مدیریت و منابع انسانی",
+      "domain_title_en": "Management & HR",
+      "keywords_fa": [
+        "مدیر محصول",
+        "مالک محصول"
+      ],
+      "keywords_en": [
+        "product manager",
+        "product owner"
+      ],
+      "levels": {
+        "junior": [
+          "agile_scrum",
+          "marketing_fundamentals",
+          "communication_skills",
+          "presentation_skills",
+          "project_management_fundamentals",
+          "product_management_fundamentals",
+          "requirements_engineering"
+        ],
+        "mid": [
+          "ab_testing",
+          "google_analytics",
+          "negotiation",
+          "market_research",
+          "stakeholder_management",
+          "ux_user_research",
+          "product_analytics"
+        ],
+        "senior": [
+          "growth_marketing",
+          "leadership",
+          "product_strategy",
+          "business_model"
+        ]
+      }
+    },
+    "business_analyst": {
+      "role_id": "business_analyst",
+      "title_fa": "تحلیلگر کسب‌وکار",
+      "title_en": "Business Analyst",
+      "domain_id": "management_hr",
+      "domain_title_fa": "مدیریت و منابع انسانی",
+      "domain_title_en": "Management & HR",
+      "keywords_fa": [
+        "تحلیلگر کسب‌وکار",
+        "کارشناس تحلیل کسب‌وکار"
+      ],
+      "keywords_en": [
+        "business analyst"
+      ],
+      "levels": {
+        "junior": [
+          "sql_basics",
+          "agile_scrum",
+          "excel_basics",
+          "statistics_basics",
+          "data_visualization",
+          "communication_skills",
+          "presentation_skills",
+          "project_management_fundamentals",
+          "requirements_engineering"
+        ],
+        "mid": [
+          "excel_advanced",
+          "market_research",
+          "stakeholder_management",
+          "ux_user_research",
+          "bpmn_process_modeling",
+          "uml"
+        ],
+        "senior": [
+          "business_model"
+        ]
+      }
+    }
+  },
+  "concepts": {
+    "ab_testing": {
+      "concept_id": "ab_testing",
+      "title_fa": "آزمون A/B",
+      "title_en": "A/B testing",
+      "level": "mid",
+      "prerequisites": [
+        "hypothesis_testing"
+      ],
+      "roles": [
+        "data_analyst",
+        "data_scientist",
+        "product_manager",
+        "digital_marketer"
+      ]
+    },
+    "accounting_principles": {
+      "concept_id": "accounting_principles",
+      "title_fa": "اصول حسابداری",
+      "title_en": "Accounting principles",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "accountant",
+        "auditor",
+        "tax_specialist",
+        "financial_analyst"
+      ]
+    },
+    "accounting_software": {
+      "concept_id": "accounting_software",
+      "title_fa": "نرم‌افزارهای حسابداری (سپیدار، همکاران سیستم)",
+      "title_en": "Accounting software",
+      "level": "junior",
+      "prerequisites": [
+        "accounting_principles"
+      ],
+      "roles": [
+        "accountant"
+      ]
+    },
+    "accounting_standards": {
+      "concept_id": "accounting_standards",
+      "title_fa": "استانداردهای حسابداری (ایران و IFRS)",
+      "title_en": "Accounting standards (IFRS)",
+      "level": "mid",
+      "prerequisites": [
+        "financial_accounting"
+      ],
+      "roles": [
+        "accountant",
+        "auditor",
+        "financial_analyst"
+      ]
+    },
+    "agile_scrum": {
+      "concept_id": "agile_scrum",
+      "title_fa": "چابک و اسکرام",
+      "title_en": "Agile & Scrum",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "qa_engineer",
+        "project_manager",
+        "product_manager",
+        "backend_developer",
+        "frontend_developer",
+        "business_analyst"
+      ]
+    },
+    "airflow": {
+      "concept_id": "airflow",
+      "title_fa": "Apache Airflow",
+      "title_en": "Apache Airflow",
+      "level": "mid",
+      "prerequisites": [
+        "etl_pipelines",
+        "python_basics"
+      ],
+      "roles": [
+        "data_engineer"
+      ]
+    },
+    "android_development": {
+      "concept_id": "android_development",
+      "title_fa": "برنامه‌نویسی اندروید",
+      "title_en": "Android development",
+      "level": "junior",
+      "prerequisites": [
+        "kotlin"
+      ],
+      "roles": [
+        "mobile_developer"
+      ]
+    },
+    "api_testing": {
+      "concept_id": "api_testing",
+      "title_fa": "تست API با Postman",
+      "title_en": "API testing (Postman)",
+      "level": "junior",
+      "prerequisites": [
+        "http_rest_api",
+        "software_testing_fundamentals"
+      ],
+      "roles": [
+        "qa_engineer",
+        "backend_developer"
+      ]
+    },
+    "auditing_fundamentals": {
+      "concept_id": "auditing_fundamentals",
+      "title_fa": "اصول حسابرسی",
+      "title_en": "Auditing fundamentals",
+      "level": "junior",
+      "prerequisites": [
+        "accounting_principles",
+        "financial_accounting"
+      ],
+      "roles": [
+        "auditor"
+      ]
+    },
+    "b2b_sales": {
+      "concept_id": "b2b_sales",
+      "title_fa": "فروش سازمانی (B2B)",
+      "title_en": "B2B sales",
+      "level": "mid",
+      "prerequisites": [
+        "sales_techniques"
+      ],
+      "roles": [
+        "sales_specialist"
+      ]
+    },
+    "bash_scripting": {
+      "concept_id": "bash_scripting",
+      "title_fa": "اسکریپت‌نویسی Bash",
+      "title_en": "Bash scripting",
+      "level": "mid",
+      "prerequisites": [
+        "linux_basics"
+      ],
+      "roles": [
+        "devops_engineer",
+        "data_engineer"
+      ]
+    },
+    "bpmn_process_modeling": {
+      "concept_id": "bpmn_process_modeling",
+      "title_fa": "مدل‌سازی فرایند (BPMN)",
+      "title_en": "Process modeling (BPMN)",
+      "level": "mid",
+      "prerequisites": [
+        "requirements_engineering"
+      ],
+      "roles": [
+        "business_analyst"
+      ]
+    },
+    "branding": {
+      "concept_id": "branding",
+      "title_fa": "برندینگ",
+      "title_en": "Branding",
+      "level": "senior",
+      "prerequisites": [
+        "marketing_fundamentals"
+      ],
+      "roles": [
+        "digital_marketer",
+        "content_marketer",
+        "social_media_specialist"
+      ]
+    },
+    "budgeting_forecasting": {
+      "concept_id": "budgeting_forecasting",
+      "title_fa": "بودجه‌بندی و پیش‌بینی مالی",
+      "title_en": "Budgeting & forecasting",
+      "level": "mid",
+      "prerequisites": [
+        "cost_accounting",
+        "excel_advanced"
+      ],
+      "roles": [
+        "financial_analyst",
+        "accountant"
+      ]
+    },
+    "business_model": {
+      "concept_id": "business_model",
+      "title_fa": "مدل کسب‌وکار و استراتژی",
+      "title_en": "Business models & strategy",
+      "level": "senior",
+      "prerequisites": [
+        "marketing_fundamentals"
+      ],
+      "roles": [
+        "business_analyst",
+        "product_manager"
+      ]
+    },
+    "caching_redis": {
+      "concept_id": "caching_redis",
+      "title_fa": "کش و Redis",
+      "title_en": "Caching & Redis",
+      "level": "mid",
+      "prerequisites": [
+        "database_design",
+        "networking_basics"
+      ],
+      "roles": [
+        "backend_developer"
+      ]
+    },
+    "capital_markets_basics": {
+      "concept_id": "capital_markets_basics",
+      "title_fa": "مبانی بازار سرمایه",
+      "title_en": "Capital markets basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "investment_analyst",
+        "financial_analyst"
+      ]
+    },
+    "ci_cd": {
+      "concept_id": "ci_cd",
+      "title_fa": "CI/CD",
+      "title_en": "CI/CD pipelines",
+      "level": "mid",
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "roles": [
+        "devops_engineer",
+        "backend_developer",
+        "qa_engineer",
+        "mobile_developer"
+      ]
+    },
+    "cloud_basics": {
+      "concept_id": "cloud_basics",
+      "title_fa": "رایانش ابری",
+      "title_en": "Cloud computing (AWS)",
+      "level": "mid",
+      "prerequisites": [
+        "networking_basics",
+        "linux_basics"
+      ],
+      "roles": [
+        "devops_engineer",
+        "data_engineer",
+        "ml_engineer"
+      ]
+    },
+    "communication_skills": {
+      "concept_id": "communication_skills",
+      "title_fa": "مهارت‌های ارتباطی",
+      "title_en": "Communication skills",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "sales_specialist",
+        "recruiter",
+        "hr_specialist",
+        "project_manager",
+        "product_manager",
+        "business_analyst"
+      ]
+    },
+    "compensation_benefits": {
+      "concept_id": "compensation_benefits",
+      "title_fa": "نظام جبران خدمات",
+      "title_en": "Compensation & benefits",
+      "level": "mid",
+      "prerequisites": [
+        "hrm_fundamentals",
+        "payroll_insurance"
+      ],
+      "roles": [
+        "hr_specialist"
+      ]
+    },
+    "computer_vision": {
+      "concept_id": "computer_vision",
+      "title_fa": "بینایی ماشین",
+      "title_en": "Computer vision",
+      "level": "senior",
+      "prerequisites": [
+        "deep_learning",
+        "pytorch"
+      ],
+      "roles": [
+        "ml_engineer"
+      ]
+    },
+    "content_strategy": {
+      "concept_id": "content_strategy",
+      "title_fa": "استراتژی محتوا",
+      "title_en": "Content strategy",
+      "level": "mid",
+      "prerequisites": [
+        "copywriting",
+        "marketing_fundamentals"
+      ],
+      "roles": [
+        "content_marketer",
+        "social_media_specialist"
+      ]
+    },
+    "copywriting": {
+      "concept_id": "copywriting",
+      "title_fa": "کپی‌رایتینگ",
+      "title_en": "Copywriting",
+      "level": "junior",
+      "prerequisites": [
+        "marketing_fundamentals"
+      ],
+      "roles": [
+        "content_marketer",
+        "social_media_specialist",
+        "digital_marketer"
+      ]
+    },
+    "corporate_valuation": {
+      "concept_id": "corporate_valuation",
+      "title_fa": "ارزش‌گذاری شرکت و مدیریت مالی",
+      "title_en": "Corporate finance & valuation",
+      "level": "senior",
+      "prerequisites": [
+        "financial_modeling",
+        "financial_statement_analysis"
+      ],
+      "roles": [
+        "financial_analyst",
+        "investment_analyst"
+      ]
+    },
+    "cost_accounting": {
+      "concept_id": "cost_accounting",
+      "title_fa": "حسابداری صنعتی (بهای تمام‌شده)",
+      "title_en": "Cost accounting",
+      "level": "mid",
+      "prerequisites": [
+        "accounting_principles",
+        "financial_accounting"
+      ],
+      "roles": [
+        "accountant",
+        "financial_analyst"
+      ]
+    },
+    "crm": {
+      "concept_id": "crm",
+      "title_fa": "مدیریت ارتباط با مشتری (CRM)",
+      "title_en": "CRM",
+      "level": "junior",
+      "prerequisites": [
+        "sales_techniques"
+      ],
+      "roles": [
+        "sales_specialist",
+        "digital_marketer"
+      ]
+    },
+    "data_cleaning": {
+      "concept_id": "data_cleaning",
+      "title_fa": "پاکسازی و آماده‌سازی داده",
+      "title_en": "Data cleaning",
+      "level": "junior",
+      "prerequisites": [
+        "pandas_numpy"
+      ],
+      "roles": [
+        "data_analyst",
+        "data_scientist"
+      ]
+    },
+    "data_modeling": {
+      "concept_id": "data_modeling",
+      "title_fa": "مدل‌سازی داده (Star Schema)",
+      "title_en": "Dimensional data modeling",
+      "level": "mid",
+      "prerequisites": [
+        "sql_basics"
+      ],
+      "roles": [
+        "bi_developer",
+        "data_engineer"
+      ]
+    },
+    "data_structures_algorithms": {
+      "concept_id": "data_structures_algorithms",
+      "title_fa": "ساختمان داده و الگوریتم",
+      "title_en": "Data structures & algorithms",
+      "level": "mid",
+      "prerequisites": [
+        "oop"
+      ],
+      "roles": [
+        "backend_developer",
+        "frontend_developer",
+        "mobile_developer",
+        "ml_engineer"
+      ]
+    },
+    "data_visualization": {
+      "concept_id": "data_visualization",
+      "title_fa": "مصورسازی داده",
+      "title_en": "Data visualization",
+      "level": "junior",
+      "prerequisites": [
+        "pandas_numpy"
+      ],
+      "roles": [
+        "data_analyst",
+        "bi_developer",
+        "data_scientist",
+        "business_analyst"
+      ]
+    },
+    "data_warehousing": {
+      "concept_id": "data_warehousing",
+      "title_fa": "انبار داده",
+      "title_en": "Data warehousing",
+      "level": "mid",
+      "prerequisites": [
+        "sql_advanced",
+        "data_modeling"
+      ],
+      "roles": [
+        "bi_developer",
+        "data_engineer"
+      ]
+    },
+    "database_design": {
+      "concept_id": "database_design",
+      "title_fa": "طراحی پایگاه داده",
+      "title_en": "Database design",
+      "level": "mid",
+      "prerequisites": [
+        "sql_basics"
+      ],
+      "roles": [
+        "backend_developer",
+        "data_engineer",
+        "bi_developer"
+      ]
+    },
+    "dax": {
+      "concept_id": "dax",
+      "title_fa": "زبان DAX",
+      "title_en": "DAX",
+      "level": "mid",
+      "prerequisites": [
+        "power_bi"
+      ],
+      "roles": [
+        "bi_developer"
+      ]
+    },
+    "deep_learning": {
+      "concept_id": "deep_learning",
+      "title_fa": "یادگیری عمیق",
+      "title_en": "Deep learning",
+      "level": "mid",
+      "prerequisites": [
+        "machine_learning_basics",
+        "linear_algebra"
+      ],
+      "roles": [
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "design_patterns": {
+      "concept_id": "design_patterns",
+      "title_fa": "الگوهای طراحی",
+      "title_en": "Design patterns",
+      "level": "mid",
+      "prerequisites": [
+        "oop",
+        "data_structures_algorithms"
+      ],
+      "roles": [
+        "backend_developer",
+        "frontend_developer",
+        "mobile_developer"
+      ]
+    },
+    "digital_marketing_fundamentals": {
+      "concept_id": "digital_marketing_fundamentals",
+      "title_fa": "مبانی دیجیتال مارکتینگ",
+      "title_en": "Digital marketing fundamentals",
+      "level": "junior",
+      "prerequisites": [
+        "marketing_fundamentals"
+      ],
+      "roles": [
+        "digital_marketer",
+        "seo_specialist",
+        "content_marketer",
+        "social_media_specialist"
+      ]
+    },
+    "direct_tax_law": {
+      "concept_id": "direct_tax_law",
+      "title_fa": "قانون مالیات‌های مستقیم",
+      "title_en": "Direct taxation law (Iran)",
+      "level": "mid",
+      "prerequisites": [
+        "accounting_principles"
+      ],
+      "roles": [
+        "tax_specialist",
+        "accountant",
+        "auditor"
+      ]
+    },
+    "distributed_systems": {
+      "concept_id": "distributed_systems",
+      "title_fa": "سیستم‌های توزیع‌شده",
+      "title_en": "Distributed systems",
+      "level": "senior",
+      "prerequisites": [
+        "system_design",
+        "microservices"
+      ],
+      "roles": [
+        "backend_developer",
+        "data_engineer"
+      ]
+    },
+    "django": {
+      "concept_id": "django",
+      "title_fa": "جنگو",
+      "title_en": "Django",
+      "level": "junior",
+      "prerequisites": [
+        "python_basics",
+        "http_rest_api",
+        "sql_basics"
+      ],
+      "roles": [
+        "backend_developer"
+      ]
+    },
+    "docker": {
+      "concept_id": "docker",
+      "title_fa": "داکر",
+      "title_en": "Docker",
+      "level": "mid",
+      "prerequisites": [
+        "linux_basics"
+      ],
+      "roles": [
+        "backend_developer",
+        "devops_engineer",
+        "data_engineer",
+        "ml_engineer",
+        "qa_engineer"
+      ]
+    },
+    "email_marketing": {
+      "concept_id": "email_marketing",
+      "title_fa": "ایمیل مارکتینگ",
+      "title_en": "Email marketing",
+      "level": "mid",
+      "prerequisites": [
+        "digital_marketing_fundamentals",
+        "copywriting"
+      ],
+      "roles": [
+        "digital_marketer",
+        "content_marketer"
+      ]
+    },
+    "employer_branding": {
+      "concept_id": "employer_branding",
+      "title_fa": "برند کارفرمایی",
+      "title_en": "Employer branding",
+      "level": "senior",
+      "prerequisites": [
+        "hrm_fundamentals",
+        "branding"
+      ],
+      "roles": [
+        "recruiter",
+        "hr_specialist"
+      ]
+    },
+    "etl_pipelines": {
+      "concept_id": "etl_pipelines",
+      "title_fa": "ETL و خطوط داده",
+      "title_en": "ETL pipelines",
+      "level": "mid",
+      "prerequisites": [
+        "python_basics",
+        "sql_basics"
+      ],
+      "roles": [
+        "data_engineer",
+        "bi_developer"
+      ]
+    },
+    "excel_advanced": {
+      "concept_id": "excel_advanced",
+      "title_fa": "اکسل پیشرفته (Pivot و توابع)",
+      "title_en": "Advanced Excel",
+      "level": "mid",
+      "prerequisites": [
+        "excel_basics"
+      ],
+      "roles": [
+        "data_analyst",
+        "bi_developer",
+        "accountant",
+        "financial_analyst",
+        "auditor",
+        "investment_analyst",
+        "business_analyst"
+      ]
+    },
+    "excel_basics": {
+      "concept_id": "excel_basics",
+      "title_fa": "اکسل مقدماتی",
+      "title_en": "Excel basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "data_analyst",
+        "bi_developer",
+        "accountant",
+        "financial_analyst",
+        "auditor",
+        "tax_specialist",
+        "investment_analyst",
+        "hr_specialist",
+        "recruiter",
+        "business_analyst",
+        "sales_specialist",
+        "digital_marketer",
+        "project_manager"
+      ]
+    },
+    "feature_engineering": {
+      "concept_id": "feature_engineering",
+      "title_fa": "مهندسی ویژگی",
+      "title_en": "Feature engineering",
+      "level": "mid",
+      "prerequisites": [
+        "scikit_learn",
+        "data_cleaning"
+      ],
+      "roles": [
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "financial_accounting": {
+      "concept_id": "financial_accounting",
+      "title_fa": "حسابداری مالی و صورت‌های مالی",
+      "title_en": "Financial accounting & statements",
+      "level": "junior",
+      "prerequisites": [
+        "accounting_principles"
+      ],
+      "roles": [
+        "accountant",
+        "auditor",
+        "financial_analyst",
+        "investment_analyst"
+      ]
+    },
+    "financial_math": {
+      "concept_id": "financial_math",
+      "title_fa": "ریاضیات مالی و ارزش زمانی پول",
+      "title_en": "Financial math (time value of money)",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "financial_analyst",
+        "investment_analyst"
+      ]
+    },
+    "financial_modeling": {
+      "concept_id": "financial_modeling",
+      "title_fa": "مدل‌سازی مالی",
+      "title_en": "Financial modeling",
+      "level": "mid",
+      "prerequisites": [
+        "excel_advanced",
+        "financial_statement_analysis"
+      ],
+      "roles": [
+        "financial_analyst",
+        "investment_analyst"
+      ]
+    },
+    "financial_statement_analysis": {
+      "concept_id": "financial_statement_analysis",
+      "title_fa": "تجزیه و تحلیل صورت‌های مالی",
+      "title_en": "Financial statement analysis",
+      "level": "mid",
+      "prerequisites": [
+        "financial_accounting"
+      ],
+      "roles": [
+        "financial_analyst",
+        "investment_analyst",
+        "auditor"
+      ]
+    },
+    "flutter_dart": {
+      "concept_id": "flutter_dart",
+      "title_fa": "فلاتر و دارت",
+      "title_en": "Flutter & Dart",
+      "level": "junior",
+      "prerequisites": [
+        "oop"
+      ],
+      "roles": [
+        "mobile_developer"
+      ]
+    },
+    "fundamental_analysis": {
+      "concept_id": "fundamental_analysis",
+      "title_fa": "تحلیل بنیادی",
+      "title_en": "Fundamental analysis",
+      "level": "mid",
+      "prerequisites": [
+        "financial_statement_analysis",
+        "capital_markets_basics"
+      ],
+      "roles": [
+        "investment_analyst"
+      ]
+    },
+    "git": {
+      "concept_id": "git",
+      "title_fa": "گیت و کنترل نسخه",
+      "title_en": "Git & version control",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "backend_developer",
+        "frontend_developer",
+        "mobile_developer",
+        "devops_engineer",
+        "qa_engineer",
+        "data_engineer",
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "google_ads": {
+      "concept_id": "google_ads",
+      "title_fa": "تبلیغات گوگل",
+      "title_en": "Google Ads",
+      "level": "mid",
+      "prerequisites": [
+        "digital_marketing_fundamentals"
+      ],
+      "roles": [
+        "digital_marketer"
+      ]
+    },
+    "google_analytics": {
+      "concept_id": "google_analytics",
+      "title_fa": "گوگل آنالیتیکس",
+      "title_en": "Google Analytics",
+      "level": "mid",
+      "prerequisites": [
+        "digital_marketing_fundamentals"
+      ],
+      "roles": [
+        "digital_marketer",
+        "seo_specialist",
+        "content_marketer",
+        "product_manager"
+      ]
+    },
+    "graphic_design_basics": {
+      "concept_id": "graphic_design_basics",
+      "title_fa": "مبانی طراحی گرافیک (فتوشاپ)",
+      "title_en": "Graphic design basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "social_media_specialist",
+        "content_marketer"
+      ]
+    },
+    "growth_marketing": {
+      "concept_id": "growth_marketing",
+      "title_fa": "بازاریابی رشد (Growth)",
+      "title_en": "Growth marketing",
+      "level": "senior",
+      "prerequisites": [
+        "digital_marketing_fundamentals",
+        "google_analytics",
+        "ab_testing"
+      ],
+      "roles": [
+        "digital_marketer",
+        "product_manager"
+      ]
+    },
+    "hr_analytics": {
+      "concept_id": "hr_analytics",
+      "title_fa": "تحلیل داده منابع انسانی",
+      "title_en": "HR analytics",
+      "level": "senior",
+      "prerequisites": [
+        "hrm_fundamentals",
+        "excel_advanced",
+        "statistics_basics"
+      ],
+      "roles": [
+        "hr_specialist",
+        "recruiter"
+      ]
+    },
+    "hrm_fundamentals": {
+      "concept_id": "hrm_fundamentals",
+      "title_fa": "مبانی مدیریت منابع انسانی",
+      "title_en": "HRM fundamentals",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "hr_specialist",
+        "recruiter"
+      ]
+    },
+    "html_css": {
+      "concept_id": "html_css",
+      "title_fa": "HTML و CSS",
+      "title_en": "HTML & CSS",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "frontend_developer"
+      ]
+    },
+    "http_rest_api": {
+      "concept_id": "http_rest_api",
+      "title_fa": "HTTP و REST API",
+      "title_en": "HTTP & REST APIs",
+      "level": "junior",
+      "prerequisites": [
+        "networking_basics"
+      ],
+      "roles": [
+        "backend_developer",
+        "frontend_developer",
+        "mobile_developer",
+        "qa_engineer"
+      ]
+    },
+    "hypothesis_testing": {
+      "concept_id": "hypothesis_testing",
+      "title_fa": "آزمون فرض",
+      "title_en": "Hypothesis testing",
+      "level": "mid",
+      "prerequisites": [
+        "statistics_basics",
+        "probability"
+      ],
+      "roles": [
+        "data_analyst",
+        "data_scientist"
+      ]
+    },
+    "infrastructure_as_code": {
+      "concept_id": "infrastructure_as_code",
+      "title_fa": "زیرساخت به‌عنوان کد (Terraform/Ansible)",
+      "title_en": "Infrastructure as code",
+      "level": "senior",
+      "prerequisites": [
+        "cloud_basics",
+        "linux_basics"
+      ],
+      "roles": [
+        "devops_engineer"
+      ]
+    },
+    "instagram_marketing": {
+      "concept_id": "instagram_marketing",
+      "title_fa": "بازاریابی اینستاگرام",
+      "title_en": "Instagram marketing",
+      "level": "junior",
+      "prerequisites": [
+        "social_media_marketing"
+      ],
+      "roles": [
+        "social_media_specialist"
+      ]
+    },
+    "internal_control": {
+      "concept_id": "internal_control",
+      "title_fa": "کنترل‌های داخلی",
+      "title_en": "Internal control (COSO)",
+      "level": "mid",
+      "prerequisites": [
+        "auditing_fundamentals"
+      ],
+      "roles": [
+        "auditor",
+        "accountant"
+      ]
+    },
+    "interviewing_techniques": {
+      "concept_id": "interviewing_techniques",
+      "title_fa": "مصاحبه استخدامی",
+      "title_en": "Interviewing techniques",
+      "level": "junior",
+      "prerequisites": [
+        "recruitment_selection",
+        "communication_skills"
+      ],
+      "roles": [
+        "recruiter",
+        "hr_specialist"
+      ]
+    },
+    "javascript": {
+      "concept_id": "javascript",
+      "title_fa": "جاوااسکریپت",
+      "title_en": "JavaScript",
+      "level": "junior",
+      "prerequisites": [
+        "html_css"
+      ],
+      "roles": [
+        "frontend_developer",
+        "backend_developer"
+      ]
+    },
+    "jetpack_compose": {
+      "concept_id": "jetpack_compose",
+      "title_fa": "Jetpack Compose",
+      "title_en": "Jetpack Compose",
+      "level": "mid",
+      "prerequisites": [
+        "android_development",
+        "kotlin"
+      ],
+      "roles": [
+        "mobile_developer"
+      ]
+    },
+    "kafka_streaming": {
+      "concept_id": "kafka_streaming",
+      "title_fa": "پردازش جریان داده (Kafka)",
+      "title_en": "Stream processing (Kafka)",
+      "level": "senior",
+      "prerequisites": [
+        "message_queues"
+      ],
+      "roles": [
+        "data_engineer"
+      ]
+    },
+    "keyword_research": {
+      "concept_id": "keyword_research",
+      "title_fa": "تحقیق کلمات کلیدی",
+      "title_en": "Keyword research",
+      "level": "junior",
+      "prerequisites": [
+        "seo_basics"
+      ],
+      "roles": [
+        "seo_specialist",
+        "content_marketer"
+      ]
+    },
+    "kotlin": {
+      "concept_id": "kotlin",
+      "title_fa": "کاتلین",
+      "title_en": "Kotlin",
+      "level": "junior",
+      "prerequisites": [
+        "oop"
+      ],
+      "roles": [
+        "mobile_developer"
+      ]
+    },
+    "kubernetes": {
+      "concept_id": "kubernetes",
+      "title_fa": "کوبرنتیز",
+      "title_en": "Kubernetes",
+      "level": "senior",
+      "prerequisites": [
+        "docker",
+        "networking_basics"
+      ],
+      "roles": [
+        "devops_engineer",
+        "backend_developer"
+      ]
+    },
+    "labor_law": {
+      "concept_id": "labor_law",
+      "title_fa": "قانون کار",
+      "title_en": "Labor law (Iran)",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "hr_specialist",
+        "recruiter",
+        "accountant"
+      ]
+    },
+    "leadership": {
+      "concept_id": "leadership",
+      "title_fa": "رهبری و مدیریت تیم",
+      "title_en": "Leadership & team management",
+      "level": "senior",
+      "prerequisites": [
+        "communication_skills",
+        "stakeholder_management"
+      ],
+      "roles": [
+        "project_manager",
+        "product_manager",
+        "hr_specialist"
+      ]
+    },
+    "linear_algebra": {
+      "concept_id": "linear_algebra",
+      "title_fa": "جبر خطی",
+      "title_en": "Linear algebra",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "link_building": {
+      "concept_id": "link_building",
+      "title_fa": "لینک‌سازی (سئو خارجی)",
+      "title_en": "Link building (off-page SEO)",
+      "level": "mid",
+      "prerequisites": [
+        "seo_basics"
+      ],
+      "roles": [
+        "seo_specialist"
+      ]
+    },
+    "linux_basics": {
+      "concept_id": "linux_basics",
+      "title_fa": "مبانی لینوکس",
+      "title_en": "Linux basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "devops_engineer",
+        "backend_developer",
+        "data_engineer",
+        "ml_engineer"
+      ]
+    },
+    "llm_applications": {
+      "concept_id": "llm_applications",
+      "title_fa": "مدل‌های زبانی بزرگ و هوش مصنوعی مولد",
+      "title_en": "LLMs & generative AI",
+      "level": "senior",
+      "prerequisites": [
+        "nlp",
+        "python_basics"
+      ],
+      "roles": [
+        "ml_engineer",
+        "data_scientist"
+      ]
+    },
+    "machine_learning_basics": {
+      "concept_id": "machine_learning_basics",
+      "title_fa": "مبانی یادگیری ماشین",
+      "title_en": "Machine learning basics",
+      "level": "junior",
+      "prerequisites": [
+        "python_basics",
+        "linear_algebra",
+        "statistics_basics"
+      ],
+      "roles": [
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "market_research": {
+      "concept_id": "market_research",
+      "title_fa": "تحقیقات بازار",
+      "title_en": "Market research",
+      "level": "mid",
+      "prerequisites": [
+        "marketing_fundamentals",
+        "statistics_basics"
+      ],
+      "roles": [
+        "product_manager",
+        "digital_marketer",
+        "business_analyst",
+        "sales_specialist"
+      ]
+    },
+    "marketing_fundamentals": {
+      "concept_id": "marketing_fundamentals",
+      "title_fa": "مبانی بازاریابی",
+      "title_en": "Marketing fundamentals",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "digital_marketer",
+        "content_marketer",
+        "social_media_specialist",
+        "sales_specialist",
+        "product_manager"
+      ]
+    },
+    "message_queues": {
+      "concept_id": "message_queues",
+      "title_fa": "صف پیام (RabbitMQ/Kafka)",
+      "title_en": "Message queues",
+      "level": "senior",
+      "prerequisites": [
+        "networking_basics"
+      ],
+      "roles": [
+        "backend_developer",
+        "data_engineer"
+      ]
+    },
+    "microservices": {
+      "concept_id": "microservices",
+      "title_fa": "معماری میکروسرویس",
+      "title_en": "Microservices architecture",
+      "level": "senior",
+      "prerequisites": [
+        "docker",
+        "http_rest_api",
+        "message_queues"
+      ],
+      "roles": [
+        "backend_developer"
+      ]
+    },
+    "mlops": {
+      "concept_id": "mlops",
+      "title_fa": "MLOps و استقرار مدل",
+      "title_en": "MLOps & model deployment",
+      "level": "senior",
+      "prerequisites": [
+        "machine_learning_basics",
+        "docker",
+        "ci_cd"
+      ],
+      "roles": [
+        "ml_engineer"
+      ]
+    },
+    "mobile_architecture": {
+      "concept_id": "mobile_architecture",
+      "title_fa": "معماری اپلیکیشن موبایل (MVVM)",
+      "title_en": "Mobile app architecture",
+      "level": "senior",
+      "prerequisites": [
+        "oop"
+      ],
+      "roles": [
+        "mobile_developer"
+      ]
+    },
+    "monitoring_observability": {
+      "concept_id": "monitoring_observability",
+      "title_fa": "مانیتورینگ (Prometheus/Grafana)",
+      "title_en": "Monitoring & observability",
+      "level": "senior",
+      "prerequisites": [
+        "linux_basics",
+        "docker"
+      ],
+      "roles": [
+        "devops_engineer"
+      ]
+    },
+    "negotiation": {
+      "concept_id": "negotiation",
+      "title_fa": "مذاکره",
+      "title_en": "Negotiation",
+      "level": "mid",
+      "prerequisites": [
+        "communication_skills",
+        "sales_techniques"
+      ],
+      "roles": [
+        "sales_specialist",
+        "recruiter",
+        "project_manager",
+        "product_manager"
+      ]
+    },
+    "networking_basics": {
+      "concept_id": "networking_basics",
+      "title_fa": "مبانی شبکه",
+      "title_en": "Computer networking basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "devops_engineer",
+        "backend_developer"
+      ]
+    },
+    "nextjs": {
+      "concept_id": "nextjs",
+      "title_fa": "Next.js",
+      "title_en": "Next.js",
+      "level": "mid",
+      "prerequisites": [
+        "react",
+        "typescript"
+      ],
+      "roles": [
+        "frontend_developer"
+      ]
+    },
+    "nginx": {
+      "concept_id": "nginx",
+      "title_fa": "وب‌سرور Nginx",
+      "title_en": "Nginx web server",
+      "level": "mid",
+      "prerequisites": [
+        "linux_basics",
+        "networking_basics"
+      ],
+      "roles": [
+        "devops_engineer",
+        "backend_developer"
+      ]
+    },
+    "nlp": {
+      "concept_id": "nlp",
+      "title_fa": "پردازش زبان طبیعی",
+      "title_en": "Natural language processing",
+      "level": "senior",
+      "prerequisites": [
+        "deep_learning",
+        "pytorch"
+      ],
+      "roles": [
+        "ml_engineer",
+        "data_scientist"
+      ]
+    },
+    "nodejs": {
+      "concept_id": "nodejs",
+      "title_fa": "Node.js",
+      "title_en": "Node.js",
+      "level": "junior",
+      "prerequisites": [
+        "javascript",
+        "http_rest_api"
+      ],
+      "roles": [
+        "backend_developer"
+      ]
+    },
+    "nosql_mongodb": {
+      "concept_id": "nosql_mongodb",
+      "title_fa": "پایگاه داده NoSQL و MongoDB",
+      "title_en": "NoSQL & MongoDB",
+      "level": "mid",
+      "prerequisites": [
+        "database_design"
+      ],
+      "roles": [
+        "backend_developer",
+        "data_engineer"
+      ]
+    },
+    "oop": {
+      "concept_id": "oop",
+      "title_fa": "برنامه‌نویسی شیءگرا",
+      "title_en": "Object-oriented programming",
+      "level": "junior",
+      "prerequisites": [
+        "python_basics"
+      ],
+      "roles": [
+        "backend_developer",
+        "mobile_developer",
+        "qa_engineer",
+        "ml_engineer"
+      ]
+    },
+    "pandas_numpy": {
+      "concept_id": "pandas_numpy",
+      "title_fa": "Pandas و NumPy",
+      "title_en": "Pandas & NumPy",
+      "level": "junior",
+      "prerequisites": [
+        "python_basics"
+      ],
+      "roles": [
+        "data_analyst",
+        "data_scientist",
+        "ml_engineer",
+        "data_engineer"
+      ]
+    },
+    "payroll_insurance": {
+      "concept_id": "payroll_insurance",
+      "title_fa": "حقوق و دستمزد و بیمه",
+      "title_en": "Payroll & social insurance",
+      "level": "junior",
+      "prerequisites": [
+        "accounting_principles",
+        "labor_law"
+      ],
+      "roles": [
+        "accountant",
+        "hr_specialist"
+      ]
+    },
+    "performance_management": {
+      "concept_id": "performance_management",
+      "title_fa": "مدیریت و ارزیابی عملکرد",
+      "title_en": "Performance management",
+      "level": "mid",
+      "prerequisites": [
+        "hrm_fundamentals"
+      ],
+      "roles": [
+        "hr_specialist"
+      ]
+    },
+    "performance_testing": {
+      "concept_id": "performance_testing",
+      "title_fa": "تست عملکرد (JMeter)",
+      "title_en": "Performance testing (JMeter)",
+      "level": "senior",
+      "prerequisites": [
+        "software_testing_fundamentals",
+        "networking_basics"
+      ],
+      "roles": [
+        "qa_engineer"
+      ]
+    },
+    "portfolio_management": {
+      "concept_id": "portfolio_management",
+      "title_fa": "مدیریت پرتفوی",
+      "title_en": "Portfolio management",
+      "level": "senior",
+      "prerequisites": [
+        "fundamental_analysis",
+        "technical_analysis",
+        "risk_management"
+      ],
+      "roles": [
+        "investment_analyst"
+      ]
+    },
+    "power_bi": {
+      "concept_id": "power_bi",
+      "title_fa": "Power BI",
+      "title_en": "Power BI",
+      "level": "junior",
+      "prerequisites": [
+        "excel_basics"
+      ],
+      "roles": [
+        "bi_developer",
+        "data_analyst",
+        "financial_analyst"
+      ]
+    },
+    "presentation_skills": {
+      "concept_id": "presentation_skills",
+      "title_fa": "فن بیان و ارائه",
+      "title_en": "Presentation skills",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "sales_specialist",
+        "project_manager",
+        "product_manager",
+        "business_analyst",
+        "financial_analyst"
+      ]
+    },
+    "probability": {
+      "concept_id": "probability",
+      "title_fa": "احتمال",
+      "title_en": "Probability",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "product_analytics": {
+      "concept_id": "product_analytics",
+      "title_fa": "تحلیل محصول و متریک‌ها",
+      "title_en": "Product analytics & metrics",
+      "level": "mid",
+      "prerequisites": [
+        "product_management_fundamentals",
+        "data_visualization"
+      ],
+      "roles": [
+        "product_manager"
+      ]
+    },
+    "product_management_fundamentals": {
+      "concept_id": "product_management_fundamentals",
+      "title_fa": "مبانی مدیریت محصول",
+      "title_en": "Product management fundamentals",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "product_manager"
+      ]
+    },
+    "product_strategy": {
+      "concept_id": "product_strategy",
+      "title_fa": "استراتژی و نقشه راه محصول",
+      "title_en": "Product strategy & roadmap",
+      "level": "senior",
+      "prerequisites": [
+        "product_management_fundamentals",
+        "business_model",
+        "product_analytics"
+      ],
+      "roles": [
+        "product_manager"
+      ]
+    },
+    "project_control": {
+      "concept_id": "project_control",
+      "title_fa": "کنترل پروژه",
+      "title_en": "Project control (earned value)",
+      "level": "mid",
+      "prerequisites": [
+        "project_management_fundamentals",
+        "project_tools"
+      ],
+      "roles": [
+        "project_manager"
+      ]
+    },
+    "project_management_fundamentals": {
+      "concept_id": "project_management_fundamentals",
+      "title_fa": "مبانی مدیریت پروژه (PMBOK)",
+      "title_en": "Project management fundamentals",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "project_manager",
+        "product_manager",
+        "business_analyst"
+      ]
+    },
+    "project_tools": {
+      "concept_id": "project_tools",
+      "title_fa": "ابزارهای مدیریت پروژه (MSP/Jira)",
+      "title_en": "Project tools (MS Project/Jira)",
+      "level": "junior",
+      "prerequisites": [
+        "project_management_fundamentals"
+      ],
+      "roles": [
+        "project_manager"
+      ]
+    },
+    "python_basics": {
+      "concept_id": "python_basics",
+      "title_fa": "مبانی پایتون",
+      "title_en": "Python basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "backend_developer",
+        "qa_engineer",
+        "data_analyst",
+        "data_engineer",
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "pytorch": {
+      "concept_id": "pytorch",
+      "title_fa": "PyTorch",
+      "title_en": "PyTorch",
+      "level": "mid",
+      "prerequisites": [
+        "deep_learning"
+      ],
+      "roles": [
+        "ml_engineer"
+      ]
+    },
+    "react": {
+      "concept_id": "react",
+      "title_fa": "ری‌اکت",
+      "title_en": "React",
+      "level": "junior",
+      "prerequisites": [
+        "javascript",
+        "html_css",
+        "responsive_design"
+      ],
+      "roles": [
+        "frontend_developer"
+      ]
+    },
+    "recruitment_selection": {
+      "concept_id": "recruitment_selection",
+      "title_fa": "فرایند جذب و استخدام",
+      "title_en": "Recruitment & selection",
+      "level": "junior",
+      "prerequisites": [
+        "hrm_fundamentals"
+      ],
+      "roles": [
+        "recruiter",
+        "hr_specialist"
+      ]
+    },
+    "requirements_engineering": {
+      "concept_id": "requirements_engineering",
+      "title_fa": "تحلیل و مهندسی نیازمندی‌ها",
+      "title_en": "Requirements engineering",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "business_analyst",
+        "product_manager",
+        "qa_engineer"
+      ]
+    },
+    "responsive_design": {
+      "concept_id": "responsive_design",
+      "title_fa": "طراحی واکنش‌گرا",
+      "title_en": "Responsive web design",
+      "level": "junior",
+      "prerequisites": [
+        "html_css"
+      ],
+      "roles": [
+        "frontend_developer"
+      ]
+    },
+    "risk_management": {
+      "concept_id": "risk_management",
+      "title_fa": "مدیریت ریسک",
+      "title_en": "Risk management",
+      "level": "senior",
+      "prerequisites": [
+        "internal_control"
+      ],
+      "roles": [
+        "auditor",
+        "financial_analyst",
+        "investment_analyst",
+        "project_manager"
+      ]
+    },
+    "sales_techniques": {
+      "concept_id": "sales_techniques",
+      "title_fa": "فنون فروش",
+      "title_en": "Sales techniques",
+      "level": "junior",
+      "prerequisites": [
+        "communication_skills"
+      ],
+      "roles": [
+        "sales_specialist"
+      ]
+    },
+    "scikit_learn": {
+      "concept_id": "scikit_learn",
+      "title_fa": "Scikit-learn",
+      "title_en": "Scikit-learn",
+      "level": "junior",
+      "prerequisites": [
+        "machine_learning_basics",
+        "pandas_numpy"
+      ],
+      "roles": [
+        "data_scientist",
+        "ml_engineer"
+      ]
+    },
+    "seo_basics": {
+      "concept_id": "seo_basics",
+      "title_fa": "مبانی سئو",
+      "title_en": "SEO basics",
+      "level": "junior",
+      "prerequisites": [
+        "digital_marketing_fundamentals",
+        "html_css"
+      ],
+      "roles": [
+        "seo_specialist",
+        "content_marketer",
+        "digital_marketer"
+      ]
+    },
+    "social_media_marketing": {
+      "concept_id": "social_media_marketing",
+      "title_fa": "بازاریابی در شبکه‌های اجتماعی",
+      "title_en": "Social media marketing",
+      "level": "junior",
+      "prerequisites": [
+        "digital_marketing_fundamentals"
+      ],
+      "roles": [
+        "social_media_specialist",
+        "digital_marketer",
+        "content_marketer"
+      ]
+    },
+    "software_testing_fundamentals": {
+      "concept_id": "software_testing_fundamentals",
+      "title_fa": "مبانی تست نرم‌افزار",
+      "title_en": "Software testing fundamentals",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "qa_engineer"
+      ]
+    },
+    "spark": {
+      "concept_id": "spark",
+      "title_fa": "Apache Spark",
+      "title_en": "Apache Spark",
+      "level": "mid",
+      "prerequisites": [
+        "etl_pipelines",
+        "python_basics"
+      ],
+      "roles": [
+        "data_engineer",
+        "data_scientist"
+      ]
+    },
+    "sql_advanced": {
+      "concept_id": "sql_advanced",
+      "title_fa": "SQL پیشرفته",
+      "title_en": "Advanced SQL",
+      "level": "mid",
+      "prerequisites": [
+        "sql_basics"
+      ],
+      "roles": [
+        "data_analyst",
+        "bi_developer",
+        "data_engineer"
+      ]
+    },
+    "sql_basics": {
+      "concept_id": "sql_basics",
+      "title_fa": "مبانی SQL",
+      "title_en": "SQL basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "backend_developer",
+        "data_analyst",
+        "bi_developer",
+        "data_engineer",
+        "data_scientist",
+        "financial_analyst",
+        "business_analyst"
+      ]
+    },
+    "stakeholder_management": {
+      "concept_id": "stakeholder_management",
+      "title_fa": "مدیریت ذی‌نفعان",
+      "title_en": "Stakeholder management",
+      "level": "mid",
+      "prerequisites": [
+        "project_management_fundamentals",
+        "communication_skills"
+      ],
+      "roles": [
+        "project_manager",
+        "product_manager",
+        "business_analyst"
+      ]
+    },
+    "state_management": {
+      "concept_id": "state_management",
+      "title_fa": "مدیریت State (Redux)",
+      "title_en": "State management (Redux)",
+      "level": "mid",
+      "prerequisites": [
+        "react"
+      ],
+      "roles": [
+        "frontend_developer"
+      ]
+    },
+    "statistics_basics": {
+      "concept_id": "statistics_basics",
+      "title_fa": "آمار مقدماتی",
+      "title_en": "Statistics basics",
+      "level": "junior",
+      "prerequisites": [],
+      "roles": [
+        "data_analyst",
+        "data_scientist",
+        "ml_engineer",
+        "financial_analyst",
+        "investment_analyst",
+        "business_analyst",
+        "digital_marketer"
+      ]
+    },
+    "swift_ios": {
+      "concept_id": "swift_ios",
+      "title_fa": "Swift و iOS",
+      "title_en": "Swift & iOS",
+      "level": "junior",
+      "prerequisites": [
+        "oop"
+      ],
+      "roles": [
+        "mobile_developer"
+      ]
+    },
+    "system_design": {
+      "concept_id": "system_design",
+      "title_fa": "طراحی سیستم",
+      "title_en": "System design",
+      "level": "senior",
+      "prerequisites": [
+        "database_design",
+        "networking_basics",
+        "caching_redis"
+      ],
+      "roles": [
+        "backend_developer",
+        "devops_engineer"
+      ]
+    },
+    "tableau": {
+      "concept_id": "tableau",
+      "title_fa": "Tableau",
+      "title_en": "Tableau",
+      "level": "mid",
+      "prerequisites": [
+        "data_visualization"
+      ],
+      "roles": [
+        "bi_developer",
+        "data_analyst"
+      ]
+    },
+    "talent_sourcing": {
+      "concept_id": "talent_sourcing",
+      "title_fa": "سورسینگ و جذب استعداد",
+      "title_en": "Talent sourcing (LinkedIn)",
+      "level": "mid",
+      "prerequisites": [
+        "recruitment_selection"
+      ],
+      "roles": [
+        "recruiter"
+      ]
+    },
+    "tax_returns": {
+      "concept_id": "tax_returns",
+      "title_fa": "تنظیم اظهارنامه مالیاتی",
+      "title_en": "Tax returns (Iran)",
+      "level": "mid",
+      "prerequisites": [
+        "direct_tax_law",
+        "vat",
+        "financial_accounting"
+      ],
+      "roles": [
+        "tax_specialist",
+        "accountant"
+      ]
+    },
+    "technical_analysis": {
+      "concept_id": "technical_analysis",
+      "title_fa": "تحلیل تکنیکال",
+      "title_en": "Technical analysis",
+      "level": "mid",
+      "prerequisites": [
+        "capital_markets_basics"
+      ],
+      "roles": [
+        "investment_analyst"
+      ]
+    },
+    "technical_seo": {
+      "concept_id": "technical_seo",
+      "title_fa": "سئو تکنیکال",
+      "title_en": "Technical SEO",
+      "level": "mid",
+      "prerequisites": [
+        "seo_basics"
+      ],
+      "roles": [
+        "seo_specialist"
+      ]
+    },
+    "test_automation": {
+      "concept_id": "test_automation",
+      "title_fa": "اتوماسیون تست (Selenium)",
+      "title_en": "Test automation (Selenium)",
+      "level": "mid",
+      "prerequisites": [
+        "software_testing_fundamentals",
+        "python_basics"
+      ],
+      "roles": [
+        "qa_engineer"
+      ]
+    },
+    "time_series": {
+      "concept_id": "time_series",
+      "title_fa": "تحلیل سری زمانی",
+      "title_en": "Time series analysis",
+      "level": "mid",
+      "prerequisites": [
+        "statistics_basics",
+        "pandas_numpy"
+      ],
+      "roles": [
+        "data_scientist",
+        "investment_analyst",
+        "financial_analyst"
+      ]
+    },
+    "typescript": {
+      "concept_id": "typescript",
+      "title_fa": "تایپ‌اسکریپت",
+      "title_en": "TypeScript",
+      "level": "mid",
+      "prerequisites": [
+        "javascript"
+      ],
+      "roles": [
+        "frontend_developer",
+        "backend_developer"
+      ]
+    },
+    "uml": {
+      "concept_id": "uml",
+      "title_fa": "UML",
+      "title_en": "UML",
+      "level": "mid",
+      "prerequisites": [
+        "oop",
+        "requirements_engineering"
+      ],
+      "roles": [
+        "business_analyst",
+        "backend_developer"
+      ]
+    },
+    "unit_testing": {
+      "concept_id": "unit_testing",
+      "title_fa": "تست‌نویسی و تست واحد",
+      "title_en": "Unit testing",
+      "level": "mid",
+      "prerequisites": [
+        "oop"
+      ],
+      "roles": [
+        "backend_developer",
+        "frontend_developer",
+        "mobile_developer",
+        "qa_engineer"
+      ]
+    },
+    "ux_user_research": {
+      "concept_id": "ux_user_research",
+      "title_fa": "تجربه کاربری و تحقیقات کاربر",
+      "title_en": "UX & user research",
+      "level": "mid",
+      "prerequisites": [
+        "product_management_fundamentals"
+      ],
+      "roles": [
+        "product_manager",
+        "business_analyst"
+      ]
+    },
+    "vat": {
+      "concept_id": "vat",
+      "title_fa": "مالیات بر ارزش افزوده",
+      "title_en": "Value added tax (Iran)",
+      "level": "mid",
+      "prerequisites": [
+        "accounting_principles"
+      ],
+      "roles": [
+        "tax_specialist",
+        "accountant"
+      ]
+    },
+    "video_editing": {
+      "concept_id": "video_editing",
+      "title_fa": "تدوین ویدیو",
+      "title_en": "Video editing",
+      "level": "mid",
+      "prerequisites": [
+        "graphic_design_basics"
+      ],
+      "roles": [
+        "social_media_specialist",
+        "content_marketer"
+      ]
+    },
+    "web_performance": {
+      "concept_id": "web_performance",
+      "title_fa": "بهینه‌سازی عملکرد وب",
+      "title_en": "Web performance optimization",
+      "level": "senior",
+      "prerequisites": [
+        "javascript",
+        "html_css"
+      ],
+      "roles": [
+        "frontend_developer"
+      ]
+    },
+    "web_security": {
+      "concept_id": "web_security",
+      "title_fa": "امنیت وب",
+      "title_en": "Web security (OWASP)",
+      "level": "mid",
+      "prerequisites": [
+        "http_rest_api"
+      ],
+      "roles": [
+        "backend_developer",
+        "frontend_developer",
+        "devops_engineer"
+      ]
+    },
+    "wordpress": {
+      "concept_id": "wordpress",
+      "title_fa": "وردپرس",
+      "title_en": "WordPress",
+      "level": "junior",
+      "prerequisites": [
+        "html_css"
+      ],
+      "roles": [
+        "seo_specialist",
+        "content_marketer"
+      ]
+    }
+  }
+}
