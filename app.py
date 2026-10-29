@@ -102,20 +102,33 @@ with st.sidebar:
         '<div class="brand-subtitle">دستیار ارزیابی مسیر شغلی</div></div></div>',
         unsafe_allow_html=True,
     )
-    st.caption("گفت‌وگویی کوتاه برای شناخت فاصلهٔ مهارتی و ساخت نقشهٔ راه معتبر")
-    mode = st.selectbox("نوع اجرا", ["دموی آفلاین", "API واقعی"], key="mode")
-    use_demo = st.checkbox("استفاده از تاکسونومی نمونه", value=True, key="demo_taxonomy")
+    st.caption("همراه شما برای ساختن یک مسیر شغلی روشن‌تر")
+    if "manager" in st.session_state:
+        sidebar_session = st.session_state.manager.get_or_create_session(st.session_state.session_id)
+        sidebar_completed, sidebar_total = _profile_progress(sidebar_session)
+        st.markdown("**پیشرفت شما**")
+        st.progress(sidebar_completed / sidebar_total, text=f"{sidebar_completed} از {sidebar_total} بخش کامل شده")
+
+    reset = st.button("شروع یک گفت‌وگوی جدید", width="stretch", key="reset")
+    st.markdown('<div class="soft-divider"></div>', unsafe_allow_html=True)
+    st.markdown("**حریم خصوصی شما**")
+    st.caption("گفت‌وگو و رزومه فقط در حافظهٔ همین نشست می‌ماند و خودکار ذخیره نمی‌شود.")
+
+    mode, use_demo = "دموی آفلاین", True
     uploaded = None
     taxonomy_path = ""
-    if not use_demo:
-        uploaded = st.file_uploader("تاکسونومی تیم گراف", type=["json"], key="taxonomy_upload")
-        taxonomy_path = st.text_input("یا مسیر فایل تاکسونومی", value=os.getenv("TAXONOMY_PATH", ""), key="taxonomy_path")
-
     api_key = base_url = model = ""
     fmt, protocol, budget = "json_object", "openai", 30000
-    if mode == "API واقعی":
-        st.caption("متن گفت‌وگو و رزومه برای استخراج به درگاه انتخابی فرستاده می‌شود.")
-        with st.expander("تنظیمات اتصال", expanded=True):
+    start = False
+    with st.expander("تنظیمات پیشرفته", expanded=False):
+        st.caption("این بخش برای مدیر سامانه و تیم توسعه است.")
+        mode = st.selectbox("موتور پردازش", ["دموی آفلاین", "API واقعی"], key="mode")
+        use_demo = st.checkbox("استفاده از دادهٔ نمونه", value=True, key="demo_taxonomy")
+        if not use_demo:
+            uploaded = st.file_uploader("فایل دادهٔ مسیرهای شغلی", type=["json"], key="taxonomy_upload")
+            taxonomy_path = st.text_input("یا مسیر فایل داده", value=os.getenv("TAXONOMY_PATH", ""), key="taxonomy_path")
+        if mode == "API واقعی":
+            st.caption("متن گفت‌وگو و رزومه برای استخراج به سرویس انتخابی ارسال می‌شود.")
             protocol = st.selectbox(
                 "پروتکل اتصال", ["openai", "gemini"],
                 index=1 if os.getenv("LLM_PROTOCOL", "openai") == "gemini" else 0,
@@ -128,11 +141,12 @@ with st.sidebar:
             default_fmt = os.getenv("LLM_RESPONSE_FORMAT", "json_object")
             fmt = st.selectbox("قالب خروجی", formats, index=formats.index(default_fmt) if default_fmt in formats else 0, key="format")
             budget = st.number_input("سقف توکن نشست", min_value=1000, value=int(os.getenv("MAX_SESSION_TOKENS", "30000")), step=1000, key="budget")
-
-    start = st.button("اعمال تنظیمات و شروع", type="primary", width="stretch", key="start")
-    reset = st.button("شروع دوباره", width="stretch", key="reset")
-    st.markdown('<div class="soft-divider"></div>', unsafe_allow_html=True)
-    st.caption("اطلاعات این نشست خودکار روی دیسک ذخیره نمی‌شود. دانلود خروجی فقط با انتخاب شما انجام می‌شود.")
+        start = st.button("ذخیره و شروع", type="primary", width="stretch", key="start")
+        if mode == "دموی آفلاین":
+            st.caption("برای ارائهٔ سریع می‌توانی یک نمونهٔ تکمیل‌شده بسازی.")
+            run_demo = st.button("نمایش نمونهٔ تکمیل‌شده", key="run_demo", width="stretch")
+        else:
+            run_demo = False
 
 if reset:
     for key in ("manager", "session_id", "latest", "active_mode", "active_demo", "resume_notice", "edit_synced"):
@@ -174,7 +188,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 if "manager" not in st.session_state:
-    st.info("تنظیمات را در نوار کناری کامل کن و «اعمال تنظیمات و شروع» را بزن.")
+    st.info("برای شروع، تنظیمات پیشرفته را از نوار کناری باز کن و «ذخیره و شروع» را بزن.")
     st.stop()
 
 manager = st.session_state.manager
@@ -186,35 +200,35 @@ latest = st.session_state.latest
 completed_fields, total_fields = _profile_progress(session)
 
 st.markdown(
-    '<div class="scope-note">◈ این دستیار فقط اطلاعات مرتبط با ارزیابی مسیر شغلی را پردازش می‌کند. '
-    'پیشنهادها صرفاً از تاکسونومی فعال ساخته می‌شوند و مهارت یا سابقه‌ای بدون گفتهٔ صریح شما ثبت نمی‌شود.</div>',
+    '<div class="scope-note">◈ برای حفظ دقت، این گفت‌وگو فقط روی هدف شغلی، تجربه‌ها و مهارت‌های شما تمرکز دارد. '
+    'هیچ مهارت یا سابقه‌ای بدون تأیید شما به پروفایل اضافه نمی‌شود.</div>',
     unsafe_allow_html=True,
 )
 if st.session_state.active_demo:
-    st.warning("نسخهٔ نمایشی با تاکسونومی نمونه و موتور مرجع اجرا می‌شود؛ برای تحویل تیمی، تاکسونومی و موتور نهایی را متصل کنید.")
+    st.caption("نسخهٔ آزمایشی · نتیجه‌ها بر پایهٔ داده‌های نمونه ساخته می‌شوند.")
 
-metric_1, metric_2, metric_3, metric_4 = st.columns(4)
-metric_1.metric("پیشرفت پروفایل", f"{completed_fields} / {total_fields}")
-metric_2.metric("پرسش‌های ارزیابی", f"{session.question_count} / 6")
-metric_3.metric("مهارت‌های ثبت‌شده", len(session.slots.known_concepts))
-metric_4.metric("وضعیت", "تکمیل" if latest.is_complete else "در حال بررسی")
+progress_col, progress_status = st.columns([4, 1])
+with progress_col:
+    st.progress(completed_fields / total_fields, text=f"پروفایل شما · {completed_fields} از {total_fields} بخش کامل شده")
+with progress_status:
+    st.markdown(
+        f'<div class="status-pill">● {"آماده" if latest.is_complete else "در حال تکمیل"}</div>',
+        unsafe_allow_html=True,
+    )
 
-chat_tab, graph_tab, profile_tab, team_tab = st.tabs(["گفت‌وگو", "نقشهٔ راه", "پروفایل", "حریم خصوصی و اتصال تیم"])
+chat_tab, graph_tab, profile_tab, team_tab = st.tabs(["گفت‌وگو", "مسیر پیشنهادی", "پروفایل من", "دربارهٔ مسیر"])
 
 with chat_tab:
     conversation_col, context_col = st.columns([1.7, .8], gap="large")
     with conversation_col:
-        st.markdown('<div class="panel-title">گفت‌وگو با مسیر</div>', unsafe_allow_html=True)
-        st.markdown('<div class="panel-copy">به پرسش فعلی پاسخ بده؛ هر زمان خواستی می‌توانی اطلاعات ثبت‌شده را از تب پروفایل اصلاح کنی.</div>', unsafe_allow_html=True)
-        if st.session_state.active_mode == "دموی آفلاین":
-            with st.expander("سناریوی آماده برای نمایش"):
-                st.caption("استخراج آفلاین محدود و مبتنی بر قواعد است؛ این سناریو مسیر کامل محصول را نشان می‌دهد.")
-                if st.button("اجرای نمونهٔ کامل", key="run_demo", width="stretch"):
-                    manager.reset_session(sid)
-                    manager.start_session(sid)
-                    for message in ["تحلیلگر داده", "جونیور", "دانشجوی مهندسی کامپیوتر هستم", "0 سال سابقه دارم و مبتدی هستم", "هیچ مهارتی ندارم", "تایید می‌کنم"]:
-                        st.session_state.latest = manager.handle_user_turn(sid, message)
-                    st.rerun()
+        st.markdown('<div class="panel-title">مشاور مسیر شغلی</div>', unsafe_allow_html=True)
+        st.markdown('<div class="panel-copy">با چند پاسخ کوتاه، تصویر دقیق‌تری از نقطهٔ فعلی و مقصد شغلی‌ات می‌سازیم.</div>', unsafe_allow_html=True)
+        if run_demo:
+            manager.reset_session(sid)
+            manager.start_session(sid)
+            for message in ["تحلیلگر داده", "جونیور", "دانشجوی مهندسی کامپیوتر هستم", "0 سال سابقه دارم و مبتدی هستم", "هیچ مهارتی ندارم", "تایید می‌کنم"]:
+                st.session_state.latest = manager.handle_user_turn(sid, message)
+            st.rerun()
         for message in session.history:
             with st.chat_message(message["role"]):
                 st.write(message["content"])
@@ -229,8 +243,8 @@ with chat_tab:
             st.rerun()
 
     with context_col:
-        st.markdown('<div class="panel-title">از روی رزومه شروع کن</div>', unsafe_allow_html=True)
-        st.markdown('<div class="panel-copy">رزومهٔ PDF، DOCX یا TXT را بارگذاری کن. متن آن فقط در حافظهٔ همین نشست بررسی می‌شود.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="panel-title">رزومه داری؟</div>', unsafe_allow_html=True)
+        st.markdown('<div class="panel-copy">با بارگذاری رزومه، بخشی از اطلاعات اولیه سریع‌تر تکمیل می‌شود. قبل از ساخت مسیر می‌توانی همه‌چیز را بازبینی کنی.</div>', unsafe_allow_html=True)
         resume_upload = st.file_uploader("رزومه", type=["pdf", "docx", "txt"], label_visibility="collapsed", key="resume_upload")
         process_resume = st.button("بررسی رزومه", type="primary", width="stretch", disabled=resume_upload is None, key="process_resume")
         if process_resume and resume_upload is not None:
@@ -248,7 +262,7 @@ with chat_tab:
         profile = session.slots
         skill_labels = [escape(manager.guardrail.concepts[item].label) for item in profile.known_concepts]
         st.markdown(
-            f'<div class="profile-card"><span class="status-pill">● پروفایل زنده</span>'
+            f'<div class="profile-card"><span class="status-pill">● خلاصهٔ شما</span>'
             f'<div class="label">نقش هدف</div><div class="value">{_role_label(manager, profile.target_role)}</div>'
             f'<div class="label">سطح هدف</div><div class="value">{LEVEL_LABELS.get(profile.target_level, "هنوز مشخص نشده")}</div>'
             f'<div class="label">سطح فعلی</div><div class="value">{LEVEL_LABELS.get(profile.current_level, "هنوز مشخص نشده")}</div>'
@@ -258,7 +272,7 @@ with chat_tab:
 
 with graph_tab:
     if latest.roadmap is None:
-        st.info("پس از تکمیل و تأیید پروفایل، نقشهٔ راه معتبر و خلاصهٔ فارسی اینجا نمایش داده می‌شود.")
+        st.info("وقتی پروفایل را کامل و تأیید کنی، مسیر پیشنهادی یادگیری اینجا آماده می‌شود.")
         if latest.is_complete and st.button("تلاش دوباره برای ساخت نقشه", key="retry_graph"):
             st.session_state.latest = manager.confirm_profile(sid)
             st.rerun()
@@ -266,22 +280,22 @@ with graph_tab:
         graph = latest.roadmap
         graph_col, summary_col = st.columns([1.25, 1], gap="large")
         with graph_col:
-            st.subheader("ترتیب یادگیری پیشنهادی")
+            st.subheader("گام‌های پیشنهادی یادگیری")
             if graph.nodes:
                 st.graphviz_chart(graphviz_dot(graph), width="stretch")
             else:
                 st.success("مفهومی برای یادگیری باقی نمانده است.")
-            st.caption("پیکان از پیش‌نیاز به مفهوم وابسته است و شماره‌ها ترتیب مطالعه را نشان می‌دهند.")
+            st.caption("شماره‌ها ترتیب پیشنهادی را نشان می‌دهند؛ هر پیکان یک پیش‌نیاز را به گام بعدی وصل می‌کند.")
         with summary_col:
             st.subheader("خلاصهٔ مسیر")
             st.write(latest.summary)
-            st.caption("این متن فقط از همان گراف تأییدشده ساخته شده و لینک یا زمان یادگیری تازه تولید نمی‌کند.")
+            st.caption("این خلاصه بر اساس اطلاعات تأییدشدهٔ پروفایل شما ساخته شده است.")
             st.download_button("دریافت نقشهٔ راه JSON", graph.model_dump_json(indent=2), "roadmap.json", "application/json", key="download_graph", width="stretch")
             st.download_button("دریافت خلاصهٔ فارسی", latest.summary, "summary_fa.txt", "text/plain", key="download_summary", width="stretch")
 
 with profile_tab:
-    st.subheader("پروفایل قابل‌ویرایش")
-    st.caption("هر اصلاح، تأیید و نقشهٔ قبلی را باطل می‌کند تا خروجی قدیمی نمایش داده نشود.")
+    st.subheader("پروفایل شغلی من")
+    st.caption("اطلاعات استخراج‌شده را مرور و در صورت نیاز اصلاح کن. مسیر پیشنهادی فقط بعد از تأیید نهایی ساخته می‌شود.")
     guardrail, profile = manager.guardrail, session.slots
     roles = list(guardrail.roles)
     levels, currents = ["junior", "mid", "senior"], ["beginner", "junior", "mid", "senior"]
@@ -313,25 +327,33 @@ with profile_tab:
     if st.button("تأیید نهایی و ساخت نقشهٔ راه", type="primary", key="confirm", width="stretch"):
         st.session_state.latest = manager.confirm_profile(sid)
         st.rerun()
-    with st.expander("مشاهده و دریافت دادهٔ پروفایل"):
+    with st.expander("دریافت نسخهٔ پروفایل"):
         st.json(latest.profile_json)
         st.download_button("دریافت پروفایل JSON", json.dumps(latest.profile_json, ensure_ascii=False, indent=2), "profile.json", "application/json", key="download_profile")
 
 with team_tab:
-    privacy_col, contract_col = st.columns(2, gap="large")
+    privacy_col, guide_col = st.columns(2, gap="large")
     with privacy_col:
-        st.subheader("حریم خصوصی و محدوده")
+        st.subheader("حریم خصوصی شما")
         st.markdown("""
 - گفت‌وگو و رزومه فقط در حافظهٔ نشست نگه‌داری می‌شوند.
-- در حالت API، متن برای استخراج به درگاه انتخابی شما ارسال می‌شود.
+- در حالت آنلاین، متن برای تحلیل به سرویس تنظیم‌شدهٔ سامانه ارسال می‌شود.
 - رزومه روی دیسک نوشته نمی‌شود و فایل‌های اسکن‌شده بدون متن پشتیبانی نمی‌شوند.
-- پاسخ‌ها فقط پروفایل شغلی، فاصلهٔ مهارتی و نقشهٔ راه تاکسونومی را پوشش می‌دهند.
+- این دستیار فقط پروفایل شغلی، فاصلهٔ مهارتی و مسیر یادگیری را پوشش می‌دهد.
 """)
-        st.caption(f"حالت فعال: {st.session_state.active_mode} · تاکسونومی: {manager.guardrail.taxonomy.version}")
-    with contract_col:
-        st.subheader("مرز اتصال تیم‌ها")
+    with guide_col:
+        st.subheader("چطور کار می‌کند؟")
+        st.markdown("""
+1. دربارهٔ هدف، تجربه و مهارت‌هایت گفت‌وگو می‌کنیم.
+2. تو پروفایل ساخته‌شده را مرور و تأیید می‌کنی.
+3. فاصلهٔ مهارتی و ترتیب پیشنهادی یادگیری نمایش داده می‌شود.
+
+هر زمان اطلاعاتت را اصلاح کنی، مسیر نیز بر اساس نسخهٔ تازه دوباره ساخته خواهد شد.
+""")
+    with st.expander("اطلاعات فنی برای تیم توسعه"):
+        st.caption(f"موتور فعال: {st.session_state.active_mode} · نسخهٔ داده: {manager.guardrail.taxonomy.version}")
         st.code("response = manager.handle_user_turn(session_id, user_text)\nresponse.profile_json\nresponse.roadmap\nresponse.summary", language="python")
-        st.write("رابط کاربری فقط TurnResponse را مصرف می‌کند. موتور تیم گراف با build_roadmap(profile, revision) متصل می‌شود و خروجی آن پیش از نمایش با قرارداد موجود اعتبارسنجی خواهد شد.")
-        with st.expander("آمار فنی نشست"):
-            st.json(session.usage.model_dump())
+        st.write("رابط کاربری فقط TurnResponse را مصرف می‌کند. موتور گراف با build_roadmap(profile, revision) متصل می‌شود و خروجی پیش از نمایش اعتبارسنجی خواهد شد.")
+        st.caption("آمار فنی نشست")
+        st.json(session.usage.model_dump())
         st.download_button("دریافت TurnResponse برای هماهنگی تیم", latest.model_dump_json(indent=2), "turn_response.json", "application/json", key="download_response", width="stretch")
