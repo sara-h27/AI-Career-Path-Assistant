@@ -1,0 +1,65 @@
+test_api_confirmation_local (test_core.APITests.test_api_confirmation_local) ... ok
+test_budget_blocks_network (test_core.APITests.test_budget_blocks_network) ... ok
+test_format_rejection_no_auto_retry (test_core.APITests.test_format_rejection_no_auto_retry) ... ok
+test_key_not_in_repr_or_outputs (test_core.APITests.test_key_not_in_repr_or_outputs) ... ok
+test_malformed_refusal_truncation (test_core.APITests.test_malformed_refusal_truncation) ... ok
+test_missing_usage_conservative_budget (test_core.APITests.test_missing_usage_conservative_budget) ... ok
+test_schema_format (test_core.APITests.test_schema_format) ... ok
+test_timeout_auth_and_no_logging (test_core.APITests.test_timeout_auth_and_no_logging) ... ok
+test_valid_request_and_usage (test_core.APITests.test_valid_request_and_usage) ... ok
+test_add_then_remove_and_regenerate (test_core.CoreTests.test_add_then_remove_and_regenerate) ... ok
+test_bad_adapter_never_crashes (test_core.CoreTests.test_bad_adapter_never_crashes) ... ok
+test_confirm_cannot_fill_missing (test_core.CoreTests.test_confirm_cannot_fill_missing) ... ok
+test_confirmation_can_be_withdrawn (test_core.CoreTests.test_confirmation_can_be_withdrawn) ... ok
+test_contract (test_core.CoreTests.test_contract) ... ok
+test_corrupt_or_partial_taxonomy_rejected (test_core.CoreTests.test_corrupt_or_partial_taxonomy_rejected) ... ok
+test_custom_file_alias (test_core.CoreTests.test_custom_file_alias) ... ok
+test_cycle_and_unknown_ref (test_core.CoreTests.test_cycle_and_unknown_ref) ... ok
+test_edit_role_invalidates_confirmation (test_core.CoreTests.test_edit_role_invalidates_confirmation) ... ok
+test_entire_taxonomy_graphs (test_core.CoreTests.test_entire_taxonomy_graphs) ... ok
+test_evidence_cannot_hide_hearsay (test_core.CoreTests.test_evidence_cannot_hide_hearsay) ... ok
+test_evidence_must_match_message_and_concept (test_core.CoreTests.test_evidence_must_match_message_and_concept) ... ok
+test_expiry (test_core.CoreTests.test_expiry) ... ok
+test_failed_graph_no_stale_summary (test_core.CoreTests.test_failed_graph_no_stale_summary) ... ok
+test_fallback_normalization (test_core.CoreTests.test_fallback_normalization) ... ok
+test_goals_are_not_practical_skills (test_core.CoreTests.test_goals_are_not_practical_skills) ... ok
+test_graph_validation_and_summary (test_core.CoreTests.test_graph_validation_and_summary) ... ok
+test_hazm_runtime_failure (test_core.CoreTests.test_hazm_runtime_failure) ... ok
+test_input_limit (test_core.CoreTests.test_input_limit) ... ok
+test_invalid_manual_edit_atomic (test_core.CoreTests.test_invalid_manual_edit_atomic) ... ok
+test_negative_confirmation_not_accepted (test_core.CoreTests.test_negative_confirmation_not_accepted) ... ok
+test_no_data_is_not_success_and_no_invented_level (test_core.CoreTests.test_no_data_is_not_success_and_no_invented_level) ... ok
+test_no_implicit_taxonomy (test_core.CoreTests.test_no_implicit_taxonomy) ... ok
+test_prune_and_aliases (test_core.CoreTests.test_prune_and_aliases) ... ok
+test_response_mutation_cannot_corrupt_session (test_core.CoreTests.test_response_mutation_cannot_corrupt_session) ... ok
+test_schema_constraints (test_core.CoreTests.test_schema_constraints) ... ok
+test_session_isolation (test_core.CoreTests.test_session_isolation) ... ok
+test_six_question_path_and_empty_skills (test_core.CoreTests.test_six_question_path_and_empty_skills) ... ok
+test_slot_skip (test_core.CoreTests.test_slot_skip) ... ok
+test_taxonomy_alias_collision (test_core.CoreTests.test_taxonomy_alias_collision) ... ok
+test_unknown_usage_does_not_show_partial_cost_as_total (test_core.CoreTests.test_unknown_usage_does_not_show_partial_cost_as_total) ... ok
+test_unknowns_not_public (test_core.CoreTests.test_unknowns_not_public) ... ok
+test_zero_gap_summary (test_core.CoreTests.test_zero_gap_summary) ... ok
+test_base_v1beta_not_duplicated (test_gemini.GeminiTests.test_base_v1beta_not_duplicated) ... ok
+test_malformed_and_bad_schema (test_gemini.GeminiTests.test_malformed_and_bad_schema) ... ok
+test_model_and_protocol_validation (test_gemini.GeminiTests.test_model_and_protocol_validation) ... ok
+test_native_request_and_usage (test_gemini.GeminiTests.test_native_request_and_usage) ... ok
+test_native_roundtrip_to_graph (test_gemini.GeminiTests.test_native_roundtrip_to_graph) ... ok
+test_refusal_and_truncation (test_gemini.GeminiTests.test_refusal_and_truncation) ... ok
+test_schema_and_prompt_modes (test_gemini.GeminiTests.test_schema_and_prompt_modes) ... ok
+test_thinking_text_not_parsed (test_gemini.GeminiTests.test_thinking_text_not_parsed) ... ok
+test_demo_graph_then_add_remove_reconfirm (test_ui.StreamlitTests.test_demo_graph_then_add_remove_reconfirm) ... 2026-10-29 12:07:27.137 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_initial_no_guesses (test_ui.StreamlitTests.test_initial_no_guesses) ... 2026-10-29 12:07:27.486 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_manual_edit_after_limit (test_ui.StreamlitTests.test_manual_edit_after_limit) ... 2026-10-29 12:07:27.638 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_missing_api_key_graceful (test_ui.StreamlitTests.test_missing_api_key_graceful) ... 2026-10-29 12:07:28.014 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_reset_is_private_fresh_session (test_ui.StreamlitTests.test_reset_is_private_fresh_session) ... 2026-10-29 12:07:28.211 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 1.444s
+
+OK

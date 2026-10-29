@@ -1,0 +1,795 @@
+{
+  "schema_version": "1.0",
+  "version": "demo-2026-10-v1",
+  "is_demo": true,
+  "concepts": [
+    {
+      "id": "computer_basics",
+      "label": "مبانی رایانه",
+      "aliases": [
+        "مبانی کامپیوتر"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "programming_basics",
+      "label": "مبانی برنامه‌نویسی",
+      "aliases": [
+        "برنامه نویسی"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "aliases": [
+        "پایتون",
+        "پایتن"
+      ],
+      "prerequisites": [
+        "programming_basics"
+      ]
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "aliases": [
+        "اس کیو ال",
+        "اس‌کیو‌ال",
+        "سیکوئل"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "git",
+      "label": "Git",
+      "aliases": [
+        "گیت"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "aliases": [
+        "لینوکس"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "aliases": [
+        "داکر"
+      ],
+      "prerequisites": [
+        "linux"
+      ]
+    },
+    {
+      "id": "rest_api",
+      "label": "REST API",
+      "aliases": [
+        "rest"
+      ],
+      "prerequisites": [
+        "programming_basics"
+      ]
+    },
+    {
+      "id": "postgresql",
+      "label": "PostgreSQL",
+      "aliases": [
+        "postgres",
+        "پستگرس"
+      ],
+      "prerequisites": [
+        "sql"
+      ]
+    },
+    {
+      "id": "redis",
+      "label": "Redis",
+      "aliases": [
+        "ردیس"
+      ],
+      "prerequisites": [
+        "programming_basics"
+      ]
+    },
+    {
+      "id": "system_design",
+      "label": "طراحی سیستم",
+      "aliases": [
+        "system design"
+      ],
+      "prerequisites": [
+        "rest_api",
+        "postgresql"
+      ]
+    },
+    {
+      "id": "distributed_systems",
+      "label": "سیستم‌های توزیع‌شده",
+      "aliases": [
+        "distributed systems"
+      ],
+      "prerequisites": [
+        "system_design"
+      ]
+    },
+    {
+      "id": "ci_cd",
+      "label": "CI/CD",
+      "aliases": [
+        "ci cd"
+      ],
+      "prerequisites": [
+        "git",
+        "docker"
+      ]
+    },
+    {
+      "id": "javascript",
+      "label": "JavaScript",
+      "aliases": [
+        "جاوا اسکریپت",
+        "جاوااسکریپت"
+      ],
+      "prerequisites": [
+        "programming_basics"
+      ]
+    },
+    {
+      "id": "typescript",
+      "label": "TypeScript",
+      "aliases": [
+        "تایپ اسکریپت",
+        "تایپ‌اسکریپت"
+      ],
+      "prerequisites": [
+        "javascript"
+      ]
+    },
+    {
+      "id": "html_css",
+      "label": "HTML و CSS",
+      "aliases": [
+        "html css",
+        "html/css"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "react",
+      "label": "React",
+      "aliases": [
+        "ری اکت",
+        "ری‌اکت"
+      ],
+      "prerequisites": [
+        "javascript",
+        "html_css"
+      ]
+    },
+    {
+      "id": "testing",
+      "label": "آزمون نرم‌افزار",
+      "aliases": [
+        "software testing"
+      ],
+      "prerequisites": [
+        "programming_basics"
+      ]
+    },
+    {
+      "id": "mobile_basics",
+      "label": "مبانی توسعهٔ موبایل",
+      "aliases": [
+        "mobile development"
+      ],
+      "prerequisites": [
+        "programming_basics"
+      ]
+    },
+    {
+      "id": "excel",
+      "label": "Excel",
+      "aliases": [
+        "اکسل",
+        "spreadsheets"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "statistics",
+      "label": "آمار",
+      "aliases": [
+        "statistics"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "pandas",
+      "label": "Pandas",
+      "aliases": [
+        "پانداس"
+      ],
+      "prerequisites": [
+        "python"
+      ]
+    },
+    {
+      "id": "numpy",
+      "label": "NumPy",
+      "aliases": [
+        "نامپای"
+      ],
+      "prerequisites": [
+        "python"
+      ]
+    },
+    {
+      "id": "power_bi",
+      "label": "Power BI",
+      "aliases": [
+        "powerbi",
+        "پاور بی آی"
+      ],
+      "prerequisites": [
+        "excel"
+      ]
+    },
+    {
+      "id": "tableau",
+      "label": "Tableau",
+      "aliases": [
+        "تبلو"
+      ],
+      "prerequisites": [
+        "statistics"
+      ]
+    },
+    {
+      "id": "machine_learning",
+      "label": "یادگیری ماشین",
+      "aliases": [
+        "machine learning",
+        "ml"
+      ],
+      "prerequisites": [
+        "statistics",
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "id": "deep_learning",
+      "label": "یادگیری عمیق",
+      "aliases": [
+        "deep learning",
+        "dl"
+      ],
+      "prerequisites": [
+        "machine_learning"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "label": "PyTorch",
+      "aliases": [
+        "پای تورچ"
+      ],
+      "prerequisites": [
+        "deep_learning",
+        "python"
+      ]
+    },
+    {
+      "id": "airflow",
+      "label": "Airflow",
+      "aliases": [
+        "ایرفلو"
+      ],
+      "prerequisites": [
+        "python",
+        "sql"
+      ]
+    },
+    {
+      "id": "spark",
+      "label": "Spark",
+      "aliases": [
+        "اسپارک"
+      ],
+      "prerequisites": [
+        "python",
+        "sql"
+      ]
+    },
+    {
+      "id": "agile",
+      "label": "Agile",
+      "aliases": [
+        "اجایل"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "scrum",
+      "label": "Scrum",
+      "aliases": [
+        "اسکرام"
+      ],
+      "prerequisites": [
+        "agile"
+      ]
+    },
+    {
+      "id": "user_research",
+      "label": "پژوهش کاربر",
+      "aliases": [
+        "user research"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "product_strategy",
+      "label": "استراتژی محصول",
+      "aliases": [
+        "product strategy"
+      ],
+      "prerequisites": [
+        "user_research"
+      ]
+    },
+    {
+      "id": "seo",
+      "label": "SEO",
+      "aliases": [
+        "سئو"
+      ],
+      "prerequisites": [
+        "computer_basics"
+      ]
+    },
+    {
+      "id": "google_analytics",
+      "label": "Google Analytics",
+      "aliases": [
+        "گوگل آنالیتیکس"
+      ],
+      "prerequisites": [
+        "statistics"
+      ]
+    },
+    {
+      "id": "accounting",
+      "label": "حسابداری",
+      "aliases": [
+        "accounting"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "financial_modeling",
+      "label": "مدل‌سازی مالی",
+      "aliases": [
+        "financial modeling"
+      ],
+      "prerequisites": [
+        "accounting",
+        "excel"
+      ]
+    },
+    {
+      "id": "recruiting",
+      "label": "جذب و استخدام",
+      "aliases": [
+        "recruiting"
+      ],
+      "prerequisites": []
+    },
+    {
+      "id": "interviewing",
+      "label": "مصاحبهٔ استخدامی",
+      "aliases": [
+        "interviewing"
+      ],
+      "prerequisites": [
+        "recruiting"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "backend_developer",
+      "label": "توسعه‌دهندهٔ بک‌اند",
+      "domain": "software",
+      "aliases": [
+        "backend",
+        "backend developer",
+        "بک اند",
+        "بک‌اند",
+        "برنامه نویس بک اند"
+      ],
+      "requirements": {
+        "junior": [
+          "python",
+          "sql",
+          "git",
+          "rest_api"
+        ],
+        "mid": [
+          "docker",
+          "git",
+          "postgresql",
+          "python",
+          "rest_api",
+          "sql",
+          "testing"
+        ],
+        "senior": [
+          "distributed_systems",
+          "docker",
+          "git",
+          "postgresql",
+          "python",
+          "redis",
+          "rest_api",
+          "sql",
+          "system_design",
+          "testing"
+        ]
+      }
+    },
+    {
+      "id": "frontend_developer",
+      "label": "توسعه‌دهندهٔ فرانت‌اند",
+      "domain": "software",
+      "aliases": [
+        "frontend",
+        "فرانت اند",
+        "فرانت‌اند"
+      ],
+      "requirements": {
+        "junior": [
+          "html_css",
+          "javascript",
+          "git"
+        ],
+        "mid": [
+          "git",
+          "html_css",
+          "javascript",
+          "react",
+          "testing",
+          "typescript"
+        ],
+        "senior": [
+          "ci_cd",
+          "git",
+          "html_css",
+          "javascript",
+          "react",
+          "system_design",
+          "testing",
+          "typescript"
+        ]
+      }
+    },
+    {
+      "id": "devops_engineer",
+      "label": "مهندس دواپس",
+      "domain": "software",
+      "aliases": [
+        "devops",
+        "دواپس"
+      ],
+      "requirements": {
+        "junior": [
+          "linux",
+          "git",
+          "docker"
+        ],
+        "mid": [
+          "ci_cd",
+          "docker",
+          "git",
+          "linux",
+          "python"
+        ],
+        "senior": [
+          "ci_cd",
+          "distributed_systems",
+          "docker",
+          "git",
+          "linux",
+          "python",
+          "system_design"
+        ]
+      }
+    },
+    {
+      "id": "mobile_developer",
+      "label": "توسعه‌دهندهٔ موبایل",
+      "domain": "software",
+      "aliases": [
+        "mobile developer",
+        "برنامه نویس موبایل"
+      ],
+      "requirements": {
+        "junior": [
+          "mobile_basics",
+          "git"
+        ],
+        "mid": [
+          "git",
+          "mobile_basics",
+          "rest_api",
+          "testing"
+        ],
+        "senior": [
+          "ci_cd",
+          "git",
+          "mobile_basics",
+          "rest_api",
+          "system_design",
+          "testing"
+        ]
+      }
+    },
+    {
+      "id": "data_analyst",
+      "label": "تحلیلگر داده",
+      "domain": "data",
+      "aliases": [
+        "data analyst",
+        "دیتا آنالیست"
+      ],
+      "requirements": {
+        "junior": [
+          "excel",
+          "sql",
+          "statistics"
+        ],
+        "mid": [
+          "excel",
+          "pandas",
+          "power_bi",
+          "sql",
+          "statistics"
+        ],
+        "senior": [
+          "excel",
+          "machine_learning",
+          "pandas",
+          "power_bi",
+          "sql",
+          "statistics",
+          "tableau"
+        ]
+      }
+    },
+    {
+      "id": "data_scientist",
+      "label": "دانشمند داده",
+      "domain": "data",
+      "aliases": [
+        "data scientist",
+        "دیتا ساینتیست"
+      ],
+      "requirements": {
+        "junior": [
+          "python",
+          "statistics",
+          "pandas",
+          "sql"
+        ],
+        "mid": [
+          "machine_learning",
+          "pandas",
+          "python",
+          "sql",
+          "statistics"
+        ],
+        "senior": [
+          "deep_learning",
+          "machine_learning",
+          "pandas",
+          "python",
+          "spark",
+          "sql",
+          "statistics"
+        ]
+      }
+    },
+    {
+      "id": "ml_engineer",
+      "label": "مهندس یادگیری ماشین",
+      "domain": "data",
+      "aliases": [
+        "ml engineer",
+        "machine learning engineer"
+      ],
+      "requirements": {
+        "junior": [
+          "python",
+          "machine_learning",
+          "git"
+        ],
+        "mid": [
+          "docker",
+          "git",
+          "machine_learning",
+          "python",
+          "pytorch"
+        ],
+        "senior": [
+          "ci_cd",
+          "distributed_systems",
+          "docker",
+          "git",
+          "machine_learning",
+          "python",
+          "pytorch"
+        ]
+      }
+    },
+    {
+      "id": "data_engineer",
+      "label": "مهندس داده",
+      "domain": "data",
+      "aliases": [
+        "data engineer"
+      ],
+      "requirements": {
+        "junior": [
+          "python",
+          "sql",
+          "git"
+        ],
+        "mid": [
+          "airflow",
+          "git",
+          "postgresql",
+          "python",
+          "sql"
+        ],
+        "senior": [
+          "airflow",
+          "distributed_systems",
+          "git",
+          "postgresql",
+          "python",
+          "spark",
+          "sql"
+        ]
+      }
+    },
+    {
+      "id": "product_manager",
+      "label": "مدیر محصول",
+      "domain": "business",
+      "aliases": [
+        "product manager",
+        "پروداکت منیجر"
+      ],
+      "requirements": {
+        "junior": [
+          "user_research",
+          "agile"
+        ],
+        "mid": [
+          "agile",
+          "product_strategy",
+          "scrum",
+          "user_research"
+        ],
+        "senior": [
+          "agile",
+          "google_analytics",
+          "product_strategy",
+          "scrum",
+          "statistics",
+          "user_research"
+        ]
+      }
+    },
+    {
+      "id": "digital_marketer",
+      "label": "کارشناس بازاریابی دیجیتال",
+      "domain": "business",
+      "aliases": [
+        "digital marketer",
+        "دیجیتال مارکتر"
+      ],
+      "requirements": {
+        "junior": [
+          "seo",
+          "excel"
+        ],
+        "mid": [
+          "excel",
+          "google_analytics",
+          "seo"
+        ],
+        "senior": [
+          "excel",
+          "google_analytics",
+          "product_strategy",
+          "seo",
+          "user_research"
+        ]
+      }
+    },
+    {
+      "id": "financial_analyst",
+      "label": "تحلیلگر مالی",
+      "domain": "business",
+      "aliases": [
+        "financial analyst"
+      ],
+      "requirements": {
+        "junior": [
+          "accounting",
+          "excel"
+        ],
+        "mid": [
+          "accounting",
+          "excel",
+          "financial_modeling",
+          "statistics"
+        ],
+        "senior": [
+          "accounting",
+          "excel",
+          "financial_modeling",
+          "power_bi",
+          "sql",
+          "statistics"
+        ]
+      }
+    },
+    {
+      "id": "hr_recruiter",
+      "label": "کارشناس جذب و استخدام",
+      "domain": "business",
+      "aliases": [
+        "recruiter",
+        "منابع انسانی"
+      ],
+      "requirements": {
+        "junior": [
+          "recruiting"
+        ],
+        "mid": [
+          "excel",
+          "interviewing",
+          "recruiting"
+        ],
+        "senior": [
+          "excel",
+          "interviewing",
+          "recruiting",
+          "statistics",
+          "user_research"
+        ]
+      }
+    }
+  ]
+}

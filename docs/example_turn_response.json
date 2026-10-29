@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "message": "پروفایل تأیید شد و گراف و خلاصهٔ آن آماده است.",
+  "is_complete": true,
+  "profile_json": {
+    "target_role": "data_analyst",
+    "target_level": "junior",
+    "current_level": "beginner",
+    "education": "دانشجو هستم",
+    "experience_years": 0.0,
+    "known_concepts": [],
+    "is_confirmed": true
+  },
+  "current_state": "COMPLETED",
+  "status": "complete",
+  "turn_count": 6,
+  "question_count": 6,
+  "assessment_finished": true,
+  "profile_revision": 5,
+  "warnings": [],
+  "roadmap": {
+    "schema_version": "1.0",
+    "taxonomy_version": "demo-2026-10-v1",
+    "profile_revision": 5,
+    "profile_fingerprint": "c1b2f3fa01f74ae30e3cd849cdeb8eb87f05c121ee9440e9286f4522260120b1",
+    "target_role": "data_analyst",
+    "target_level": "junior",
+    "nodes": [
+      {
+        "id": "computer_basics",
+        "label": "مبانی رایانه"
+      },
+      {
+        "id": "excel",
+        "label": "Excel"
+      },
+      {
+        "id": "sql",
+        "label": "SQL"
+      },
+      {
+        "id": "statistics",
+        "label": "آمار"
+      }
+    ],
+    "edges": [
+      {
+        "source": "computer_basics",
+        "target": "excel"
+      },
+      {
+        "source": "computer_basics",
+        "target": "sql"
+      },
+      {
+        "source": "computer_basics",
+        "target": "statistics"
+      }
+    ],
+    "study_order": [
+      "computer_basics",
+      "excel",
+      "sql",
+      "statistics"
+    ]
+  },
+  "summary": "گراف فعلی شامل 4 مفهوم برای یادگیری است. ترتیب پیشنهادی:\n1. مبانی رایانه\n2. Excel\n3. SQL\n4. آمار\nپیش‌نیازهای نمایش‌داده‌شده در گراف:\n• مبانی رایانه پیش‌نیازِ Excel است.\n• مبانی رایانه پیش‌نیازِ SQL است.\n• مبانی رایانه پیش‌نیازِ آمار است.",
+  "usage": {
+    "api_calls": 0,
+    "failed_calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "budget_tokens": 0,
+    "usage_missing_calls": 0,
+    "estimated_cost_usd": null,
+    "last_latency_ms": 0.0
+  }
+}

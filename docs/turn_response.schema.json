@@ -1,0 +1,277 @@
+{
+  "$defs": {
+    "DialogueState": {
+      "enum": [
+        "ROLE",
+        "TARGET_SENIORITY",
+        "EDUCATION",
+        "EXPERIENCE_AND_CURRENT_LEVEL",
+        "TOOLS_SKILLS",
+        "CONFIRMATION",
+        "COMPLETED",
+        "INCOMPLETE"
+      ],
+      "title": "DialogueState",
+      "type": "string"
+    },
+    "Roadmap": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "taxonomy_version": {
+          "title": "Taxonomy Version",
+          "type": "string"
+        },
+        "profile_revision": {
+          "title": "Profile Revision",
+          "type": "integer"
+        },
+        "profile_fingerprint": {
+          "title": "Profile Fingerprint",
+          "type": "string"
+        },
+        "target_role": {
+          "title": "Target Role",
+          "type": "string"
+        },
+        "target_level": {
+          "enum": [
+            "junior",
+            "mid",
+            "senior"
+          ],
+          "title": "Target Level",
+          "type": "string"
+        },
+        "nodes": {
+          "items": {
+            "$ref": "#/$defs/RoadmapNode"
+          },
+          "title": "Nodes",
+          "type": "array"
+        },
+        "edges": {
+          "items": {
+            "$ref": "#/$defs/RoadmapEdge"
+          },
+          "title": "Edges",
+          "type": "array"
+        },
+        "study_order": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Study Order",
+          "type": "array"
+        }
+      },
+      "required": [
+        "taxonomy_version",
+        "profile_revision",
+        "profile_fingerprint",
+        "target_role",
+        "target_level",
+        "nodes",
+        "edges",
+        "study_order"
+      ],
+      "title": "Roadmap",
+      "type": "object"
+    },
+    "RoadmapEdge": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "target": {
+          "title": "Target",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "target"
+      ],
+      "title": "RoadmapEdge",
+      "type": "object"
+    },
+    "RoadmapNode": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ],
+      "title": "RoadmapNode",
+      "type": "object"
+    },
+    "Usage": {
+      "additionalProperties": false,
+      "properties": {
+        "api_calls": {
+          "default": 0,
+          "title": "Api Calls",
+          "type": "integer"
+        },
+        "failed_calls": {
+          "default": 0,
+          "title": "Failed Calls",
+          "type": "integer"
+        },
+        "prompt_tokens": {
+          "default": 0,
+          "title": "Prompt Tokens",
+          "type": "integer"
+        },
+        "completion_tokens": {
+          "default": 0,
+          "title": "Completion Tokens",
+          "type": "integer"
+        },
+        "budget_tokens": {
+          "default": 0,
+          "title": "Budget Tokens",
+          "type": "integer"
+        },
+        "usage_missing_calls": {
+          "default": 0,
+          "title": "Usage Missing Calls",
+          "type": "integer"
+        },
+        "estimated_cost_usd": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Estimated Cost Usd"
+        },
+        "last_latency_ms": {
+          "default": 0,
+          "title": "Last Latency Ms",
+          "type": "number"
+        }
+      },
+      "title": "Usage",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "is_complete": {
+      "title": "Is Complete",
+      "type": "boolean"
+    },
+    "profile_json": {
+      "additionalProperties": true,
+      "title": "Profile Json",
+      "type": "object"
+    },
+    "current_state": {
+      "$ref": "#/$defs/DialogueState"
+    },
+    "status": {
+      "enum": [
+        "collecting",
+        "awaiting_confirmation",
+        "complete",
+        "incomplete",
+        "error"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "turn_count": {
+      "title": "Turn Count",
+      "type": "integer"
+    },
+    "question_count": {
+      "title": "Question Count",
+      "type": "integer"
+    },
+    "assessment_finished": {
+      "title": "Assessment Finished",
+      "type": "boolean"
+    },
+    "profile_revision": {
+      "title": "Profile Revision",
+      "type": "integer"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "roadmap": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Roadmap"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "summary": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Summary"
+    },
+    "usage": {
+      "$ref": "#/$defs/Usage"
+    }
+  },
+  "required": [
+    "message",
+    "is_complete",
+    "profile_json",
+    "current_state",
+    "status",
+    "turn_count",
+    "question_count",
+    "assessment_finished",
+    "profile_revision"
+  ],
+  "title": "TurnResponse",
+  "type": "object"
+}

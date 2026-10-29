@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+!.env.metis.example
+.venv/
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+.pytest_cache/
+private_data/
