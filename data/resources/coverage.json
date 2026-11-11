@@ -1,0 +1,872 @@
+[
+ {
+  "concept_id": "growth_marketing",
+  "total": 3,
+  "fa_accessible": 0,
+  "free": 2
+ },
+ {
+  "concept_id": "product_analytics",
+  "total": 3,
+  "fa_accessible": 0,
+  "free": 2
+ },
+ {
+  "concept_id": "jetpack_compose",
+  "total": 3,
+  "fa_accessible": 1,
+  "free": 2
+ },
+ {
+  "concept_id": "design_patterns",
+  "total": 4,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "caching_redis",
+  "total": 4,
+  "fa_accessible": 2,
+  "free": 2
+ },
+ {
+  "concept_id": "message_queues",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "distributed_systems",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "monitoring_observability",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "swift_ios",
+  "total": 4,
+  "fa_accessible": 2,
+  "free": 2
+ },
+ {
+  "concept_id": "mobile_architecture",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "data_modeling",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "hypothesis_testing",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 4
+ },
+ {
+  "concept_id": "scikit_learn",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "feature_engineering",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "cost_accounting",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "vat",
+  "total": 4,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "accounting_standards",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "internal_control",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "budgeting_forecasting",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "sales_techniques",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "negotiation",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 4
+ },
+ {
+  "concept_id": "performance_management",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "uml",
+  "total": 4,
+  "fa_accessible": 1,
+  "free": 3
+ },
+ {
+  "concept_id": "microservices",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "nginx",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "state_management",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "api_testing",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "performance_testing",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "pandas_numpy",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "data_cleaning",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "data_warehousing",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "ab_testing",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 2
+ },
+ {
+  "concept_id": "accounting_software",
+  "total": 5,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "payroll_insurance",
+  "total": 5,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "direct_tax_law",
+  "total": 5,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "tax_returns",
+  "total": 5,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "financial_modeling",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "financial_math",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "portfolio_management",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "seo_basics",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 2
+ },
+ {
+  "concept_id": "technical_seo",
+  "total": 5,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "instagram_marketing",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "employer_branding",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "labor_law",
+  "total": 5,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "compensation_benefits",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "stakeholder_management",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "product_strategy",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "requirements_engineering",
+  "total": 5,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "git",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "linux_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "bash_scripting",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "networking_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "python_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "oop",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "data_structures_algorithms",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 5
+ },
+ {
+  "concept_id": "http_rest_api",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "sql_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "sql_advanced",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "database_design",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 4
+ },
+ {
+  "concept_id": "nosql_mongodb",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "django",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "nodejs",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 4
+ },
+ {
+  "concept_id": "unit_testing",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "web_security",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "docker",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "kubernetes",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "ci_cd",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "system_design",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "cloud_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "infrastructure_as_code",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "html_css",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "javascript",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "typescript",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "responsive_design",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "react",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "nextjs",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "web_performance",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "kotlin",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "android_development",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "flutter_dart",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "software_testing_fundamentals",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "test_automation",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "agile_scrum",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "excel_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "excel_advanced",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "statistics_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "probability",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "linear_algebra",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 4
+ },
+ {
+  "concept_id": "data_visualization",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "power_bi",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "tableau",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "dax",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "etl_pipelines",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "airflow",
+  "total": 6,
+  "fa_accessible": 2,
+  "free": 3
+ },
+ {
+  "concept_id": "spark",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "kafka_streaming",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 4
+ },
+ {
+  "concept_id": "machine_learning_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "deep_learning",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "pytorch",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "nlp",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "computer_vision",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "time_series",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "mlops",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "llm_applications",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "accounting_principles",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "financial_accounting",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "auditing_fundamentals",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "risk_management",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "financial_statement_analysis",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "corporate_valuation",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "capital_markets_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "fundamental_analysis",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "technical_analysis",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "marketing_fundamentals",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "digital_marketing_fundamentals",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "keyword_research",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "link_building",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "wordpress",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "copywriting",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "content_strategy",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "social_media_marketing",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "graphic_design_basics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "video_editing",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "google_ads",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "google_analytics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "email_marketing",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "branding",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 4
+ },
+ {
+  "concept_id": "b2b_sales",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "crm",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "market_research",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "communication_skills",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "presentation_skills",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "hrm_fundamentals",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "recruitment_selection",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "interviewing_techniques",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "talent_sourcing",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "hr_analytics",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "project_management_fundamentals",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "project_tools",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "project_control",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "leadership",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "product_management_fundamentals",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "ux_user_research",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "bpmn_process_modeling",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ },
+ {
+  "concept_id": "business_model",
+  "total": 6,
+  "fa_accessible": 3,
+  "free": 3
+ }
+]

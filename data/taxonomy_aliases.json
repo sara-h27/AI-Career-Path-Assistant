@@ -1,0 +1,1277 @@
+{
+  "note": "Exact-match synonyms used to recognise roles/concepts in chat and resumes. Each alias must map to ONE id (build fails on ambiguity). Keep them specific: no generic words like 'test' or 'api'. The id, title_fa and title_en are added automatically.",
+  "roles": {
+    "backend_developer": [
+      "بک‌اند",
+      "بک اند",
+      "برنامه‌نویس بک‌اند",
+      "برنامه نویس بک اند",
+      "توسعه دهنده بک اند",
+      "backend",
+      "back-end developer",
+      "backend engineer",
+      "برنامه‌نویس پایتون",
+      "python developer",
+      "django developer"
+    ],
+    "frontend_developer": [
+      "فرانت‌اند",
+      "فرانت اند",
+      "برنامه‌نویس فرانت‌اند",
+      "برنامه نویس فرانت اند",
+      "frontend",
+      "front-end developer",
+      "frontend engineer",
+      "react developer"
+    ],
+    "mobile_developer": [
+      "برنامه‌نویس موبایل",
+      "برنامه نویس موبایل",
+      "برنامه‌نویس اندروید",
+      "برنامه نویس اندروید",
+      "android developer",
+      "flutter developer",
+      "ios developer",
+      "mobile developer"
+    ],
+    "devops_engineer": [
+      "دواپس",
+      "devops",
+      "sre",
+      "site reliability engineer",
+      "مهندس دواپس"
+    ],
+    "qa_engineer": [
+      "تستر",
+      "تستر نرم‌افزار",
+      "تستر نرم افزار",
+      "مهندس تست",
+      "qa",
+      "software tester",
+      "quality assurance engineer"
+    ],
+    "data_analyst": [
+      "تحلیلگر داده",
+      "تحلیل‌گر داده",
+      "دیتا آنالیست",
+      "دیتا انالیست",
+      "data analyst",
+      "کارشناس تحلیل داده"
+    ],
+    "bi_developer": [
+      "هوش تجاری",
+      "bi developer",
+      "business intelligence developer",
+      "کارشناس هوش تجاری",
+      "power bi developer"
+    ],
+    "data_engineer": [
+      "مهندس داده",
+      "دیتا اینجینیر",
+      "data engineer"
+    ],
+    "data_scientist": [
+      "دانشمند داده",
+      "دیتا ساینتیست",
+      "data scientist"
+    ],
+    "ml_engineer": [
+      "مهندس یادگیری ماشین",
+      "مهندس هوش مصنوعی",
+      "machine learning engineer",
+      "ml engineer",
+      "ai engineer",
+      "متخصص یادگیری ماشین"
+    ],
+    "accountant": [
+      "حسابدار",
+      "کارمند حسابداری",
+      "کارشناس حسابداری",
+      "accountant"
+    ],
+    "financial_analyst": [
+      "تحلیلگر مالی",
+      "تحلیل‌گر مالی",
+      "کارشناس مالی",
+      "financial analyst"
+    ],
+    "auditor": [
+      "حسابرس",
+      "حسابرس داخلی",
+      "auditor",
+      "internal auditor"
+    ],
+    "tax_specialist": [
+      "کارشناس مالیاتی",
+      "کارشناس امور مالیاتی",
+      "tax specialist",
+      "tax accountant"
+    ],
+    "investment_analyst": [
+      "تحلیلگر بازار سرمایه",
+      "تحلیلگر بورس",
+      "کارشناس سرمایه‌گذاری",
+      "investment analyst",
+      "equity analyst"
+    ],
+    "digital_marketer": [
+      "دیجیتال مارکتر",
+      "کارشناس دیجیتال مارکتینگ",
+      "کارشناس بازاریابی دیجیتال",
+      "digital marketer",
+      "digital marketing specialist",
+      "performance marketer"
+    ],
+    "seo_specialist": [
+      "کارشناس سئو",
+      "متخصص سئو",
+      "seo specialist",
+      "seo expert"
+    ],
+    "content_marketer": [
+      "کارشناس تولید محتوا",
+      "تولیدکننده محتوا",
+      "تولید کننده محتوا",
+      "محتوانویس",
+      "content marketer",
+      "content writer"
+    ],
+    "social_media_specialist": [
+      "کارشناس شبکه‌های اجتماعی",
+      "کارشناس شبکه های اجتماعی",
+      "ادمین اینستاگرام",
+      "سوشال مدیا منیجر",
+      "social media specialist",
+      "social media manager"
+    ],
+    "sales_specialist": [
+      "کارشناس فروش",
+      "فروشنده",
+      "کارشناس توسعه بازار",
+      "sales specialist",
+      "sales representative",
+      "sales expert"
+    ],
+    "recruiter": [
+      "کارشناس جذب و استخدام",
+      "کارشناس جذب",
+      "کارشناس جذب استعداد",
+      "ریکروتر",
+      "recruiter",
+      "talent acquisition specialist"
+    ],
+    "hr_specialist": [
+      "کارشناس منابع انسانی",
+      "کارشناس اداری و منابع انسانی",
+      "hr specialist",
+      "hr generalist",
+      "human resources specialist"
+    ],
+    "project_manager": [
+      "مدیر پروژه",
+      "کارشناس کنترل پروژه",
+      "project manager",
+      "scrum master",
+      "اسکرام مستر"
+    ],
+    "product_manager": [
+      "مدیر محصول",
+      "مالک محصول",
+      "product manager",
+      "product owner",
+      "پروداکت منیجر"
+    ],
+    "business_analyst": [
+      "تحلیلگر کسب‌وکار",
+      "تحلیلگر کسب و کار",
+      "تحلیل‌گر کسب‌وکار",
+      "business analyst",
+      "کارشناس تحلیل کسب و کار"
+    ]
+  },
+  "concepts": {
+    "git": [
+      "گیت",
+      "github",
+      "گیت‌هاب",
+      "گیت هاب",
+      "gitlab",
+      "version control",
+      "کنترل نسخه"
+    ],
+    "linux_basics": [
+      "linux",
+      "لینوکس",
+      "ubuntu",
+      "اوبونتو"
+    ],
+    "bash_scripting": [
+      "bash",
+      "shell scripting",
+      "اسکریپت نویسی bash"
+    ],
+    "networking_basics": [
+      "شبکه‌های کامپیوتری",
+      "شبکه های کامپیوتری",
+      "ccna",
+      "tcp/ip",
+      "computer networking"
+    ],
+    "python_basics": [
+      "python",
+      "پایتون",
+      "پایتن"
+    ],
+    "oop": [
+      "شی‌گرایی",
+      "شی گرایی",
+      "شیءگرایی",
+      "برنامه‌نویسی شی‌گرا",
+      "برنامه نویسی شی گرا",
+      "object oriented programming"
+    ],
+    "data_structures_algorithms": [
+      "ساختمان داده",
+      "ساختمان داده‌ها",
+      "data structures",
+      "algorithms",
+      "الگوریتم‌ها",
+      "dsa"
+    ],
+    "design_patterns": [
+      "دیزاین پترن",
+      "الگوهای طراحی",
+      "design pattern"
+    ],
+    "http_rest_api": [
+      "rest api",
+      "restful",
+      "وب سرویس",
+      "وب‌سرویس",
+      "web api"
+    ],
+    "sql_basics": [
+      "sql",
+      "اس کیو ال",
+      "اس‌کیو‌ال",
+      "سیکوئل",
+      "mysql",
+      "postgresql",
+      "postgres",
+      "sql server",
+      "اس کیو ال سرور",
+      "oracle database"
+    ],
+    "sql_advanced": [
+      "window functions",
+      "sql پیشرفته",
+      "query optimization",
+      "بهینه‌سازی کوئری",
+      "stored procedure"
+    ],
+    "database_design": [
+      "طراحی پایگاه داده",
+      "طراحی دیتابیس",
+      "normalization",
+      "نرمال‌سازی",
+      "erd"
+    ],
+    "nosql_mongodb": [
+      "mongodb",
+      "mongo",
+      "مونگو",
+      "nosql",
+      "elasticsearch",
+      "cassandra"
+    ],
+    "django": [
+      "جنگو",
+      "django rest framework",
+      "drf"
+    ],
+    "nodejs": [
+      "node",
+      "nodejs",
+      "node js",
+      "نود",
+      "express.js",
+      "nestjs"
+    ],
+    "unit_testing": [
+      "unit test",
+      "unit testing",
+      "تست واحد",
+      "pytest",
+      "junit",
+      "jest",
+      "تست‌نویسی",
+      "تست نویسی",
+      "tdd"
+    ],
+    "web_security": [
+      "owasp",
+      "امنیت وب",
+      "web security",
+      "امنیت اپلیکیشن"
+    ],
+    "caching_redis": [
+      "redis",
+      "ردیس",
+      "memcached",
+      "caching"
+    ],
+    "message_queues": [
+      "rabbitmq",
+      "ربیت",
+      "message queue",
+      "celery",
+      "صف پیام"
+    ],
+    "docker": [
+      "داکر",
+      "docker compose",
+      "docker-compose"
+    ],
+    "kubernetes": [
+      "کوبرنتیز",
+      "k8s",
+      "helm",
+      "openshift"
+    ],
+    "ci_cd": [
+      "ci/cd",
+      "cicd",
+      "jenkins",
+      "جنکینز",
+      "gitlab ci",
+      "github actions",
+      "continuous integration"
+    ],
+    "system_design": [
+      "طراحی سیستم",
+      "system design",
+      "معماری نرم‌افزار",
+      "معماری نرم افزار",
+      "software architecture"
+    ],
+    "microservices": [
+      "میکروسرویس",
+      "microservice",
+      "microservices architecture"
+    ],
+    "distributed_systems": [
+      "سیستم‌های توزیع‌شده",
+      "سیستم های توزیع شده",
+      "distributed systems"
+    ],
+    "nginx": [
+      "انجین‌ایکس",
+      "انجین ایکس",
+      "apache web server",
+      "haproxy"
+    ],
+    "cloud_basics": [
+      "aws",
+      "azure",
+      "gcp",
+      "google cloud",
+      "رایانش ابری",
+      "cloud computing",
+      "آروان کلود"
+    ],
+    "infrastructure_as_code": [
+      "terraform",
+      "ansible",
+      "انسیبل",
+      "ترافرم",
+      "infrastructure as code",
+      "iac"
+    ],
+    "monitoring_observability": [
+      "prometheus",
+      "grafana",
+      "گرافانا",
+      "پرومتئوس",
+      "zabbix",
+      "elk"
+    ],
+    "html_css": [
+      "html",
+      "css",
+      "html5",
+      "css3",
+      "اچ تی ام ال"
+    ],
+    "javascript": [
+      "جاوااسکریپت",
+      "جاوا اسکریپت",
+      "js",
+      "ecmascript",
+      "es6"
+    ],
+    "typescript": [
+      "تایپ‌اسکریپت",
+      "تایپ اسکریپت"
+    ],
+    "responsive_design": [
+      "ریسپانسیو",
+      "واکنش‌گرا",
+      "طراحی واکنش گرا",
+      "responsive",
+      "bootstrap",
+      "بوت استرپ",
+      "tailwind",
+      "tailwindcss",
+      "flexbox"
+    ],
+    "react": [
+      "ری‌اکت",
+      "ری اکت",
+      "ریکت",
+      "reactjs",
+      "react.js"
+    ],
+    "state_management": [
+      "redux",
+      "ریداکس",
+      "zustand",
+      "mobx",
+      "context api"
+    ],
+    "nextjs": [
+      "next.js",
+      "next js",
+      "نکست"
+    ],
+    "web_performance": [
+      "web performance",
+      "بهینه‌سازی سرعت سایت",
+      "lighthouse",
+      "core web vitals"
+    ],
+    "kotlin": [
+      "کاتلین"
+    ],
+    "android_development": [
+      "android",
+      "اندروید",
+      "android studio",
+      "android sdk"
+    ],
+    "jetpack_compose": [
+      "jetpack",
+      "جت پک کامپوز"
+    ],
+    "flutter_dart": [
+      "flutter",
+      "فلاتر",
+      "dart",
+      "دارت"
+    ],
+    "swift_ios": [
+      "swift",
+      "سوئیفت",
+      "ios",
+      "swiftui",
+      "xcode"
+    ],
+    "mobile_architecture": [
+      "mvvm",
+      "mvp",
+      "clean architecture",
+      "کلین آرکیتکچر"
+    ],
+    "software_testing_fundamentals": [
+      "istqb",
+      "تست نرم‌افزار",
+      "تست نرم افزار",
+      "software testing",
+      "manual testing",
+      "تست دستی",
+      "test case",
+      "تست کیس"
+    ],
+    "test_automation": [
+      "selenium",
+      "سلنیوم",
+      "cypress",
+      "playwright",
+      "appium",
+      "test automation",
+      "اتوماسیون تست"
+    ],
+    "api_testing": [
+      "postman",
+      "پستمن",
+      "api testing",
+      "تست api",
+      "soapui",
+      "swagger"
+    ],
+    "performance_testing": [
+      "jmeter",
+      "جی‌متر",
+      "load testing",
+      "تست بار",
+      "performance testing",
+      "تست عملکرد",
+      "locust",
+      "k6"
+    ],
+    "agile_scrum": [
+      "scrum",
+      "اسکرام",
+      "agile",
+      "اجایل",
+      "چابک",
+      "kanban",
+      "کانبان"
+    ],
+    "excel_basics": [
+      "excel",
+      "اکسل",
+      "microsoft excel",
+      "ms excel",
+      "spreadsheet"
+    ],
+    "excel_advanced": [
+      "pivot table",
+      "پیوت تیبل",
+      "pivot",
+      "vlookup",
+      "power query",
+      "پاور کوئری",
+      "excel vba",
+      "vba",
+      "اکسل پیشرفته",
+      "advanced excel"
+    ],
+    "statistics_basics": [
+      "statistics",
+      "آمار توصیفی",
+      "descriptive statistics",
+      "spss",
+      "minitab",
+      "آمار استنباطی",
+      "تحلیل آماری",
+      "statistical analysis"
+    ],
+    "probability": [
+      "احتمال",
+      "آمار و احتمال",
+      "probability theory"
+    ],
+    "linear_algebra": [
+      "جبر خطی",
+      "linear algebra"
+    ],
+    "pandas_numpy": [
+      "pandas",
+      "پانداس",
+      "numpy",
+      "نامپای",
+      "jupyter",
+      "ژوپیتر"
+    ],
+    "data_cleaning": [
+      "پاکسازی داده",
+      "پاک‌سازی داده",
+      "data cleaning",
+      "data wrangling",
+      "پیش‌پردازش داده",
+      "پیش پردازش داده",
+      "data preprocessing"
+    ],
+    "data_visualization": [
+      "مصورسازی داده",
+      "مصور سازی داده",
+      "data visualization",
+      "matplotlib",
+      "seaborn",
+      "plotly",
+      "داشبورد",
+      "dashboard"
+    ],
+    "power_bi": [
+      "power bi",
+      "powerbi",
+      "پاور بی آی",
+      "پاوربی‌آی"
+    ],
+    "tableau": [
+      "تبلو"
+    ],
+    "dax": [
+      "زبان dax"
+    ],
+    "data_modeling": [
+      "data modeling",
+      "مدل‌سازی داده",
+      "مدل سازی داده",
+      "star schema",
+      "dimensional modeling",
+      "snowflake schema"
+    ],
+    "data_warehousing": [
+      "انبار داده",
+      "data warehouse",
+      "dwh",
+      "ssas",
+      "olap"
+    ],
+    "etl_pipelines": [
+      "etl",
+      "elt",
+      "ssis",
+      "data pipeline",
+      "پایپ‌لاین داده",
+      "talend",
+      "informatica"
+    ],
+    "airflow": [
+      "apache airflow",
+      "ایرفلو"
+    ],
+    "spark": [
+      "apache spark",
+      "pyspark",
+      "اسپارک",
+      "hadoop",
+      "هدوپ",
+      "big data",
+      "کلان داده",
+      "databricks"
+    ],
+    "kafka_streaming": [
+      "kafka",
+      "کافکا",
+      "apache kafka",
+      "stream processing",
+      "flink"
+    ],
+    "hypothesis_testing": [
+      "آزمون فرض",
+      "hypothesis testing",
+      "t-test",
+      "statistical inference",
+      "استنباط آماری"
+    ],
+    "ab_testing": [
+      "a/b testing",
+      "a/b test",
+      "ab testing",
+      "تست a/b",
+      "آزمون a/b"
+    ],
+    "machine_learning_basics": [
+      "machine learning",
+      "یادگیری ماشین",
+      "ماشین لرنینگ",
+      "ml"
+    ],
+    "scikit_learn": [
+      "scikit-learn",
+      "sklearn",
+      "سایکیت لرن",
+      "xgboost",
+      "lightgbm"
+    ],
+    "feature_engineering": [
+      "feature engineering",
+      "مهندسی ویژگی",
+      "feature selection",
+      "انتخاب ویژگی"
+    ],
+    "deep_learning": [
+      "deep learning",
+      "یادگیری عمیق",
+      "شبکه عصبی",
+      "neural networks",
+      "cnn",
+      "rnn"
+    ],
+    "pytorch": [
+      "پایتورچ",
+      "tensorflow",
+      "تنسورفلو",
+      "keras",
+      "کراس"
+    ],
+    "nlp": [
+      "پردازش زبان طبیعی",
+      "natural language processing",
+      "hugging face",
+      "transformers",
+      "پردازش متن"
+    ],
+    "computer_vision": [
+      "بینایی ماشین",
+      "بینایی کامپیوتر",
+      "opencv",
+      "پردازش تصویر",
+      "image processing",
+      "yolo"
+    ],
+    "time_series": [
+      "سری زمانی",
+      "سری‌های زمانی",
+      "time series",
+      "forecasting",
+      "arima",
+      "پیش‌بینی سری زمانی"
+    ],
+    "mlops": [
+      "ml ops",
+      "mlflow",
+      "model deployment",
+      "استقرار مدل",
+      "kubeflow"
+    ],
+    "llm_applications": [
+      "llm",
+      "large language model",
+      "مدل زبانی بزرگ",
+      "مدل‌های زبانی بزرگ",
+      "rag",
+      "langchain",
+      "لنگ‌چین",
+      "prompt engineering",
+      "پرامپت نویسی",
+      "generative ai",
+      "هوش مصنوعی مولد"
+    ],
+    "accounting_principles": [
+      "اصول حسابداری",
+      "accounting principles",
+      "حسابداری مقدماتی",
+      "ثبت اسناد حسابداری",
+      "ثبت اسناد",
+      "دفاتر قانونی",
+      "bookkeeping"
+    ],
+    "financial_accounting": [
+      "حسابداری مالی",
+      "financial accounting",
+      "صورت‌های مالی",
+      "صورت های مالی",
+      "صورتهای مالی",
+      "financial statements",
+      "تهیه صورت‌های مالی",
+      "ترازنامه",
+      "balance sheet"
+    ],
+    "cost_accounting": [
+      "حسابداری صنعتی",
+      "حسابداری بهای تمام شده",
+      "بهای تمام شده",
+      "cost accounting",
+      "قیمت تمام شده"
+    ],
+    "accounting_software": [
+      "نرم‌افزار حسابداری",
+      "نرم افزار حسابداری",
+      "سپیدار",
+      "همکاران سیستم",
+      "راهکاران",
+      "رایورز"
+    ],
+    "payroll_insurance": [
+      "حقوق و دستمزد",
+      "لیست بیمه",
+      "بیمه تامین اجتماعی",
+      "تامین اجتماعی",
+      "payroll"
+    ],
+    "direct_tax_law": [
+      "قانون مالیات‌های مستقیم",
+      "قانون مالیات های مستقیم",
+      "مالیات مستقیم",
+      "مالیات عملکرد",
+      "امور مالیاتی"
+    ],
+    "vat": [
+      "ارزش افزوده",
+      "مالیات بر ارزش افزوده",
+      "vat",
+      "سامانه مودیان",
+      "صورتحساب الکترونیکی"
+    ],
+    "tax_returns": [
+      "اظهارنامه مالیاتی",
+      "اظهارنامه",
+      "tax return",
+      "تنظیم اظهارنامه"
+    ],
+    "accounting_standards": [
+      "استانداردهای حسابداری",
+      "استاندارد حسابداری",
+      "ifrs",
+      "gaap"
+    ],
+    "auditing_fundamentals": [
+      "حسابرسی",
+      "auditing",
+      "audit",
+      "اصول حسابرسی"
+    ],
+    "internal_control": [
+      "کنترل داخلی",
+      "کنترل‌های داخلی",
+      "کنترل های داخلی",
+      "internal control",
+      "coso",
+      "حسابرسی داخلی",
+      "internal audit"
+    ],
+    "risk_management": [
+      "مدیریت ریسک",
+      "risk management",
+      "ارزیابی ریسک",
+      "risk assessment"
+    ],
+    "financial_statement_analysis": [
+      "تحلیل صورت‌های مالی",
+      "تحلیل صورت های مالی",
+      "تجزیه و تحلیل صورت‌های مالی",
+      "تجزیه و تحلیل صورت های مالی",
+      "نسبت‌های مالی",
+      "نسبت های مالی",
+      "financial statement analysis",
+      "financial ratios"
+    ],
+    "financial_modeling": [
+      "مدل‌سازی مالی",
+      "مدل سازی مالی",
+      "financial modeling",
+      "financial modelling"
+    ],
+    "budgeting_forecasting": [
+      "بودجه‌ریزی",
+      "بودجه ریزی",
+      "بودجه‌بندی",
+      "بودجه بندی",
+      "budgeting",
+      "forecasting financial",
+      "پیش‌بینی مالی"
+    ],
+    "corporate_valuation": [
+      "ارزش‌گذاری",
+      "ارزشگذاری",
+      "ارزش گذاری",
+      "valuation",
+      "dcf",
+      "مدیریت مالی",
+      "corporate finance"
+    ],
+    "financial_math": [
+      "ریاضیات مالی",
+      "ارزش زمانی پول",
+      "time value of money",
+      "financial mathematics"
+    ],
+    "capital_markets_basics": [
+      "بازار سرمایه",
+      "بورس",
+      "بورس اوراق بهادار",
+      "stock market",
+      "capital markets",
+      "اوراق بهادار"
+    ],
+    "fundamental_analysis": [
+      "تحلیل بنیادی",
+      "فاندامنتال",
+      "fundamental analysis"
+    ],
+    "technical_analysis": [
+      "تحلیل تکنیکال",
+      "technical analysis",
+      "تکنیکال"
+    ],
+    "portfolio_management": [
+      "مدیریت پرتفوی",
+      "مدیریت سبد",
+      "portfolio management",
+      "مدیریت دارایی",
+      "asset management"
+    ],
+    "marketing_fundamentals": [
+      "اصول بازاریابی",
+      "مبانی بازاریابی",
+      "marketing fundamentals",
+      "مارکتینگ",
+      "بازاریابی",
+      "marketing"
+    ],
+    "digital_marketing_fundamentals": [
+      "دیجیتال مارکتینگ",
+      "بازاریابی دیجیتال",
+      "digital marketing",
+      "بازاریابی آنلاین",
+      "online marketing"
+    ],
+    "seo_basics": [
+      "سئو",
+      "seo",
+      "بهینه‌سازی موتور جستجو",
+      "بهینه سازی موتور جستجو",
+      "on-page seo",
+      "سئو داخلی"
+    ],
+    "technical_seo": [
+      "سئو تکنیکال",
+      "سئو فنی",
+      "technical seo",
+      "google search console",
+      "سرچ کنسول",
+      "search console",
+      "schema markup"
+    ],
+    "keyword_research": [
+      "تحقیق کلمات کلیدی",
+      "کلمات کلیدی",
+      "keyword research",
+      "ahrefs",
+      "semrush"
+    ],
+    "link_building": [
+      "لینک‌سازی",
+      "لینک سازی",
+      "بک لینک",
+      "بک‌لینک",
+      "سئو خارجی",
+      "link building",
+      "backlink",
+      "off-page seo"
+    ],
+    "wordpress": [
+      "وردپرس",
+      "woocommerce",
+      "ووکامرس",
+      "elementor",
+      "المنتور"
+    ],
+    "copywriting": [
+      "کپی‌رایتینگ",
+      "کپی رایتینگ",
+      "copywriting",
+      "محتوانویسی",
+      "محتوا نویسی",
+      "نویسندگی محتوا",
+      "تولید محتوای متنی"
+    ],
+    "content_strategy": [
+      "استراتژی محتوا",
+      "content strategy",
+      "تقویم محتوایی",
+      "content calendar",
+      "تولید محتوا",
+      "content marketing",
+      "بازاریابی محتوا"
+    ],
+    "social_media_marketing": [
+      "سوشال مدیا مارکتینگ",
+      "بازاریابی شبکه‌های اجتماعی",
+      "بازاریابی شبکه های اجتماعی",
+      "social media marketing",
+      "مدیریت شبکه‌های اجتماعی",
+      "مدیریت شبکه های اجتماعی",
+      "لینکدین مارکتینگ"
+    ],
+    "instagram_marketing": [
+      "اینستاگرام",
+      "instagram",
+      "اینستاگرام مارکتینگ",
+      "مدیریت پیج اینستاگرام"
+    ],
+    "graphic_design_basics": [
+      "فتوشاپ",
+      "photoshop",
+      "illustrator",
+      "ایلاستریتور",
+      "canva",
+      "کانوا",
+      "طراحی گرافیک",
+      "graphic design",
+      "figma",
+      "فیگما",
+      "کورل",
+      "corel"
+    ],
+    "video_editing": [
+      "تدوین ویدیو",
+      "video editing",
+      "premiere",
+      "پریمیر",
+      "after effects",
+      "افتر افکت",
+      "capcut",
+      "کپ کات"
+    ],
+    "google_ads": [
+      "گوگل ادز",
+      "google ads",
+      "adwords",
+      "ادوردز",
+      "sem",
+      "تبلیغات کلیکی",
+      "ppc"
+    ],
+    "google_analytics": [
+      "گوگل آنالیتیکس",
+      "google analytics",
+      "ga4",
+      "google tag manager",
+      "تگ منیجر"
+    ],
+    "email_marketing": [
+      "ایمیل مارکتینگ",
+      "email marketing",
+      "بازاریابی ایمیلی",
+      "mailchimp",
+      "newsletter"
+    ],
+    "branding": [
+      "برندینگ",
+      "branding",
+      "برندسازی",
+      "هویت برند",
+      "brand identity"
+    ],
+    "growth_marketing": [
+      "گروث هکینگ",
+      "گروث مارکتینگ",
+      "growth hacking",
+      "growth marketing",
+      "بازاریابی رشد"
+    ],
+    "sales_techniques": [
+      "فنون فروش",
+      "تکنیک‌های فروش",
+      "تکنیک های فروش",
+      "sales techniques",
+      "فروش تلفنی",
+      "telesales",
+      "فروش حضوری",
+      "مهارت فروش"
+    ],
+    "b2b_sales": [
+      "فروش سازمانی",
+      "فروش b2b",
+      "b2b",
+      "فروش صنعتی",
+      "b2b sales",
+      "فروش پروژه‌ای"
+    ],
+    "crm": [
+      "crm",
+      "سی آر ام",
+      "مدیریت ارتباط با مشتری",
+      "salesforce",
+      "hubspot",
+      "دیدار crm",
+      "پیام‌گستر"
+    ],
+    "negotiation": [
+      "مذاکره",
+      "فن مذاکره",
+      "negotiation",
+      "مهارت مذاکره"
+    ],
+    "market_research": [
+      "تحقیقات بازار",
+      "تحقیق بازار",
+      "market research",
+      "تحلیل رقبا",
+      "competitor analysis",
+      "بازارسنجی"
+    ],
+    "communication_skills": [
+      "مهارت‌های ارتباطی",
+      "مهارت های ارتباطی",
+      "مهارت ارتباطی",
+      "ارتباط موثر",
+      "communication skills",
+      "روابط عمومی بالا"
+    ],
+    "presentation_skills": [
+      "فن بیان",
+      "مهارت ارائه",
+      "presentation skills",
+      "public speaking",
+      "سخنرانی",
+      "powerpoint",
+      "پاورپوینت"
+    ],
+    "hrm_fundamentals": [
+      "مدیریت منابع انسانی",
+      "human resource management",
+      "hrm",
+      "منابع انسانی",
+      "امور اداری و منابع انسانی"
+    ],
+    "recruitment_selection": [
+      "جذب و استخدام",
+      "جذب و گزینش",
+      "recruitment"
+    ],
+    "interviewing_techniques": [
+      "مصاحبه استخدامی",
+      "مصاحبه شغلی",
+      "interviewing",
+      "مصاحبه ساختاریافته",
+      "structured interview",
+      "انجام مصاحبه"
+    ],
+    "talent_sourcing": [
+      "سورسینگ",
+      "sourcing",
+      "talent sourcing",
+      "لینکدین ریکروتر",
+      "linkedin recruiter",
+      "جذب استعداد"
+    ],
+    "employer_branding": [
+      "برند کارفرمایی",
+      "employer branding",
+      "برندینگ کارفرما"
+    ],
+    "labor_law": [
+      "قانون کار",
+      "labor law",
+      "قوانین کار",
+      "قانون تامین اجتماعی"
+    ],
+    "performance_management": [
+      "ارزیابی عملکرد",
+      "مدیریت عملکرد",
+      "performance management",
+      "performance appraisal",
+      "kpi",
+      "okr"
+    ],
+    "compensation_benefits": [
+      "جبران خدمات",
+      "نظام جبران خدمات",
+      "حقوق و مزایا",
+      "compensation and benefits",
+      "طرح طبقه‌بندی مشاغل",
+      "طبقه بندی مشاغل"
+    ],
+    "hr_analytics": [
+      "hr analytics",
+      "people analytics",
+      "تحلیل داده منابع انسانی",
+      "تحلیل منابع انسانی"
+    ],
+    "project_management_fundamentals": [
+      "مدیریت پروژه",
+      "project management",
+      "pmbok",
+      "pmp",
+      "پی ام پی"
+    ],
+    "project_tools": [
+      "msp",
+      "ms project",
+      "microsoft project",
+      "مایکروسافت پروجکت",
+      "jira",
+      "جیرا",
+      "trello",
+      "ترلو",
+      "primavera",
+      "پریماورا",
+      "asana",
+      "clickup"
+    ],
+    "project_control": [
+      "کنترل پروژه",
+      "project control",
+      "earned value",
+      "ارزش کسب شده",
+      "evm",
+      "زمان‌بندی پروژه",
+      "برنامه‌ریزی و کنترل پروژه"
+    ],
+    "stakeholder_management": [
+      "مدیریت ذینفعان",
+      "مدیریت ذی‌نفعان",
+      "stakeholder management",
+      "ذینفعان"
+    ],
+    "leadership": [
+      "رهبری تیم",
+      "مدیریت تیم",
+      "leadership",
+      "team leadership",
+      "team lead",
+      "سرپرستی تیم",
+      "رهبری"
+    ],
+    "product_management_fundamentals": [
+      "مدیریت محصول",
+      "product management",
+      "product discovery",
+      "roadmapping"
+    ],
+    "ux_user_research": [
+      "ux",
+      "تجربه کاربری",
+      "user research",
+      "تحقیقات کاربر",
+      "یوزر ریسرچ",
+      "usability testing",
+      "تست کاربردپذیری",
+      "ui/ux"
+    ],
+    "product_analytics": [
+      "product analytics",
+      "تحلیل محصول",
+      "mixpanel",
+      "amplitude",
+      "product metrics",
+      "متریک‌های محصول"
+    ],
+    "product_strategy": [
+      "استراتژی محصول",
+      "product strategy",
+      "نقشه راه محصول",
+      "product roadmap",
+      "product vision"
+    ],
+    "requirements_engineering": [
+      "تحلیل نیازمندی",
+      "تحلیل نیازمندی‌ها",
+      "مهندسی نیازمندی",
+      "requirements engineering",
+      "requirements gathering",
+      "user story",
+      "یوزر استوری",
+      "srs"
+    ],
+    "bpmn_process_modeling": [
+      "bpmn",
+      "مدل‌سازی فرایند",
+      "مدل سازی فرایند",
+      "مدلسازی فرآیند",
+      "business process modeling",
+      "بهبود فرایند",
+      "process mapping"
+    ],
+    "uml": [
+      "uml",
+      "یو ام ال",
+      "دیاگرام uml",
+      "use case diagram",
+      "sequence diagram"
+    ],
+    "business_model": [
+      "مدل کسب‌وکار",
+      "مدل کسب و کار",
+      "بوم مدل کسب و کار",
+      "business model canvas",
+      "business model",
+      "lean canvas"
+    ]
+  }
+}

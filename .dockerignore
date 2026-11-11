@@ -1,0 +1,8 @@
+.venv
+.env
+.env.*
+*.env
+.en*
+__pycache__
+.pytest_cache
+data/resources/raw

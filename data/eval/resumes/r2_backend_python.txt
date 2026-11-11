@@ -1,0 +1,18 @@
+Ali Rezaei (synthetic resume for evaluation)
+Tehran, Iran
+
+Summary
+Backend developer with 2 years of experience building REST APIs with Python and Django.
+
+Experience
+Backend Developer, an online retail startup, 2024 - present
+- Built and maintained REST APIs with Django REST Framework and PostgreSQL
+- Wrote unit tests with pytest; used Git and GitHub for code review
+- Containerised services with Docker and docker-compose
+- Worked in an Agile/Scrum team
+
+Education
+B.Sc. Computer Engineering, Amirkabir University of Technology
+
+Skills
+Python, Django, DRF, PostgreSQL, SQL, Git, Docker, Linux, pytest, REST API

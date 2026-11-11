@@ -1,0 +1,38 @@
+{
+  "note": "Graded relevance (2 = strong fit, 1 = could realistically apply, 0 = not relevant), judged from posting title/requirements against each synthetic resume, without looking at system scores. Pools = top-10 of both rankers + same-domain and random postings (seed 42). DRAFT by the integration author; at least one teammate should review before the report.",
+  "resumes": {
+    "r1_data_analyst_junior": {
+      "file": "resumes/r1_data_analyst_junior.txt",
+      "labels": {
+        "estekhdam:52382770": 0, "estekhdam:52382783": 1, "estekhdam:52390340": 2, "estekhdam:52401257": 0,
+        "estekhdam:52402227": 0, "estekhdam:52405541": 1, "estekhdam:52421643": 0, "estekhdam:52423898": 0,
+        "estekhdam:52436854": 0, "jobinja:t7Rf": 0, "jobinja:tE5k": 0, "jobinja:tEFu": 0, "jobinja:tERF": 0,
+        "jobinja:tETU": 0, "jobinja:tM3w": 2, "jobinja:tMB1": 0, "jobinja:tMdt": 0, "jobinja:tMkR": 0,
+        "jobinja:tNEn": 0, "jobinja:tNW8": 0, "jobinja:tOXd": 0, "jobinja:tj3D": 0, "jobinja:tjCw": 0,
+        "jobinja:tuHe": 1, "jobinja:tuZk": 0, "jobinja:tugd": 2
+      }
+    },
+    "r2_backend_python": {
+      "file": "resumes/r2_backend_python.txt",
+      "labels": {
+        "estekhdam:52381836": 0, "estekhdam:52395586": 0, "estekhdam:52396793": 0, "estekhdam:52406132": 0,
+        "estekhdam:52436785": 0, "jobinja:t7Rf": 1, "jobinja:tE5k": 0, "jobinja:tE5w": 0, "jobinja:tEkj": 0,
+        "jobinja:tM29": 0, "jobinja:tM5j": 0, "jobinja:tM6i": 0, "jobinja:tMI0": 0, "jobinja:tMZM": 0,
+        "jobinja:tNW8": 1, "jobinja:tNjU": 0, "jobinja:tNxQ": 0, "jobinja:tTY7": 0, "jobinja:tj3D": 1,
+        "jobinja:tjI4": 2, "jobinja:tsGC": 0, "jobinja:tvgA": 0, "jobvision:1424692": 0, "jobvision:1426636": 0,
+        "jobvision:1486122": 0, "jobvision:884993": 0
+      }
+    },
+    "r3_accountant": {
+      "file": "resumes/r3_accountant.txt",
+      "labels": {
+        "estekhdam:52380523": 1, "estekhdam:52412853": 1, "estekhdam:52424333": 0, "estekhdam:52427802": 0,
+        "estekhdam:52428089": 2, "estekhdam:52429474": 0, "estekhdam:52433881": 0, "estekhdam:52436797": 1,
+        "estekhdam:52436854": 1, "estekhdam:52436883": 2, "estekhdam:52436891": 1, "jobinja:Cyzq": 0,
+        "jobinja:REFk": 1, "jobinja:t48g": 2, "jobinja:tEZY": 1, "jobinja:tEcc": 2, "jobinja:tEeA": 2,
+        "jobinja:tExv": 2, "jobinja:tMKD": 1, "jobinja:tMQk": 2, "jobinja:tj1F": 2, "jobinja:tph5": 2,
+        "jobinja:tuHO": 0, "jobinja:tuZS": 1, "jobinja:tuyc": 1, "jobvision:127203": 1
+      }
+    }
+  }
+}

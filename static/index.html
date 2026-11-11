@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مسیر — دستیار مسیر شغلی</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230f766e'/><path d='M16 7l4 9-4 9-4-9z' fill='white'/></svg>">
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14"/><path d="M16 7l4 9-4 9-4-9z"/></svg>
+      <div><strong>مسیر</strong><span>دستیار مسیر شغلی</span></div>
+    </div>
+    <div class="topbar-actions">
+      <span id="mode" class="pill"></span>
+      <button id="themeBtn" class="icon-btn" title="تغییر پوسته" aria-label="تغییر پوسته">
+        <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button id="resetBtn" class="btn ghost small">شروع دوباره</button>
+    </div>
+  </header>
+
+  <nav class="mobile-switch" id="mobileSwitch">
+    <button data-pane="chat" class="active">گفتگو</button>
+    <button data-pane="results">نتایج</button>
+  </nav>
+
+  <main class="workspace">
+    <!-- Conversation -->
+    <section class="pane chat-pane" id="chatPane">
+      <div class="pane-head">
+        <div>
+          <h2>گفتگو با دستیار</h2>
+          <p class="muted" id="progressText"></p>
+        </div>
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+      </div>
+      <div class="messages" id="messages" aria-live="polite"></div>
+      <div class="quick" id="quick"></div>
+      <form class="composer" id="composer">
+        <div class="attach-wrap">
+          <button type="button" class="icon-btn" id="attachBtn" title="افزودن رزومه" aria-label="افزودن رزومه">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5l-8.6 8.6a5.5 5.5 0 0 1-7.8-7.8l8.9-8.9a3.7 3.7 0 0 1 5.2 5.2l-8.9 8.9a1.8 1.8 0 0 1-2.6-2.6l8.2-8.2"/></svg>
+          </button>
+          <div class="menu" id="attachMenu" hidden>
+            <button type="button" data-action="upload">بارگذاری رزومه (PDF یا Word)</button>
+            <div class="menu-label">یا امتحان با رزومهٔ نمونه</div>
+            <div id="sampleList"></div>
+          </div>
+        </div>
+        <textarea id="input" rows="1" placeholder="پیامت را بنویس…" aria-label="پیام"></textarea>
+        <button type="submit" class="send" id="sendBtn" aria-label="ارسال">
+          <svg viewBox="0 0 24 24"><path d="M3 12l18-8-7 18-2-7z"/></svg>
+        </button>
+        <input type="file" id="fileInput" accept=".pdf,.docx" hidden>
+      </form>
+    </section>
+
+    <!-- Results -->
+    <section class="pane results-pane" id="resultsPane">
+      <div class="tabs" role="tablist">
+        <button role="tab" data-tab="roadmap" class="active">نقشهٔ راه</button>
+        <button role="tab" data-tab="jobs">فرصت‌های شغلی <span class="count" id="jobsCount"></span></button>
+        <button role="tab" data-tab="profile">پروفایل</button>
+      </div>
+      <div class="tab-body" id="tab-roadmap"></div>
+      <div class="tab-body" id="tab-jobs" hidden></div>
+      <div class="tab-body" id="tab-profile" hidden></div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-head"><h3 id="modalTitle"></h3><button class="icon-btn" id="modalClose" aria-label="بستن">
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

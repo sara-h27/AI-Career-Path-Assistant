@@ -1,0 +1,24 @@
+# Secrets: any env-style file. Only .env.example is committed.
+.env
+.env.*
+*.env
+.en*
+!.env.example
+private_data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Embedding model (~240 MB): shared outside git, see README
+models/
+
+# Local reference material (RFP and early AI-generated planning docs): not published
+docs/reference/

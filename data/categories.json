@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "description": "Shared role categories for the taxonomy (Track 2), job scraping (Track 1) and resume database (Track 4). Use role_id as the common key everywhere.",
+  "levels": ["junior", "mid", "senior"],
+  "domains": [
+    {
+      "domain_id": "software",
+      "title_fa": "نرم‌افزار",
+      "title_en": "Software",
+      "roles": [
+        {
+          "role_id": "backend_developer",
+          "title_fa": "توسعه‌دهنده بک‌اند",
+          "title_en": "Backend Developer",
+          "keywords_fa": ["بک‌اند", "برنامه‌نویس پایتون", "برنامه‌نویس جنگو", "برنامه‌نویس Node.js", "برنامه‌نویس جاوا"],
+          "keywords_en": ["backend developer", "Django", "Node.js", "Java developer"]
+        },
+        {
+          "role_id": "frontend_developer",
+          "title_fa": "توسعه‌دهنده فرانت‌اند",
+          "title_en": "Frontend Developer",
+          "keywords_fa": ["فرانت‌اند", "برنامه‌نویس React", "برنامه‌نویس Vue"],
+          "keywords_en": ["frontend developer", "React", "Vue"]
+        },
+        {
+          "role_id": "mobile_developer",
+          "title_fa": "توسعه‌دهنده موبایل",
+          "title_en": "Mobile Developer",
+          "keywords_fa": ["برنامه‌نویس اندروید", "برنامه‌نویس Flutter", "برنامه‌نویس iOS"],
+          "keywords_en": ["mobile developer", "Android", "Flutter", "iOS"]
+        },
+        {
+          "role_id": "devops_engineer",
+          "title_fa": "مهندس DevOps",
+          "title_en": "DevOps Engineer",
+          "keywords_fa": ["دواپس", "مدیر سیستم لینوکس", "Kubernetes"],
+          "keywords_en": ["DevOps engineer", "SRE", "Kubernetes", "Linux administrator"]
+        },
+        {
+          "role_id": "qa_engineer",
+          "title_fa": "مهندس تست نرم‌افزار",
+          "title_en": "QA Engineer",
+          "keywords_fa": ["تست نرم‌افزار", "تستر نرم‌افزار", "کنترل کیفیت نرم‌افزار"],
+          "keywords_en": ["QA engineer", "software tester", "test automation"]
+        }
+      ]
+    },
+    {
+      "domain_id": "data_ai",
+      "title_fa": "داده و هوش مصنوعی",
+      "title_en": "Data & AI",
+      "roles": [
+        {
+          "role_id": "data_analyst",
+          "title_fa": "تحلیلگر داده",
+          "title_en": "Data Analyst",
+          "keywords_fa": ["تحلیلگر داده", "کارشناس تحلیل داده"],
+          "keywords_en": ["data analyst", "SQL analyst"]
+        },
+        {
+          "role_id": "bi_developer",
+          "title_fa": "توسعه‌دهنده هوش تجاری",
+          "title_en": "BI Developer",
+          "keywords_fa": ["هوش تجاری", "کارشناس Power BI"],
+          "keywords_en": ["BI developer", "Power BI", "business intelligence"]
+        },
+        {
+          "role_id": "data_engineer",
+          "title_fa": "مهندس داده",
+          "title_en": "Data Engineer",
+          "keywords_fa": ["مهندس داده", "ETL"],
+          "keywords_en": ["data engineer", "ETL", "Spark"]
+        },
+        {
+          "role_id": "data_scientist",
+          "title_fa": "دانشمند داده",
+          "title_en": "Data Scientist",
+          "keywords_fa": ["دانشمند داده", "علم داده"],
+          "keywords_en": ["data scientist", "data science"]
+        },
+        {
+          "role_id": "ml_engineer",
+          "title_fa": "مهندس یادگیری ماشین",
+          "title_en": "Machine Learning Engineer",
+          "keywords_fa": ["یادگیری ماشین", "هوش مصنوعی", "یادگیری عمیق"],
+          "keywords_en": ["machine learning engineer", "ML engineer", "AI engineer"]
+        }
+      ]
+    },
+    {
+      "domain_id": "finance",
+      "title_fa": "مالی و حسابداری",
+      "title_en": "Finance & Accounting",
+      "roles": [
+        {
+          "role_id": "accountant",
+          "title_fa": "حسابدار",
+          "title_en": "Accountant",
+          "keywords_fa": ["حسابدار", "حسابداری", "کارشناس حسابداری"],
+          "keywords_en": ["accountant"]
+        },
+        {
+          "role_id": "financial_analyst",
+          "title_fa": "تحلیلگر مالی",
+          "title_en": "Financial Analyst",
+          "keywords_fa": ["تحلیلگر مالی", "کارشناس مالی", "کارشناس بودجه"],
+          "keywords_en": ["financial analyst", "FP&A"]
+        },
+        {
+          "role_id": "auditor",
+          "title_fa": "حسابرس",
+          "title_en": "Auditor",
+          "keywords_fa": ["حسابرس", "حسابرسی داخلی"],
+          "keywords_en": ["auditor", "internal audit"]
+        },
+        {
+          "role_id": "tax_specialist",
+          "title_fa": "کارشناس مالیاتی",
+          "title_en": "Tax Specialist",
+          "keywords_fa": ["کارشناس مالیاتی", "امور مالیاتی"],
+          "keywords_en": ["tax specialist", "tax accountant"]
+        },
+        {
+          "role_id": "investment_analyst",
+          "title_fa": "تحلیلگر بازار سرمایه",
+          "title_en": "Investment Analyst",
+          "keywords_fa": ["تحلیلگر بازار سرمایه", "تحلیلگر بورس", "کارشناس سرمایه‌گذاری"],
+          "keywords_en": ["investment analyst", "equity analyst"]
+        }
+      ]
+    },
+    {
+      "domain_id": "marketing_sales",
+      "title_fa": "بازاریابی و فروش",
+      "title_en": "Marketing & Sales",
+      "roles": [
+        {
+          "role_id": "digital_marketer",
+          "title_fa": "کارشناس دیجیتال مارکتینگ",
+          "title_en": "Digital Marketing Specialist",
+          "keywords_fa": ["دیجیتال مارکتینگ", "کارشناس بازاریابی دیجیتال", "پرفورمنس مارکتینگ"],
+          "keywords_en": ["digital marketing", "performance marketing"]
+        },
+        {
+          "role_id": "seo_specialist",
+          "title_fa": "کارشناس سئو",
+          "title_en": "SEO Specialist",
+          "keywords_fa": ["کارشناس سئو", "سئو"],
+          "keywords_en": ["SEO specialist", "SEO"]
+        },
+        {
+          "role_id": "content_marketer",
+          "title_fa": "کارشناس تولید محتوا",
+          "title_en": "Content Marketer",
+          "keywords_fa": ["تولید محتوا", "کانتنت مارکتینگ", "تولیدکننده محتوا"],
+          "keywords_en": ["content marketer", "content writer"]
+        },
+        {
+          "role_id": "social_media_specialist",
+          "title_fa": "کارشناس شبکه‌های اجتماعی",
+          "title_en": "Social Media Specialist",
+          "keywords_fa": ["کارشناس شبکه‌های اجتماعی", "سوشال مدیا", "ادمین اینستاگرام"],
+          "keywords_en": ["social media specialist", "social media manager"]
+        },
+        {
+          "role_id": "sales_specialist",
+          "title_fa": "کارشناس فروش",
+          "title_en": "Sales Specialist",
+          "keywords_fa": ["کارشناس فروش", "کارشناس فروش B2B", "کارشناس توسعه بازار"],
+          "keywords_en": ["sales specialist", "B2B sales", "business development"]
+        }
+      ]
+    },
+    {
+      "domain_id": "management_hr",
+      "title_fa": "مدیریت و منابع انسانی",
+      "title_en": "Management & HR",
+      "roles": [
+        {
+          "role_id": "recruiter",
+          "title_fa": "کارشناس جذب و استخدام",
+          "title_en": "Recruiter",
+          "keywords_fa": ["کارشناس جذب و استخدام", "کارشناس جذب استعداد"],
+          "keywords_en": ["recruiter", "talent acquisition"]
+        },
+        {
+          "role_id": "hr_specialist",
+          "title_fa": "کارشناس منابع انسانی",
+          "title_en": "HR Specialist",
+          "keywords_fa": ["کارشناس منابع انسانی", "کارشناس حقوق و دستمزد", "کارشناس اداری"],
+          "keywords_en": ["HR specialist", "HR generalist", "payroll"]
+        },
+        {
+          "role_id": "project_manager",
+          "title_fa": "مدیر پروژه",
+          "title_en": "Project Manager",
+          "keywords_fa": ["مدیر پروژه", "کارشناس کنترل پروژه", "اسکرام مستر"],
+          "keywords_en": ["project manager", "scrum master", "PMP"]
+        },
+        {
+          "role_id": "product_manager",
+          "title_fa": "مدیر محصول",
+          "title_en": "Product Manager",
+          "keywords_fa": ["مدیر محصول", "مالک محصول"],
+          "keywords_en": ["product manager", "product owner"]
+        },
+        {
+          "role_id": "business_analyst",
+          "title_fa": "تحلیلگر کسب‌وکار",
+          "title_en": "Business Analyst",
+          "keywords_fa": ["تحلیلگر کسب‌وکار", "کارشناس تحلیل کسب‌وکار"],
+          "keywords_en": ["business analyst"]
+        }
+      ]
+    }
+  ]
+}

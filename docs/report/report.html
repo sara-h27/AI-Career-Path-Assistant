@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Masir: AI Career Path Assistant — Technical Report</title>
+<style>
+@font-face{font-family:V;font-weight:400;src:url(../presentation/assets/vazirmatn-latin-400.woff2) format("woff2"),url(../presentation/assets/vazirmatn-400.woff2) format("woff2")}
+@font-face{font-family:V;font-weight:700;src:url(../presentation/assets/vazirmatn-latin-700.woff2) format("woff2"),url(../presentation/assets/vazirmatn-700.woff2) format("woff2")}
+@font-face{font-family:VF;font-weight:400;src:url(../presentation/assets/vazirmatn-400.woff2) format("woff2")}
+@page{size:A4;margin:16mm 15mm 16mm}
+:root{--acc:#0f766e;--accs:#e1f1ee;--ink:#1c2427;--ink2:#56626a;--line:#dcd9d0;--soft:#f3f1ec;--amb:#fdf2df}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:10.2pt/1.55 V,"Segoe UI",Arial,sans-serif}
+.fa{font-family:VF,Tahoma,sans-serif;direction:rtl;unicode-bidi:isolate}
+h1{font-size:22pt;line-height:1.15;margin:0 0 4px}
+h2{font-size:13pt;margin:16px 0 6px;color:var(--acc);break-after:avoid}
+h3{font-size:10.6pt;margin:10px 0 3px;break-after:avoid}
+p{margin:0 0 7px}ul{margin:0 0 7px;padding-left:18px}li{margin:1px 0}
+.sub{color:var(--ink2);font-size:10.5pt;margin-bottom:10px}
+.meta{display:flex;gap:16px;flex-wrap:wrap;font-size:8.8pt;color:var(--ink2);border-top:2px solid var(--acc);border-bottom:1px solid var(--line);padding:6px 0;margin:8px 0 12px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:10px 0 4px}
+.kpi{background:var(--soft);border-radius:8px;padding:7px 8px}
+.kpi b{display:block;font-size:15pt;color:var(--acc);line-height:1.1}.kpi span{font-size:8pt;color:var(--ink2)}
+table{border-collapse:collapse;width:100%;margin:6px 0 8px;font-size:9.2pt;break-inside:avoid}
+th,td{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left;vertical-align:top}
+th{background:var(--soft);font-weight:700}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+.best{font-weight:700;color:var(--acc)}
+.note{background:var(--amb);border-radius:8px;padding:7px 10px;font-size:9pt;margin:6px 0 8px;break-inside:avoid}
+.box{background:var(--accs);border-radius:8px;padding:7px 10px;font-size:9.3pt;margin:6px 0 8px;break-inside:avoid}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+figure{margin:6px 0 10px;break-inside:avoid}figcaption{font-size:8.6pt;color:var(--ink2);margin-top:3px}
+code{font-family:Consolas,monospace;font-size:8.8pt;background:var(--soft);padding:0 3px;border-radius:3px}
+.small{font-size:8.6pt;color:var(--ink2)}
+.pb{break-before:page}
+svg text{font-family:V,Arial,sans-serif}
+</style>
+</head>
+<body>
+
+<h1>Masir <span style="font-weight:400;color:var(--ink2)">·</span> <span class="fa" style="font-weight:400;color:var(--ink2)">مسیر</span></h1>
+<div class="sub">An AI career path assistant with resume-based job matching for Persian speakers — technical report</div>
+<div class="meta">
+  <span>Rahnama College ML Bootcamp Hackathon · RFP RC-MLB-HACK-2026-01</span>
+  <span>Team: Sara (jobs), Hemo (taxonomy &amp; graph), Amin (dialogue), Javad (resume parsing), Mahdi (learning resources &amp; integration)</span>
+  <span>29 October 2026</span>
+</div>
+
+<h2>1. Summary</h2>
+<p>Masir turns either a short Persian conversation (at most six questions) or an uploaded resume into one validated profile, and from that profile computes two things: a <b>learning roadmap</b> derived from an explicit skill graph, and a <b>ranked list of ten real job postings</b> with the matched and missing skills for each. The core design choice is to keep the language model on the edges — understanding free text — and to make every result the user sees (roadmap order, learning links, scores, explanations) come from deterministic code over curated data.</p>
+<div class="kpis">
+  <div class="kpi"><b>25</b><span>roles, 5 domains</span></div>
+  <div class="kpi"><b>145</b><span>concepts, 188 prerequisite edges</span></div>
+  <div class="kpi"><b>777</b><span>learning links, all checked</span></div>
+  <div class="kpi"><b>143</b><span>job postings, 3 sources</span></div>
+  <div class="kpi"><b>0.774</b><span>mean nDCG@10 (baseline 0.637)</span></div>
+  <div class="kpi"><b>72</b><span>automated tests passing</span></div>
+</div>
+
+<h2>2. Architecture</h2>
+<figure>
+<svg viewBox="0 0 720 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-size="11">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#0f766e"/></marker></defs>
+  <g fill="#fdf2df" stroke="#e7c48d">
+    <rect x="10" y="20" width="150" height="54" rx="8"/><rect x="10" y="120" width="150" height="54" rx="8"/>
+  </g>
+  <text x="85" y="42" text-anchor="middle" font-weight="700">Chat (≤ 6 questions)</text><text x="85" y="60" text-anchor="middle" fill="#56626a">LLM extraction + evidence</text>
+  <text x="85" y="142" text-anchor="middle" font-weight="700">Resume PDF / DOCX</text><text x="85" y="160" text-anchor="middle" fill="#56626a">parser + LLM profile</text>
+  <rect x="215" y="68" width="140" height="58" rx="8" fill="#e1f1ee" stroke="#0f766e"/>
+  <text x="285" y="92" text-anchor="middle" font-weight="700">Validated profile</text><text x="285" y="110" text-anchor="middle" fill="#56626a">taxonomy ids only</text>
+  <rect x="215" y="160" width="140" height="40" rx="8" fill="#fff" stroke="#c9c5ba"/>
+  <text x="285" y="184" text-anchor="middle">Taxonomy + DAG (A-02/03)</text>
+  <g fill="#fff" stroke="#c9c5ba"><rect x="410" y="14" width="140" height="54" rx="8"/><rect x="410" y="126" width="140" height="54" rx="8"/></g>
+  <text x="480" y="36" text-anchor="middle" font-weight="700">Roadmap engine</text><text x="480" y="54" text-anchor="middle" fill="#56626a">closure − known, topo order</text>
+  <text x="480" y="148" text-anchor="middle" font-weight="700">Qdrant retrieval</text><text x="480" y="166" text-anchor="middle" fill="#56626a">MiniLM, filters, top 40</text>
+  <g fill="#e1f1ee" stroke="#0f766e"><rect x="600" y="14" width="110" height="54" rx="8"/><rect x="600" y="126" width="110" height="54" rx="8"/></g>
+  <text x="655" y="36" text-anchor="middle" font-weight="700">Roadmap</text><text x="655" y="54" text-anchor="middle" fill="#56626a">+ checked links</text>
+  <text x="655" y="148" text-anchor="middle" font-weight="700">Top-10 jobs</text><text x="655" y="166" text-anchor="middle" fill="#56626a">re-ranked, explained</text>
+  <g stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#ar)">
+    <path d="M160,47 C190,47 190,90 213,92"/><path d="M160,147 C190,147 190,105 213,104"/>
+    <path d="M355,90 C385,90 380,41 408,41"/><path d="M355,104 C385,104 380,153 408,153"/>
+    <path d="M550,41 L598,41"/><path d="M550,153 L598,153"/><path d="M285,158 L285,128"/>
+    <path d="M655,70 C655,100 655,100 655,124" stroke-dasharray="4 3"/>
+  </g>
+  <text x="648" y="101" fill="#0f766e" font-size="10" text-anchor="end">B-10: job gaps → roadmap</text>
+  <text x="10" y="12" fill="#b45309" font-size="10">generative (validated in code)</text><text x="410" y="200" fill="#0f766e" font-size="10">deterministic (tested, reproducible)</text>
+</svg>
+<figcaption>Figure 1. Data flow. Generative steps (amber) only produce structured data that is re-validated against the taxonomy; everything shown to the user is computed deterministically (teal).</figcaption>
+</figure>
+<p>The system is a FastAPI service (<code>server.py</code>) with a dependency-free right-to-left web client (<code>static/</code>). <code>docker compose up</code> starts it together with a Qdrant vector database (NF-07); without Docker, <code>run.cmd</code>/<code>run.sh</code> create a virtual environment and start the server, and Qdrant falls back to in-process mode. The language model is any OpenAI-compatible or Gemini-native gateway configured in <code>.env</code>; we tested on Metis with <code>gemini-3.1-flash-lite</code>. With no key, an offline rule-based extractor keeps the whole product usable.</p>
+
+<h2>3. Skill taxonomy and roadmap (Module A)</h2>
+<p>Roles are grouped in five domains (software, data &amp; AI, finance &amp; accounting, marketing &amp; sales, management &amp; HR), five roles each, covering every role the RFP names. Each role lists concepts per level; levels are incremental, so a mid-level target includes junior concepts. Concepts carry prerequisite edges forming a DAG, checked for cycles and dangling references at build time (A-03), and 866 hand-curated Persian/English aliases, kept unambiguous by the build script, which are how free text is mapped to concept ids.</p>
+<p>The roadmap is computed, not generated (A-05): the prerequisite closure of the target concepts, minus the concepts the user has demonstrably used, in a deterministic topological order that puts junior-level foundations first. Each step lists up to three learning links drawn only from a catalogue of 777 resources (Maktabkhooneh, Aparat, YouTube, Coursera) collected per concept and HTTP-verified at build time (A-07); Persian links reachable from Iran are listed first. The Persian summary is generated from the same graph object, so text and graph cannot disagree (A-09).</p>
+
+<h3>Conversation and guardrails</h3>
+<ul>
+  <li>A state machine asks for target role, target level, education, experience and current level, and practical skills — at most six questions — with tap-to-answer options in the UI (A-01).</li>
+  <li>The model returns JSON validated by Pydantic. Every claimed skill needs a verbatim quote from the user's message; negated or "only heard of it" skills are rejected, and unknown roles or concepts are discarded rather than shown (A-04).</li>
+  <li>Corrections such as <span class="fa">«من اکسل بلد نیستم»</span> update the profile and regenerate the roadmap (A-08).</li>
+  <li>To keep prompts small, only the target role's concepts and those named in the message are sent; measured cost was about 1.7k tokens and 1.4–1.6 s per turn.</li>
+</ul>
+
+<h2>4. Resume matching (Module B)</h2>
+<p>Resumes (PDF or DOCX, Persian or English) are parsed in memory with Persian normalisation of presentation forms, digits and letter variants (B-01). The structured profile — skills as taxonomy ids, years of experience, education, previous roles and location — has a documented JSON schema (<code>docs/resume_profile.schema.json</code>, B-02); the model's output is re-validated and merged with deterministic alias matches. In the integrated workspace a resume pre-fills the conversation profile, suggests the best-fitting roles and leaves only the missing questions.</p>
+<p>The 143 postings come from Jobinja, e-estekhdam and Jobvision, normalised to one schema with de-duplication keys (B-03, B-09). A posting's skills are the taxonomy concepts found in its text plus collector tags plausible for its role.</p>
+<div class="cols">
+<div>
+<h3>Ranking (B-04 – B-07)</h3>
+<ol style="margin:0 0 7px;padding-left:18px">
+  <li><b>Retrieval:</b> postings embedded once with multilingual MiniLM into Qdrant; the resume profile is embedded as a query; city/seniority/remote filters run inside Qdrant (B-08); top 40.</li>
+  <li><b>Re-ranking</b> with four transparent features (below). Knowing a concept implies its prerequisites (Django ⇒ Python).</li>
+</ol>
+</div>
+<div>
+<table>
+  <tr><th>Feature</th><th style="text-align:right">Weight</th></tr>
+  <tr><td>Coverage of the posting's required concepts (smoothed)</td><td class="n">0.40</td></tr>
+  <tr><td>Fit to the posting's role (share of role concepts held)</td><td class="n">0.25</td></tr>
+  <tr><td>Text similarity: mean of dense (Qdrant) and char n-gram TF-IDF</td><td class="n">0.25</td></tr>
+  <tr><td>Seniority fit (years vs posting level)</td><td class="n">0.10</td></tr>
+</table>
+</div>
+</div>
+<p>Each result shows the score, a Persian explanation built from these numbers, matched and missing skills, and the link to the original ad (B-05, B-06). "Roadmap for this job" sends the missing concepts to the roadmap engine (B-10).</p>
+
+<h2 class="pb">5. Evaluation (Section 10.2)</h2>
+<p>Three synthetic resumes mirror the RFP scenarios (a junior data analyst, a backend developer with two years of Python, an accountant with three years). Each is ranked against its own pool of 26 postings — the union of both rankers' top 10 plus same-domain and random postings — labelled 2 (strong fit), 1 (could realistically apply) or 0. Precision@5 counts grade ≥ 1; nDCG@10 uses gain 2<sup>g</sup>−1. Profiles come from the deterministic extractor, so the numbers are reproducible with <code>python eval/evaluate_ranking.py</code>.</p>
+<table>
+  <tr><th>Resume</th><th>Keyword-overlap baseline<br>P@5 / nDCG@10</th><th>Hybrid, no dense similarity<br>P@5 / nDCG@10</th><th>RAG: Qdrant + hybrid (used)<br>P@5 / nDCG@10</th></tr>
+  <tr><td>Junior data analyst</td><td class="n">0.80 / 0.685</td><td class="n">0.80 / 0.810</td><td class="n">1.00 / 0.808</td></tr>
+  <tr><td>Backend developer (Python)</td><td class="n">0.20 / 0.413</td><td class="n">0.40 / 0.598</td><td class="n">0.20 / 0.721</td></tr>
+  <tr><td>Accountant</td><td class="n">1.00 / 0.814</td><td class="n">1.00 / 0.793</td><td class="n">1.00 / 0.794</td></tr>
+  <tr><td><b>Mean</b></td><td class="n">0.67 / 0.637</td><td class="n">0.73 / 0.733</td><td class="n best">0.73 / 0.774</td></tr>
+</table>
+<p>The Qdrant retrieval stage alone returns 100 %, 100 % and 90 % of the relevant judged postings in its top 40 of all 143. The backend resume is hardest because the dataset has only one Python backend posting; most backend ads require .NET, Node.js or Java, which our labels treat as not relevant.</p>
+<div class="note"><b>Caveats.</b> Labels are a first draft by one team member and should be reviewed. With three resumes the gap between the two hybrid variants is within noise; the gain over the keyword baseline is the robust finding. An earlier run scored higher (0.841) before we removed wrong collector tags — for example web-development skills on a tax-accounting ad, which leaked HTML and JavaScript into that ad's roadmap. We kept the correction and report the lower numbers.</div>
+
+<h2>6. Responsible AI, engineering and cost</h2>
+<div class="cols">
+<ul>
+  <li><b>Grounding:</b> only taxonomy ids reach the profile; links come only from the verified catalogue; summaries and explanations are templated from computed data.</li>
+  <li><b>Privacy (NF-03):</b> a notice must be accepted before the first upload; resumes and chats stay in process memory, are never written to disk or logs, and expire after two hours or on "start over".</li>
+  <li><b>Secrets (NF-04):</b> keys live only in a git-ignored <code>.env</code>, read on the server.</li>
+</ul>
+<ul>
+  <li><b>Robustness (NF-06):</b> timeouts, malformed JSON, refusals and budget overruns return friendly Persian messages and keep the previous state.</li>
+  <li><b>Cost (NF-05):</b> per-session tokens, calls, latency and (with prices set) USD cost are tracked and shown; a session token budget is enforced.</li>
+  <li><b>Data collection (NF-08):</b> the resource collector is rate-limited and identifies itself; the job collector's code is to be added to the repository by its owner.</li>
+</ul>
+</div>
+
+<h2>7. How it was built</h2>
+<p>The team split the work into five parallel tracks around shared contracts: <code>categories.json</code> defined the 25 <code>role_id</code>s; the learning-resource collector produced a draft concept list that the taxonomy track adopted, so resources, taxonomy and job tags all use the same concept ids. Integration then unified the taxonomy format between the graph engine and the dialogue guardrail (with cumulative levels so both compute identical closures), replaced the dialogue's reference graph engine with an adapter over the DAG engine, rebuilt Module B on the job data, added Qdrant retrieval and the evaluation harness, and replaced an early Streamlit prototype with a purpose-built RTL interface in which the conversation and the resume share one profile. Automated tests (72) cover the taxonomy, the dialogue guardrails, both RFP scenarios, ranking, the HTTP API and the served frontend.</p>
+<p class="small"><b>Disclosure (RFP §6.2):</b> an AI coding assistant (Claude Code) was used for parts of the implementation, integration, evaluation harness and these documents. Third-party components: FastAPI, Uvicorn, Pydantic, httpx, NetworkX, scikit-learn, NumPy, pdfplumber, python-docx, python-bidi, qdrant-client, FastEmbed, the Qdrant Docker image and the Vazirmatn font (SIL OFL).</p>
+
+<h2>8. Limitations and next steps</h2>
+<ul>
+  <li>More labelled resumes and a second labeller, to make the ranking comparison statistically meaningful.</li>
+  <li>Add programming-language concepts (Java, C#/.NET, PHP) so stack mismatches are visible to the concept features, not only to text similarity.</li>
+  <li>Commit the job collector and schedule incremental refreshes (B-11); re-verify learning links before each demo.</li>
+  <li>Persian speech input and output (A-10) and roadmap export as an image or PDF (A-11).</li>
+</ul>
+
+</body>
+</html>

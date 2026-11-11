@@ -1,0 +1,134 @@
+{
+  "$defs": {
+    "ConceptClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "concept_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "title": "Concept Id",
+          "type": "string"
+        },
+        "evidence": {
+          "description": "Exact quote from latest normalized user message",
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Evidence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "concept_id",
+        "evidence"
+      ],
+      "title": "ConceptClaim",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "target_role": {
+      "anyOf": [
+        {
+          "maxLength": 120,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Role"
+    },
+    "target_level": {
+      "anyOf": [
+        {
+          "enum": [
+            "junior",
+            "mid",
+            "senior"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Level"
+    },
+    "current_level": {
+      "anyOf": [
+        {
+          "enum": [
+            "beginner",
+            "junior",
+            "mid",
+            "senior"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Current Level"
+    },
+    "education": {
+      "anyOf": [
+        {
+          "maxLength": 1000,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Education"
+    },
+    "experience_years": {
+      "anyOf": [
+        {
+          "maximum": 80,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Experience Years"
+    },
+    "added_concepts": {
+      "items": {
+        "$ref": "#/$defs/ConceptClaim"
+      },
+      "maxItems": 100,
+      "title": "Added Concepts",
+      "type": "array"
+    },
+    "removed_concepts": {
+      "items": {
+        "$ref": "#/$defs/ConceptClaim"
+      },
+      "maxItems": 100,
+      "title": "Removed Concepts",
+      "type": "array"
+    },
+    "skills_assessed": {
+      "default": false,
+      "title": "Skills Assessed",
+      "type": "boolean"
+    },
+    "user_confirmed_final": {
+      "default": false,
+      "title": "User Confirmed Final",
+      "type": "boolean"
+    }
+  },
+  "title": "TurnExtractionSchema",
+  "type": "object"
+}

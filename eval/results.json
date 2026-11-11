@@ -1,0 +1,107 @@
+{
+ "r1_data_analyst_junior": {
+  "keyword_baseline": {
+   "P@5": 0.8,
+   "nDCG@10": 0.685,
+   "top5": [
+    "estekhdam:52382783",
+    "estekhdam:52390340",
+    "jobinja:tM3w",
+    "estekhdam:52405541",
+    "jobinja:tMkR"
+   ]
+  },
+  "hybrid_no_dense": {
+   "P@5": 0.8,
+   "nDCG@10": 0.81,
+   "top5": [
+    "estekhdam:52382783",
+    "estekhdam:52390340",
+    "jobinja:tM3w",
+    "estekhdam:52405541",
+    "jobinja:tMkR"
+   ]
+  },
+  "rag_hybrid (default)": {
+   "P@5": 1.0,
+   "nDCG@10": 0.808,
+   "top5": [
+    "estekhdam:52382783",
+    "jobinja:tM3w",
+    "estekhdam:52390340",
+    "estekhdam:52405541",
+    "jobinja:tuHe"
+   ]
+  }
+ },
+ "r2_backend_python": {
+  "keyword_baseline": {
+   "P@5": 0.2,
+   "nDCG@10": 0.413,
+   "top5": [
+    "jobinja:tM5j",
+    "estekhdam:52395586",
+    "jobinja:tNW8",
+    "jobvision:1424692",
+    "jobinja:tNjU"
+   ]
+  },
+  "hybrid_no_dense": {
+   "P@5": 0.4,
+   "nDCG@10": 0.598,
+   "top5": [
+    "jobvision:1486122",
+    "jobinja:tjI4",
+    "jobinja:tj3D",
+    "jobvision:884993",
+    "jobinja:tM5j"
+   ]
+  },
+  "rag_hybrid (default)": {
+   "P@5": 0.2,
+   "nDCG@10": 0.721,
+   "top5": [
+    "jobinja:tjI4",
+    "jobvision:1486122",
+    "jobvision:1424692",
+    "jobinja:tM5j",
+    "jobvision:884993"
+   ]
+  }
+ },
+ "r3_accountant": {
+  "keyword_baseline": {
+   "P@5": 1.0,
+   "nDCG@10": 0.814,
+   "top5": [
+    "jobinja:tph5",
+    "estekhdam:52428089",
+    "jobinja:REFk",
+    "jobinja:t48g",
+    "jobinja:tEeA"
+   ]
+  },
+  "hybrid_no_dense": {
+   "P@5": 1.0,
+   "nDCG@10": 0.793,
+   "top5": [
+    "estekhdam:52428089",
+    "jobinja:REFk",
+    "jobinja:tph5",
+    "jobinja:t48g",
+    "jobinja:tEZY"
+   ]
+  },
+  "rag_hybrid (default)": {
+   "P@5": 1.0,
+   "nDCG@10": 0.794,
+   "top5": [
+    "estekhdam:52428089",
+    "jobinja:REFk",
+    "jobinja:tph5",
+    "jobinja:tMQk",
+    "jobinja:t48g"
+   ]
+  }
+ }
+}

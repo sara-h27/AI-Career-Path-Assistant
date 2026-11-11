@@ -1,0 +1,128 @@
+{
+  "$defs": {
+    "EducationItem": {
+      "additionalProperties": false,
+      "properties": {
+        "degree": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Degree"
+        },
+        "field": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field"
+        },
+        "institution": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Institution"
+        }
+      },
+      "title": "EducationItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Documented in docs/resume_profile.schema.json.",
+  "properties": {
+    "concept_ids": {
+      "description": "Validated taxonomy concept ids",
+      "items": {
+        "type": "string"
+      },
+      "title": "Concept Ids",
+      "type": "array"
+    },
+    "skills": {
+      "description": "Skill names as written in the resume",
+      "items": {
+        "type": "string"
+      },
+      "title": "Skills",
+      "type": "array"
+    },
+    "years_of_experience": {
+      "anyOf": [
+        {
+          "maximum": 60,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Years Of Experience"
+    },
+    "education": {
+      "items": {
+        "$ref": "#/$defs/EducationItem"
+      },
+      "title": "Education",
+      "type": "array"
+    },
+    "previous_roles": {
+      "description": "Job titles held before",
+      "items": {
+        "type": "string"
+      },
+      "title": "Previous Roles",
+      "type": "array"
+    },
+    "location": {
+      "anyOf": [
+        {
+          "maxLength": 120,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Location"
+    },
+    "role_ids": {
+      "description": "Taxonomy roles the resume points to",
+      "items": {
+        "type": "string"
+      },
+      "title": "Role Ids",
+      "type": "array"
+    },
+    "source": {
+      "default": "offline",
+      "description": "offline | llm",
+      "title": "Source",
+      "type": "string"
+    }
+  },
+  "title": "ResumeProfile",
+  "type": "object"
+}
